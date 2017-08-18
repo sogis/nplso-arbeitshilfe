@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to nplso-arbeitshilfe's documentation!
-==============================================
+Arbeitshilfe für die Digitalisierung der Nutzungsplanung
+========================================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Inhalt:
+
+   allgemein
+   toleranz
 
 
-
-Indices and tables
-==================
+Index und Suche
+===============
 
 * :ref:`genindex`
 * :ref:`modindex`
