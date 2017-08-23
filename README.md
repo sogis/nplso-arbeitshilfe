@@ -7,7 +7,7 @@ Sphinx documentation repository for "Arbeitshilfe ...[richtiger Titel]"
 * Docker
 * git
 
-## Usage
+## General usage
 
 Clone this repository:
 
@@ -33,5 +33,39 @@ To make a clean html output (that deletes everything in the output folder before
 
 ```
 make clean html
+```
+
+## Specific usage
+
+Login to `geoutil`:
+
+```
+ssh bjsvzwie@geoutil.verw.rootso.org
+```
+
+The Git repository is already cloned:
+
+```
+/opt/sogis_pic/daten_tools/projekte/arp/nutzungsplanung_2.0/AP_Datenerfassung/AP_technische_Arbeitshilfe/nplso-arbeitshilfe
+```
+
+Start the Docker Container:
+
+```
+docker run -it -v /opt/sogis_pic/daten_tools/projekte/arp/nutzungsplanung_2.0/AP_Datenerfassung/AP_technische_Arbeitshilfe/nplso-arbeitshilfe:/documents/ sogis/docker-sphinx
+``` 
+
+Build html files:
+
+```
+make html
+```
+
+For pushing into the git repository, you need a github account and be member of sogis organization:
+
+```
+git add <new files>
+git commit -a -m 'some nice messages / information'
+git push
 ```
 
