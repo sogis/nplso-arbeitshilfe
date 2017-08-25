@@ -40,7 +40,7 @@ make clean html
 Login to `geoutil`:
 
 ```
-ssh bjsvzwie@geoutil.verw.rootso.org
+ssh bjsvwzie@geoutil.verw.rootso.org
 ```
 
 The Git repository is already cloned:
