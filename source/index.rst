@@ -9,9 +9,15 @@ Arbeitshilfe für die Digitalisierung der Nutzungsplanung
 .. toctree::
    :maxdepth: 2
    :caption: Inhalt:
-
-   allgemein
-   toleranz
+   
+   1allgemein
+   2ablaufdererfassung
+   3nutzungsplanung
+   4erschliessung
+   5transfermetadaten
+   6verfahrensstand
+   xallgemein
+   xtoleranz
 
 
 Index und Suche
