@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'nplso-arbeitshilfe'
+project = u'np SO-Arbeitshilfe'
 copyright = u'2017, Amt für Raumplanung Kanton Solothurn'
 author = u'Stefan Ziegler'
 
