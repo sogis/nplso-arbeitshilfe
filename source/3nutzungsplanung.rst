@@ -7,11 +7,12 @@ Datenmodell
 .. _img_ermodell:
 
 .. figure:: _static/klassendiagramm_nutzungsplanung.jpg               
-   :width: 95%                                         
-   :align: left
+   :width: 800px   
+   :align: center
 
    UML-Klassendiagramm Nutzungsplanung. 
 
+   
 Nutzungsplanung, Grundnutzung
 -----------------------------
 Das gesamte Gemeindegebiet ist flächendeckend, lückenlos und ohne Überlappungen einer Grundnutzung zuzuordnen. 
@@ -26,11 +27,13 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 ``Klasse Typ_Grundnutzung``
 '''''''''''''''''''''''''''
 
+.. rst-class:: typgrundnutzung
+
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | **Bezeichnung**    | **Typ / Werte**                             | **Beschreibung**                                                                                                                                            | **Beispiel**                                                               |
 |                    |                                             |                                                                                                                                                             |                                                                            |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-| Bezeichnung        | Text mit max. 80 Zeichen                    | Name der Grundnutzung. Wird von der Gemeinde definiert.                                                                                                     | Kernzone mit Einschränkung                                                 |
+| Bezeichnung        | Text mit max. 80 Zeichen                    | Name der Grundnutzung.                                                                                                                                      | Kernzone mit Einschränkung                                                 |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | Abkuerzung         | Text mit max. 12 Zeichen                    | Abkürzung der Grundnutzung. Kann von der Gemeinde vergeben werden. Falls keine Abkürzung vorhanden ist bleit das Feld leer.                                 | KE                                                                         |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
@@ -79,6 +82,8 @@ Ein ``Typ_Grundnutzung`` kann mehrere Grundnutzungsgeometrien haben (siehe :ref:
 
 ``Klasse Grundnutzung``
 '''''''''''''''''''''''
+
+.. rst-class:: grundnutzung
 	
 +-----------------+---------------------------+---------------------------------------------------------------------------+---------------------------------------------------------+
 | **Bezeichnung** | **Typ / Werte**           | **Beschreibung**                                                          | **Beispiel**                                            |
@@ -117,6 +122,8 @@ Nebeneinanderliegende Grundnutzungsgeometrien mit demselben kommunalen Code dür
 ``Klasse Grundnutzung_Pos``
 '''''''''''''''''''''''''''
 
+.. rst-class:: grundnutzungpos
+
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 | **Bezeichnung** | **Typ / Werte**              | **Beschreibung**                                                                             | **Beispiel** |
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
@@ -144,6 +151,8 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 ``Klasse Dokument``
 '''''''''''''''''''
 
+.. rst-class:: dokument
+
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | **Bezeichnung**  | **Typ / Wert**            | **Beschreibung**                                                                                                | **Beispiel**                                  |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
@@ -160,8 +169,8 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 |                  |                           |                                                                                                                 | 105-3-S                                       |			
 |                  |                           | Sonderbauvorschriften: Gemeindennummer "-" Plannummer nach Planregister "-" S (für Sonderbauvorschriften)       |                                               |
 |                  |                           |                                                                                                                 | 105-BR                                        |
-|                  |                           | Reglemente: Gemeindenummer "-" und kürzel Reglementart (ZR Zonenereglement, BR Baureglement und                 |                                               |
-|                  |                           | BRZ Bau- und Zonenreglement                                                                                     |                                               |
+|                  |                           | Reglemente: Gemeindenummer "-" und Kürzel Reglementart (ZR Zonenereglement, BR Baureglement und                 |                                               |
+|                  |                           | BZR Bau- und Zonenreglement                                                                                     |                                               |
 |                  |                           |                                                                                                                 | 2002/855                                      |
 |                  |                           | Bei `RRB <https://rrb.so.ch/>`_ ist die RRB Nr. aufzuführen (YYYY/RRB Nr.)                                      |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
@@ -188,7 +197,7 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 	
 Die zu referenzierenden Dokumente stehen im `Planregister <https://www.so.ch/planregister>`_ zur Verfügung. Im Ordner **Entscheide** sind die Genehmigungsbeschlüsse des Regierungsrats abgelegt, im Ordner **Plaene** die Plandokumente, im Ordner **Sonderbauvorschriften** – dort wo vorhanden - die spezifischen Regelungen zum jeweiligen Sondernutzungsplan, fallweise auch Schutzonenreglemente zu Grundwasserschutzzonenplänen und im Ordner **Reglemente** die rechtskräftigen Baureglemente und Zonenreglemente.
 
-Die Dokumente werden mit dem ``Typ_Grundnutzung`` verknüpfen. Dies sind in der Regel:
+Die Dokumente werden mit dem ``Typ_Grundnutzung`` verknüpft. Dies sind in der Regel:
 
 *	RRB
 *	Baureglemente und Zonenreglemente.
@@ -213,7 +222,7 @@ Auf die Erfassung der Rechtsgrundlagen des Bundes und des Kantons im Bereich der
 wird verzichtet.
 Weil ein Teil der zu verknüpfenden Dokumente erst nach der Genehmigung der Ortsplanung vorliegt (der Genehmigungsbeschluss selber und die Reglemente) wird der Zeitpunkt der endgültigen Datenabgabe im Genehmigungsbeschluss festgelegt.
 	
-Für den ``Typ_Grundnutzng`` mit Verbindlichkeit gleich orientierend oder hinweisend sind keine Dokumente zu erfassen resp. zuzuweisen. 
+Für den ``Typ_Grundnutzng`` mit Verbindlichkeit gleich orientierend oder hinweisend sind meist keine Dokumente zu erfassen resp. zuzuweisen (Ausnahme Grundwasserschutzzone mit RRB). 
 Falls die Grundnutzungsgeometrien angepasst werden z.B. bei einer Teilrevision ist der RRB für diese Änderung mit der Grundnutzungsgeometrie zu verknüpfen (siehe :ref:`Beispiel <img_rrbteilrevision>`). D.h. diese Verknüpfung kommt weniger vor als die Verknüpfung Dokument zum ``Typ_Grundnutzung``.
 
 .. _img_rrbteilrevision:
@@ -239,6 +248,8 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 
 ``Klasse Typ_Ueberlagernd_Flaeche`` / ``Klasse Typ_Ueberlagernd_Linie`` / ``KlasseTyp_Ueberlagernd_Punkt``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. rst-class:: typueberlagerndflp
 	
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | **Bezeichnung**    | **Typ / Werte**                             | **Beschreibung**                                                                                                                                            | **Beispiel**                                                               |
@@ -274,6 +285,8 @@ Ein ``Typ_Ueberlagernd_Flaeche`` / ``Typ_Ueberlagernd_Linie`` / ``Typ_Ueberlager
 ``Klasse Ueberlagernd_Flaeche`` / ``Klasse Ueberlagernd_Linie`` / ``Klasse Ueberlagernd_Punkt``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+.. rst-class:: ueberlagerndflp
+
 +-----------------+---------------------------+---------------------------------------------------------------------------+---------------------------------------------------------+
 | **Bezeichnung** | **Typ / Werte**           | **Beschreibung**                                                          | **Beispiel**                                            |
 +-----------------+---------------------------+---------------------------------------------------------------------------+---------------------------------------------------------+
@@ -305,6 +318,8 @@ Eine überlagernde Fläche, Linie oder ein überlagernder Punkt ist immer einem 
 ``Klasse Ueberlagernd_Flaeche_Pos`` / ``Klasse Ueberlagernd_Linie_Pos`` / ``Klasse Ueberlagernd_Punkt_Pos``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+.. rst-class:: ueberlagerndflppos
+
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 | **Bezeichnung** | **Typ / Werte**              | **Beschreibung**                                                                             | **Beispiel** |
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
@@ -322,7 +337,7 @@ Eine überlagernde Fläche, Linie oder ein überlagernder Punkt ist immer einem 
 | Grösse          | klein, mittel, gross         | Grösse der Beschriftung                                                                      | mittel       |
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 		
-Beschriftet wir die Abkürzung, welche in der ``Klasse Ueberlagernd_Flaeche`` / ``Klasse Ueberlagernd_Linie`` / ``Klasse Ueberlagernd_Punkt`` erfasst wird. Eine Beschriftung der überlagernden Geometrie macht nur Sinn, wenn eine Abkürzung unter der ``Klasse Ueberlagernd_Flaeche`` / ``Klasse Ueberlagernd_Linie`` / ``Klasse Ueberlagernd_Punkt`` erfasst ist. Eine Beschriftung ist nicht zwingend ( :ref:`siehe Beziehung in der Übersicht <img_ermodell>`). 
+Beschriftet wird die Abkürzung, welche in der ``Klasse Ueberlagernd_Flaeche`` / ``Klasse Ueberlagernd_Linie`` / ``Klasse Ueberlagernd_Punkt`` erfasst wird. Eine Beschriftung der überlagernden Geometrie macht nur Sinn, wenn eine Abkürzung unter der ``Klasse Ueberlagernd_Flaeche`` / ``Klasse Ueberlagernd_Linie`` / ``Klasse Ueberlagernd_Punkt`` erfasst ist. Eine Beschriftung ist nicht zwingend ( :ref:`siehe Beziehung in der Übersicht <img_ermodell>`). 
 Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.
 
 .. index:: Klasse Dokument
@@ -336,6 +351,8 @@ Analog zur :ref:`Klasse Dokument <klasse_dokument_grundnutzung>` der Grundnutzun
 
 ``Klasse Plandokument``
 '''''''''''''''''''''''
+
+.. rst-class:: plandokument
 
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | **Bezeichnung**  | **Typ / Wert**            | **Beschreibung**                                                                                                | **Beispiel**                                  |
@@ -400,7 +417,7 @@ Erschliessungsplanung
 .. _img_erschliessung:
 
 .. figure:: _static/Klassendiagramm_Erschliessung.jpg               
-   :width: 100%                                         
+   :width: 800px                                         
    :align: center
 
    UML-Klassendiagramm Erschliessungsplanung.
@@ -413,6 +430,8 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 
 ``Klasse Typ_Erschliessung_Flaecheobjekt`` / ``Klasse Typ_Erschliessung_Linienobjekt`` / ``Klasse Typ_Erschliessung_Punktobjekt``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. rst-class:: typerschliessungflp
 
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | **Bezeichnung**    | **Typ / Werte**                             | **Beschreibung**                                                                                                                                            | **Beispiel**                                                               |
@@ -455,6 +474,8 @@ Ein ``Klasse Erschliessung_Flaecheobjekt`` / ``Klasse Erschliessung_Linienobjekt
 ``Klasse Erschliessung_Flaecheobjekt`` / ``Klasse Erschliessung_Linienobjekt`` / ``Klasse Erschliessung_Punktobjekt``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+.. rst-class:: erschliessungflp
+
 +-----------------+---------------------------+---------------------------------------------------------------------------+---------------------------------------------------------+
 | **Bezeichnung** | **Typ / Werte**           | **Beschreibung**                                                          | **Beispiel**                                            |
 +-----------------+---------------------------+---------------------------------------------------------------------------+---------------------------------------------------------+
@@ -485,6 +506,8 @@ Eine Erschliessungsgeometrie (Fläche, Linie oder Punkt) ist immer einem Typ (``
 
 ``Klasse Erschliessung_Flaecheobjekt_Pos`` / ``Klasse Erschliessung_Flaecheobjekt_Pos`` / ``Klasse Erschliessung_Flaecheobjekt_Pos``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. rst-class:: erschliessungflppos
 
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 | **Bezeichnung** | **Typ / Werte**              | **Beschreibung**                                                                             | **Beispiel** |
@@ -541,6 +564,8 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 ``Klasse Amt``
 ''''''''''''''
 
+.. rst-class:: amt
+
 +-----------------+--------------------------+--------------------------+---------------------+
 | **Bezeichnung** | **Typ / Werte**          | **Beschreibung**         | **Beispiel**        |
 +-----------------+--------------------------+--------------------------+---------------------+
@@ -555,6 +580,8 @@ Diese Klasse enthält Angaben zur zuständigen Stelle resp. zum Planungsbüro, d
 
 ``Klasse Datenbestand``
 '''''''''''''''''''''''
+
+.. rst-class:: datenbestand
 
 +-----------------+---------------------------+-----------------------------------------------------------------------------------+-------------------------------------------------------------------+
 | **Bezeichnung** | **Typ / Werte**           | **Beschreibung**                                                                  | **Beispiel**                                                      |
@@ -592,6 +619,8 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 
 ``Klasse VS_Perimeter_Verfahrensstand``
 '''''''''''''''''''''''''''''''''''''''
+
+.. rst-class:: vsperimeterverfahrensstand
 	
 +-----------------+------------------------------+--------------------------------------------------------+--------------------------------+
 | **Bezeichnung** | **Typ / Werte**              | **Beschreibung**                                       | **Beispiel**                   |
@@ -629,6 +658,8 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 	
 ``Klasse VS_Permimeter_Pos``
 ''''''''''''''''''''''''''''
+
+.. rst-class:: vsperimeterpos
 
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 | **Bezeichnung** | **Typ / Werte**              | **Beschreibung**                                                                             | **Beispiel** |

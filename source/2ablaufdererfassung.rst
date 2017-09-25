@@ -103,8 +103,18 @@ Folgende Pläne sind für die Erfassung der digitalen Nutzungsplandaten zu berü
 
 Neben den genannten Plänen zur Ortsplanung enthält das Planverzeichnis weitere Einträge unterschiedlicher Kategorien. Einige dieser Pläne sind als Plandokumente auf die entsprechenden Nutzungsplaninhalte zu referenzieren (insb. Gestaltungspläne und kant. Erschliessungspläne auf die der Grundnutzung :ref:`überlagerten flächenbezogenen Festlegungen mit dem kant. Zonencode 611<ref_Ueb>`. Andere Pläne (z.B. Landwirtschaftsinventare, oder Fruchtfolgeflächenpläne bilden als Grundlagepläne eine Momentaufnahme zum Zeitpunkt einer Ortsplanungsrevision ab und sind bei der Datenerfassung nicht weiter zu berücksichtigen. Bei Unklarheiten zur Planliste hilft der `Kreisplaner(in) <https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg>`_ weiter.
 
+.. index:: georeferenziert
+
+TIFF Dateien, georeferenzieren
+''''''''''''''''''''''''''''''
+Die Pläne sind als PDF, aber auch als TIFF vorhanden. TIFF Pläne können im GIS importiert werden. Georeferenziert sind sie eine ausgezeichnete visuelle Hilfestellung bei der Ersterfassung der Daten. 
+
+Das Verzeichnis kann unter https://geoweb.so.ch/zonenplaene/Zonenplaene_tif/ aufgerufen werden.
+
 .. index:: kantonale Daten
 
+Kantonale Daten
+^^^^^^^^^^^^^^^
 Beim Amt für Geoinformation agi@bd.so.ch können die Daten zu den Objekten, welche im :ref:`Objektkatalog <ref_Objektkatalog>` gekennzeichnet sind, modellkonform bezogen werden. Dies sind:
 
 	*	BLN Gebiet ``noch nicht vorhanden``
@@ -114,7 +124,7 @@ Beim Amt für Geoinformation agi@bd.so.ch können die Daten zu den Objekten, wel
 	*	Historische Verkehrswege ``noch nicht vorhanden``
 	*	kantonal geschütztes Kulturobjekt ``noch nicht vorhanden``
 	*	Kantonale Landwirtschafts- und Schutzzone Witi ``noch nicht vorhanden``	
-	*	nationale und kantonale Baulinie (Strasse, Vorbaulinie, Gestalutngsbaulinie, Rückwärtige, Infrastruktur und weitere) ``noch nicht vorhanden``
+	*	nationale und kantonale Baulinie (Strasse, Vorbaulinie, Gestaltungsbaulinie, Rückwärtige, Infrastruktur und weitere) ``noch nicht vorhanden``
 	*	Naturreservat (inkl. Geotope) ``noch nicht vorhanden`` 
 	*	Negative Waldfeststellung ``noch nicht vorhanden``
 	*	Velorouten (Weitere linienbezogene Festlegungen NP) ``noch nicht vorhanden``
@@ -138,11 +148,17 @@ Basis zur Erfassung der Geometriedaten bilden die Daten der amtlichen Vermessung
 Empfohlene Reihenfolge der Erfassung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Die Geometrie der Planinhalte ist in der Reihenfolge des :ref:`Objektkatalog <ref_Objektkatalog>` zu erfassen; das heisst: 
-zuerst die :ref:`Grundnutzung <ref_Gn>`, dann die :ref:`überlagernden Nutzungen <ref_Ueb>` (beide zusammen bilden die Nutzungsplanung) und schliesslich die :ref:`Erschliessungsplanung <ref_Er>`. Die Erfassung und separate Prüfung in dieser Reihenfolge ist sinnvoll, weil Lage und/oder Abgrenzung von überlagerten Planinhalten teilweise von der Grundnutzung abhängig sind. Eine Strassenbaulinie zu einer projektierten Strasse ist Beispielsweise von der korrekten Erfassung der Verkehrsfläche in der Grundnutzung abhängig; oder die Abgrenzung von Lärmempfindlichkeitsstufen von der Lage der entsprechenden Bauzonengrenzen.
+zuerst die :ref:`Grundnutzung <ref_Gn>`, dann die :ref:`überlagernden Nutzungen <ref_Ueb>` (beide zusammen bilden die Nutzungsplanung) und schliesslich die :ref:`Erschliessungsplanung <ref_Er>`. Die Erfassung und separate Prüfung in dieser Reihenfolge ist sinnvoll, weil Lage und/oder Abgrenzung von überlagerten Planinhalten teilweise von der Grundnutzung abhängig sind. Eine Strassenbaulinie zu einer projektierten Strasse ist beispielsweise von der korrekten Erfassung der Verkehrsfläche in der Grundnutzung abhängig; oder die Abgrenzung von Lärmempfindlichkeitsstufen von der Lage der entsprechenden Bauzonengrenzen.
 
 Bereinigungsarbeiten
 ^^^^^^^^^^^^^^^^^^^^
 Mit der digitalen Ersterfassung dürfen im Grundsatz keine inhaltlichen Veränderungen oder Bereinigungsarbeiten vorgenommen werden. Wenn inhaltlicher Bereinigungs- oder Anpassungsbedarf besteht, so sind solche Arbeiten nach dem Abschluss der Ersterfassung in einem eigenständigen Arbeitsschritt umzusetzen und zu dokumentieren. Kleine Abweichungen zwischen analogen Planwerken und den Geometrien der amtlichen Vermessung sind als Zusammenfallen zu interpretieren, wenn dies klar und eindeutig als Absicht aus dem Plan hervorgeht. Bei Fragen zu diesem Thema kann der zuständige `Kreisplaner(in) <https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg>`_ kontaktiert werden. 
+
+offensichtliche Fehler
+''''''''''''''''''''''
+Tritt ein offensichtlicher Fehler auf so ist die neue Situation zu erfassen und zu vermerken.
+
+
 
 .. index:: Bezugsrahmensystem LV 95 (EPSG:2056), LV 95, EPSG:2056
 
@@ -176,7 +192,7 @@ Folgende Daten sind dem zuständigen `Kreisplaner(in) <https://www.so.ch/fileadm
 
 In der Transferdatei sind alle Daten vorhanden, auch die Daten, welche vom Kanton  bezogen und eingebunden wurden (z.B. Grundwasserschutzzonen).
 
-Bei einer Ortsplanungsrevision ist der Zeitpunkt der Datenabgabe mit dem `Kreisplaner(in) <https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg>`_ in Abhängigkeit von Verfahrensstand abzusprechen. In der Regel erfolgt die Datenabgabe erstmalig im Sinn einer Vorprüfung (bei einer Datenerhebung im Rahmen der Ortsplanungsrevision koordiniert mit der Vorprüfung nach `§ 15 PBG <http://bgs.so.ch/frontend/versions/4287>`_ ). Bei der Abgabe der Daten zur Vorprüfung kann den Daten einen Bericht oder eine Tabelle mit offenen Fragen und Erläuterungen beileget werden.
+Bei einer Ortsplanungsrevision ist der Zeitpunkt der Datenabgabe mit dem `Kreisplaner(in) <https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg>`_ in Abhängigkeit von Verfahrensstand abzusprechen. In der Regel erfolgt die Datenabgabe erstmalig im Sinn einer Vorprüfung (bei einer Datenerhebung im Rahmen der Ortsplanungsrevision koordiniert mit der Vorprüfung nach `§ 15 PBG <http://bgs.so.ch/frontend/versions/4287>`_ ). Bei der Abgabe der Daten zur Vorprüfung kann den Daten einen Bericht oder eine Tabelle mit offenen Fragen und Erläuterungen beigelegt werden.
 
 Zwingend erforderlich ist die Datenabgabe der bereinigten modellkonformen Daten zum Zeitpunkt der regierungsrätlichen Genehmigung einer Ortsplanung. Die Datenabgabe ist Voraussetzung für die Auszahlung des Kantonsbeitrages. Auch bei einer Datenerfassung ausserhalb der Ortsplanung ist die Abgabe fehlerfreier Daten Voraussetzung für die Auszahlung des Beitrags.
 

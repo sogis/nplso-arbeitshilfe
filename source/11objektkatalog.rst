@@ -141,7 +141,7 @@ Objektkatalog
 | :ref:`überlagernde Festlegungen       |         |                                                              |                                                                                                   |                                                                                    |                               |                                                                  |                                                                     |                                |                                   |                             |                                           |
 | <ref_Ueb>`                            |         |                                                              |                                                                                                   |                                                                                    |                               |                                                                  |                                                                     |                                |                                   |                             |                                           |
 +---------------------------------------+---------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
-|                                       | **Code  | Bezeichnung Bund                                             | Code kantonal                                                                                     | **Bezeichnung Kanton**                                                             | **Code kommunal**             | **Bezeichnung Gemeinde**                                         |                                                                     | Datenabgabe / -erhebung Kanton | Datenabgabe mit Anpassungsauftrag | von der Gemeinde zu erheben | Bemerkungen                               |
+|                                       | **Code  | **Bezeichnung Bund**                                         | **Code kantonal**                                                                                 | **Bezeichnung Kanton**                                                             | **Code kommunal**             | **Bezeichnung Gemeinde**                                         |                                                                     | Datenabgabe / -erhebung Kanton | Datenabgabe mit Anpassungsauftrag | von der Gemeinde zu erheben | Bemerkungen                               |
 |                                       | CH**    |                                                              |                                                                                                   |                                                                                    |                               |                                                                  |                                                                     |                                |                                   |                             |                                           |
 +---------------------------------------+---------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
 | überlagernde Zonen                    | 51      | überlagernde Ortsbild-schutzzonen                            | 510                                                                                               | :ref:`überlagernde Ortsbildschutzzone <ref_UEOBSZ>`                                | :ref:`5101-5109 <ref_UEOBSZ>` | von der Gemeinde zu vergeben                                     | :ref:`Nutzungsplanfestlegung <ref_NPFL>`                            |                                |                                   | x                           |                                           |
@@ -221,8 +221,8 @@ Objektkatalog
 |                                       | 81      |                                                              | 812                                                                                               | :ref:`geologisches Objekt <ref_GO2>`                                               | :ref:`8120 <ref_GO2>`         | geologisches Objekt                                              | :ref:`hinweisend <ref_HWD>`                                         |                                |                                   |                             |                                           |
 |                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
 |                                       |         |                                                              | 813                                                                                               | :ref:`Naturobjekt  <ref_NO2>`                                                      | :ref:`8130 <ref_NO2>`         | Naturobjekt                                                      | :ref:`Nutzungsplanfestlegung <ref_NPFL>`                            |                                |                                   | x                           |                                           |
-|                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
-|                                       |         |                                                              | 820                                                                                               | :ref:`kantonal geschütztes Kulturobjekt <ref_KTGKO2>`                              | :ref:`8200 <ref_KTGKO2>`      | kantonal geschütztes Kulturobjekt                                | :ref:`orientierend <ref_ORIE>`                                      |                                |                                   | x                           |                                           |
+|                                       +---------+                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
+|                                       | 82      |                                                              | 820                                                                                               | :ref:`kantonal geschütztes Kulturobjekt <ref_KTGKO2>`                              | :ref:`8200 <ref_KTGKO2>`      | kantonal geschütztes Kulturobjekt                                | :ref:`orientierend <ref_ORIE>`                                      |                                |                                   | x                           |                                           |
 |                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
 |                                       |         |                                                              | 821                                                                                               | :ref:`kommunal geschütztes Kulturobjekt <ref_KOGKO2>`                              | :ref:`8210 <ref_KOGKO2>`      | kommunal geschütztes Kulturobjekt                                | :ref:`Nutzungsplanfestlegung <ref_NPFL>`                            | x                              |                                   | x                           | z.B. Archäologische Fundstellen, etc.     |
 |                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
@@ -250,7 +250,7 @@ Objektkatalog
 |                                       +---------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
 |                                       | 82      | Kulturobjekte                                                | 820                                                                                               | :ref:`kantonal geschütztes Kulturobjekt <ref_KTGKO>`                               | :ref:`8200 <ref_KTGKO>`       | kantonal geschütztes Kulturobjekt                                | :ref:`orientierend <ref_ORIE>`                                      | x                              |                                   | x                           |                                           |
 |                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
-|                                       |         |                                                              | 821                                                                                               | :ref:`kommunal geschütztes Kulturobjekt <ref_KOMGKO>`                              | :ref:`8210 <ref_KOMGKO>`      | kommunal geschütztes Kulturobjekt                                | :ref:`Nutzungsplanfestlegung <ref_NPFL>`                            |                                |                                   | x                           |                                           |
+|                                       |         |                                                              | 821                                                                                               | :ref:`kommunal geschütztes Kulturobjekt <ref_KOGKO>`                               | :ref:`8210 <ref_KOGKO>`       | kommunal geschütztes Kulturobjekt                                | :ref:`Nutzungsplanfestlegung <ref_NPFL>`                            |                                |                                   | x                           |                                           |
 |                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
 |                                       |         |                                                              | 822                                                                                               | :ref:`schützenswertes Kulturobjekt <ref_SKO>`                                      | :ref:`8220 <ref_SKO>`         | schützenswertes Kulturobjekt                                     | :ref:`Nutzungsplanfestlegung <ref_NPFL>`                            |                                |                                   | x                           |                                           |
 |                                       +         +                                                              +---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------+--------------------------------+-----------------------------------+-----------------------------+-------------------------------------------+
@@ -533,6 +533,8 @@ Zone für Bauten und Anlagen für den, Tourismus, die  Freizeit und Erholung
 '''''''''''''''''''''''''''''''''''''''''''''
 In der Regel die übrig geblieben Fläche in der Bauzone welche keiner anderen Grundnutzung zugewiesen wird.
 
+*	*Abgrenzung Verkehrsfläche Strasse:* Die Bodenbedeckung der amtlichen Vermessung kennt Trottoir und Verkehrsinseln. Gehören sie vorbehaltlos zur Verkehrsfläche Strasse? Bei den Zonencodes 180 und 420 ist kein Differenzierung erforderlich; **Die Unterscheidung erfolgt ausschliesslich über die** :ref:`Erschliessungsplanung <ref_Erschliessung>`.
+
 .. _ref_VZB:
 
 1810 Verkehrszone Bahnareal
@@ -566,6 +568,8 @@ In der Regel die übrig geblieben Fläche in der Bauzone welche keiner anderen G
 2100 Landwirtschaftszone
 ''''''''''''''''''''''''
 Zone für die landwirtschaftliche Nutzung oder den produzierenden Gartenbau ausserhalb des Siedlungsgebietes
+
+*	*schmale Flächen verhindern*: Grundnutzung ist flächendeckend zu erfassen. In  der AV ausgeschiedene Bäche sind auch bei weniger als 3 m Breite als :ref:`Gewässer <ref_GEW>` zu erfassen. Bei Differenzen zwischen AV und Bodenbedeckung (Bach ausserhalb der Bachparzelle) ist im Einzelfall zu entscheiden (siehe auch :ref:`Gewässer <ref_GEW>`).
 
 .. _ref_SLWZ:
 
@@ -602,9 +606,13 @@ Zone von kommunaler Bedeutung zum Schutz von Naturobjekten und ihrer Umgebung od
 
 .. _ref_WRSZ:
 
+.. index:: Waldrandschutzzone, Waldgrenze, Waldfestlegungsplan
+
 3111-3119 Waldrandschutzzone
 ''''''''''''''''''''''''''''
 Zone zum Schutz des Waldes vor Beeinträchtigung durch Bauten und bauliche Anlagen oder zum Schutz derer durch Beeinträchtigung durch den Wald.
+
+*	Massgebend für die Abgrenzung zwischen :ref:`Wald <ref_WALD>` und Waldrandschutzzone ist der Waldfestlegungsplan und die dort festgehaltene Waldgrenze.
 
 .. _ref_WSZLL:
 
@@ -614,11 +622,16 @@ Zone zum Schutz des Waldes vor Beeinträchtigung durch Bauten und bauliche Anlag
 
 .. _ref_GEW:
 
-.. index:: Zonen für Gewässer und ihre Ufer
+.. index:: Zonen für Gewässer und ihre Ufer, schmale Flächen verhindern
 
 3200 Gewässer
 '''''''''''''
 Fliessendes oder stehendes Gewässer gemäss amtlicher Vermessung
+
+*	*Regelfall*: Parzellengrenze ist Gewässerfläche; *Ausnahmefall*: starke Abweichung um mehr als die Gewässerbreite)
+*	*schmale Flächen verhindern*: Grundnutzung ist flächendeckend zu erfassen. In  der AV ausgeschiedene Bäche sind auch bei weniger als 3 m Breite als Gewässer zu erfassen. Bei Differenzen zwischen AV und Bodenbedeckung (Bach ausserhalb der Bachparzelle) ist im Einzelfall zu entscheiden (siehe auch :ref:`Landwirtschaftszone <ref_LWZ>`, :ref:`Wald <ref_WALD>`).
+
+
 
 .. _ref_WZGU:
 
@@ -636,11 +649,14 @@ Weitere Zonen zum Schutz von bestimmten Objekten und ihrer Umgebung oder Gebiete
 
 .. _ref_VFS:
 
-.. index:: Verkehrsflächen ausserhalb Baugebiet
+.. index:: Verkehrsflächen ausserhalb Baugebiet, Abgrenzung Verkehrsfläche Strasse
 
 4200 Verkehrsfläche Strasse
 '''''''''''''''''''''''''''
-``blabla``
+
+*	*Abgrenzung Verkehrsfläche Strasse:* Die Bodenbedeckung der amtlichen Vermessung kennt Trottoir und Verkehrsinseln. Gehören sie vorbehaltlos zur Verkehrsfläche Strasse? Bei den Zonencodes 180 und 420 ist kein Differenzierung erforderlich; **Die Unterscheidung erfolgt ausschliesslich über die** :ref:`Erschliessungsplanung <ref_Erschliessung>`. 
+
+
 
 .. _ref_VFB:
 
@@ -662,7 +678,7 @@ Weitere Zonen zum Schutz von bestimmten Objekten und ihrer Umgebung oder Gebiete
 
 .. _ref_RZW:
 
-.. index:: Reservezonen nach Art. 18 Abs. 1 RPG
+.. index:: Reservezonen nach Art. 18
 
 4300 Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -693,6 +709,8 @@ Land, das aus siedlungspolitischen Gründen für eine spätere Überbauung in Fr
 4400 Wald
 '''''''''
 Wald; innerhalb Bauzone gemäss Waldfeststellung, ausserhalb Bauzone gemäss amtlicher Vermessung
+
+*	*schmale Flächen verhindern*: Grundnutzung ist flächendeckend zu erfassen. In  der AV ausgeschiedene Bäche sind auch bei weniger als 3 m Breite als :ref:`Gewässer <ref_GEW>` zu erfassen. Bei Differenzen zwischen AV und Bodenbedeckung (Bach ausserhalb der Bachparzelle) ist im Einzelfall zu entscheiden (siehe auch :ref:`Gewässer <ref_GEW>`).
 
 .. _ref_GZ:
 
@@ -745,6 +763,8 @@ zurück zum :ref:`Objektkatalog <ref_Objektkatalog>`
 '''''''''''''''
 Landschaften, die entweder schweizweit einzigartig sind, einen charakteristischen Landschaftstyp vertreten oder aufgrund ihrer Ruhe, Ungestörtheit oder ausserordentlichen Schönheit eine besondere Attraktivität aufweisen.
 
+*	aneinandergrenzende BLN-Gebiete dürfen nicht verschmolzen werden. Betrifft die Gemeinden Wisen und Kienberg.
+
 .. _ref_JSZ:
 
 5210 Juraschutzzone
@@ -783,15 +803,20 @@ Zone von kantonaler Bedeutung für die landwirtschaftliche Nutzung und gleichzei
 
 .. _ref_KTUSZ2:
 
+..index:: abgrenzung Uferschutzzone, Uferschutzzone
+
 5270 kantonale Uferschutzzone
 '''''''''''''''''''''''''''''
-``blabla``
+
+*	*Abgrenzung Uferschutzzone:* bsp. die Uferschutzzone ist 10 m parallel zum :ref:`Gewässer <ref_GEW>` definiert. Der 10 m breite Streifen überlagert die :ref:`Verkehrsfläche Strasse <ref_VFS>`. **Priorität liegt bei der Strassenfläche**.
 
 .. _ref_KOUSZ:
 
 5281-5289 kommunale Uferschutzzone ausserhalb Bauzonen
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''
-``blabla``
+
+*	*Abgrenzung Uferschutzzone:* bsp. die Uferschutzzone ist 10 m parallel zum :ref:`Gewässer <ref_GEW>` definiert. Der 10 m breite Streifen überlagert die :ref:`Verkehrsfläche Strasse <ref_VFS>`. **Priorität liegt bei der Strassenfläche**.
+*	*Rechtsgültige Situation aus dem Gesamtplan übernehmen* auch wenn in der AV kein Gewässer ausgeschieden ist (weder BB Gewässer noch EO eingedoltes Gewässer). 
 
 .. _ref_WSZLL2:
 
@@ -901,11 +926,13 @@ Gebiet, für dessen Bebauung ein Gestaltungsplan erstellt und vom Regierungsrat 
 
 .. _ref_ES1:
 
-.. index:: Lärmempfindlichkeitsstufen
+.. index:: Lärmempfindlichkeitsstufen, Empfindlichkeitsstufen
 
 6800 Empfindlichkeitsstufe I
 ''''''''''''''''''''''''''''
 Gebiete mit Lärmempfindlichkeitsstufe I (nicht störende Nutzungen)
+
+*	Verkehrsflächen besitzen keine Lärmempfindlichkeitsstufen, weder innerhalb, noch ausserhalb des Baugebietes
 
 .. _ref_ES2:
 
@@ -923,7 +950,9 @@ Gebiete mit Lärmempfindlichkeitsstufe II (nicht störende Nutzungen), welche um
 
 6830 Empfindlichkeitsstufe III
 ''''''''''''''''''''''''''''''
-``blabla``
+
+*	gilt für die :ref:`Landwirtschaftszone <ref_LWZ>` ausserhalb des Siedlungsgebiets.
+*	gilt für :ref:`Reservezonen <ref_RZW>` 
 
 .. _ref_ES3+:
 
@@ -942,6 +971,9 @@ Gebiete mit Lärmempfindlichkeitsstufe IV (stark störende Nutzungen)
 6860 keine Empfindlichkeitsstufe 
 ''''''''''''''''''''''''''''''''
 Gebiete ohne Lärmempfindlichkeitsstufe
+
+*	wird auf alle Zonen angewendet, für die keine Empfindlichkeitsstufe nach `Art. 43 LVS <https://www.admin.ch/opc/de/classified-compilation/19860372/index.html#a43>`_. vorgesehen ist. 
+*	:ref:`Verkehrsflächen <ref_VFS>` besitzen keine Lämempfindlichkeitsstufen, weder innerhalb, noch ausserhalb des Baugebietes.
 
 .. _ref_KTVNL:
 
@@ -975,7 +1007,8 @@ Dies sind z.B. geschützte archäologische Fundstellen.
 8120 geologisches Objekt
 ''''''''''''''''''''''''
 geologisches Objekt
-können als überlagernde Fläche oder Punkt erfasst werden
+
+*	kann als überlagernde Fläche oder :ref:`Punkt <ref_GO>` erfasst werden
 
 .. _ref_NO2:
 
@@ -983,33 +1016,39 @@ können als überlagernde Fläche oder Punkt erfasst werden
 ''''''''''''''''
 Naturobjekt
 
+*	kann als überlagernde Fläche oder :ref:`Punkt <ref_NO>` erfasst werden
+
 .. _ref_KTGKO2:
 
 8200 kantonal geschütztes Kulturobjekt
 ''''''''''''''''''''''''''''''''''''''
 Mit Regierungsratsbeschluss geschütztes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+*	kann als überlagernde Fläche (z.B. bei Gebäude)  oder :ref:`Punkt <ref_KTGKO>` (z.B. für Wegkreuz) erfasst werden
 
 .. _ref_KOGKO2:
 
 8210 kommunal geschütztes Kulturobjekt
 ''''''''''''''''''''''''''''''''''''''
 Mit kommunalem Beschluss geschütztes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+*	kann als überlagernde Fläche (z.B. bei Gebäude)  oder :ref:`Punkt <ref_KOGKO>` (z.B. für Wegkreuz) erfasst werden
 
 .. _ref_SKO2:
 
 8220 schützenswertes Kulturobjekt
 '''''''''''''''''''''''''''''''''
 Mit kommunalem Beschluss als schützenswert eingestuftes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+*	kann als überlagernde Fläche (z.B. bei Gebäude)  oder :ref:`Punkt <ref_SKO>` (z.B. für Wegkreuz) erfasst werden
 
 .. _ref_EKO2:
 
 8230 erhaltenswertes Kulturobjekt
 '''''''''''''''''''''''''''''''''
 Mit kommunalem Beschluss als erhaltenswert eingestuftes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+*	kann als überlagernde Fläche (z.B. bei Gebäude)  oder :ref:`Punkt <ref_EKO>` (z.B. für Wegkreuz) erfasst werden
 
 .. _ref_WW:
 
@@ -1063,11 +1102,15 @@ kommunal erhaltenswerter Einzelbaum
 ''''''''''''''''''''''''
 geologisches Objekt
 
+*	kann als :ref:`überlagernde Fläche <ref_GO2>` oder Punkt erfasst werden
+
 .. _ref_NO:
 
 8130 Naturobjekt
 ''''''''''''''''
 Naturobjekt
+
+*	kann als :ref:`überlagernde Fläche <ref_NO2>` oder Punkt erfasst werden
 
 .. _ref_KTGKO:
 
@@ -1076,14 +1119,16 @@ Naturobjekt
 8200 kantonal geschütztes Kulturobjekt
 ''''''''''''''''''''''''''''''''''''''
 Mit Regierungsratsbeschluss geschütztes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
 
-.. _ref_KOMGKO:
+*	kann als :ref:`überlagernde Fläche <ref_NO2>` (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+.. _ref_KOGKO:
 
 8210 kommunal geschütztes Kulturobjekt
 ''''''''''''''''''''''''''''''''''''''
 Mit kommunalem Beschluss geschütztes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+*	kann als :ref:`überlagernde Fläche <ref_KOGKO2>` (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
 
 .. _ref_SKO:
 
@@ -1097,7 +1142,8 @@ Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (
 8230 erhaltenswertes Kulturobjekt
 '''''''''''''''''''''''''''''''''
 Mit kommunalem Beschluss als erhaltenswert eingestuftes Kulturobjekt
-Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
+
+*	kann als :ref:`überlagernde Fläche <ref_EKO2>` (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden
 
 .. _ref_WPFNP:
 

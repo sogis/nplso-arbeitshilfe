@@ -3,6 +3,11 @@ Allgemein
 Ziel und Zweck der technischen Arbeitshilfe
 -------------------------------------------
 Die technische Arbeitshilfe spezifiziert und erklärt die inhaltlichen und technischen Anforderungen an die digitalen Daten der Nutzungsplanung. Sie richtet sich an Gemeinden und die mit der Erfassung und Nachführung beauftragten Planungs-, Ingenieur- und Vermessungsbüros. Die Arbeitshilfe beschreibt die Projektabläufe der Erfassung der digitalen Nutzungsplanungsdaten.
+   
+.. image:: _static/klassendiagramm_nutzungsplanung.jpg
+   :width: 250px
+   :height: 250px
+   :target: 11objektkatalog.html#ref-wald
 
 Die rechtsgültigen Nutzungsplanungsdaten können im Rahmen der Ortsplanungsrevision oder ausserhalb davon digital erfasst werden. Die vorgängige Erfassung der digitalen Nutzungsplanungsdaten ist auch ausserhalb der Ortsplanung eine sinnvolle Investition, bietet sie doch eine gute Grundlage für die kommende Ortsplanungsrevision.
 
@@ -40,7 +45,7 @@ Um den kantonalen Spezifitäten Rechnung zu tragen, hat der Regierungsrat - basi
 
 Mit dem Datenmodell wird sichergestellt, dass die Datenerfassung unter den Gemeinden harmonisiert ist und die Daten in der kantonalen Geodateninfrastruktur verwaltet und publiziert werden können.
 
-Das kantonale Datenmodell liegt in `INTERLIS 2.3 <https://www.interlis.ch/index_d.htm>`_ vor. Die ILI-Modelldatei ``SO_Nutzungsplanung_20170901`` ist in der Modellablage https://geoweb.so.ch/models/ARP/ zu finden. Das Datenmodell gliedert die Daten in einen Teilbereich Nutzungsplanung (Topic Nutzungsplanung) und einen Teil Erschliessung (Topic Erschliessung).
+Das kantonale Datenmodell liegt in `INTERLIS 2.3 <https://www.interlis.ch/index_d.htm>`_ vor. Die ILI-Modelldatei ``SO_Nutzungsplanung_20170915`` ist in der Modellablage https://geoweb.so.ch/models/ARP/ zu finden. Das Datenmodell gliedert die Daten in einen Teilbereich Nutzungsplanung (Topic Nutzungsplanung) und einen Teil Erschliessung (Topic Erschliessung).
 
 .. index:: Zuständigkeiten
 	
