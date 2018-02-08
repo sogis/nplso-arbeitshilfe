@@ -3,11 +3,6 @@ Allgemein
 Ziel und Zweck der technischen Arbeitshilfe
 -------------------------------------------
 Die technische Arbeitshilfe spezifiziert und erklärt die inhaltlichen und technischen Anforderungen an die digitalen Daten der Nutzungsplanung. Sie richtet sich an Gemeinden und die mit der Erfassung und Nachführung beauftragten Planungs-, Ingenieur- und Vermessungsbüros. Die Arbeitshilfe beschreibt die Projektabläufe der Erfassung der digitalen Nutzungsplanungsdaten.
-   
-.. image:: _static/klassendiagramm_nutzungsplanung.jpg
-   :width: 250px
-   :height: 250px
-   :target: 11objektkatalog.html#ref-wald
 
 Die rechtsgültigen Nutzungsplanungsdaten können im Rahmen der Ortsplanungsrevision oder ausserhalb davon digital erfasst werden. Die vorgängige Erfassung der digitalen Nutzungsplanungsdaten ist auch ausserhalb der Ortsplanung eine sinnvolle Investition, bietet sie doch eine gute Grundlage für die kommende Ortsplanungsrevision.
 
@@ -54,3 +49,4 @@ Zuständigkeiten
 Die Ortsplanung ist Aufgabe der Einwohnergemeinde (`§ 9 PBG <http://bgs.so.ch/frontend/versions/4287>`_) . Die Einwohnergemeinde erlässt die Nutzungspläne und die dazugehörigen Vorschriften und verfasst dazu einen Raumplanungsbericht (Erläuterungsbericht zur Planung). Planungsbehörde ist der Gemeinderat. Die Datenhoheit für den überwiegenden Teil der Nutzungsplandaten liegt demzufolge bei den Einwohnergemeinden.
 Der Kanton definiert das Datenmodell und ist die Prüfbehörde für die Nutzungsplanung. Er verwaltet und publiziert die harmonisierten Nutzungsplandaten im kantonalen Geoinformationssystem.
 	
+* :ref:`genindex`

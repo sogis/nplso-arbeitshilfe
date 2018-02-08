@@ -62,7 +62,7 @@ author = u'Stefan Ziegler'
 # built documents.
 #
 # The short X.Y version.
-version = u'0.1'
+version = u'1.0'
 # The full version, including alpha/beta/rc tags.
 release = u'0.1.0'
 
@@ -97,7 +97,6 @@ html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 
-
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -109,6 +108,11 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# -- Generated index in sidebar -------------------------------------------
+
+# Override the template
+
+templates_path = ['_templates']
 
 # -- Options for HTMLHelp output ------------------------------------------
 

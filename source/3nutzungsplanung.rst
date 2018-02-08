@@ -1,3 +1,5 @@
+.. include:: .style.rst
+
 .. _ref_NP:
 
 Datenmodell
@@ -6,8 +8,8 @@ Datenmodell
 
 .. _img_ermodell:
 
-.. figure:: _static/klassendiagramm_nutzungsplanung.jpg               
-   :width: 800px   
+.. figure:: _static/klassendiagramm_nutzungsplanung.png               
+   :width: 650px   
    :align: center
 
    UML-Klassendiagramm Nutzungsplanung. 
@@ -20,7 +22,8 @@ Das gesamte Gemeindegebiet ist flächendeckend, lückenlos und ohne Überlappung
 Attribute der Grundnutzung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 Folgende Attribute sind für die Grundnutzung zu erfassen:
-Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer erfasst werden.
+
+:orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Typ_Grundnutzung
 
@@ -62,7 +65,7 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | Nutzungsziffer     | Wert zwischen 0.00 und 9.00.                | Zahlenwert nach Zonenreglement der Gemeinde (0.05 = 5%)                                                                                                     | 0.4                                                                        |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-| Nutzungsziffer_Art | Baumassenziffer                             | Bauvolumen über massgebendem Terrain / anrechenbare Grundstücksfläche (§37ter PBG)                                                                          | Ausnützungsziffer                                                          |
+| Nutzungsziffer_Art | Baumassenziffer                             | Bauvolumen über massgebendem Terrain / anrechenbare Grundstücksfläche (§37ter PBG)                                                                          | Überbauungsziffer                                                          |
 |                    +---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+                                                                            |
 |                    | Geschossflächenziffer                       | Summe aller Geschossflächen / anrechenbare Grundstücksfläche (§37bis PBG)                                                                                   |                                                                            |
 |                    +---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+                                                                            |
@@ -159,24 +162,30 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 | DokumentID       | Text mit max. 16 Zeichen  | leer lassen                                                                                                     |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | Titel            | Text mit max. 80 Zeichen  | Dokumentart z.B. Regiereungsratsbeschluss, Zonenreglement, Sonderbauvorschriften                                | Sonderbauvorschriften                         |
+|                  |                           | Erschliessungsplan, Gestaltungsplan                                                                             |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| OffiziellerTitel | Text mit max. 240 Zeichen | Vollständiger Titel des Dokuments                                                                               | Gemeinde Oekingen Bau- und Zonenreglement     |
+| OffiziellerTitel | Text mit max. 240 Zeichen | Vollständiger Titel des Dokuments, wenn der OffiziellerTitel gleich lautet wie der Titel, so ist die            | Gemeinde Oekingen Bau- und Zonenreglement     |
+|                  |                           | Planbezeichnung aus der Planliste zu übernehmen.                                                                |                                               |
+|                  |                           |                                                                                                                 |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | Abkuerzung       | Text mit max. 10 Zeichen  | Abkürzung der Dokumentkategorie (Regierungsratsbeschluss, Sonderbauvorschrift, Zonenreglement)                  | RRB, SBV,ZR                                   |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | OffizielleNr     | Text mit max. 20 Zeichen  | Eindeutiger Identifikator gemäss `Planregister <https://www.so.ch/planregister>`_.                              |                                               |
 |                  |                           | Die ID setzt sich folgendermassen zusammen:                                                                     |                                               |
-|                  |                           |                                                                                                                 | 105-3-S                                       |			
-|                  |                           | Sonderbauvorschriften: Gemeindennummer "-" Plannummer nach Planregister "-" S (für Sonderbauvorschriften)       |                                               |
-|                  |                           |                                                                                                                 | 105-BR                                        |
-|                  |                           | Reglemente: Gemeindenummer "-" und Kürzel Reglementart (ZR Zonenereglement, BR Baureglement und                 |                                               |
+|                  |                           |                                                                                                                 |                                               |			
+|                  |                           | Sonderbauvorschriften: Gemeindennummer "-" Plannummer nach Planregister "-" S (für Sonderbauvorschriften)       | 109-31-S                                      |
+|                  |                           |                                                                                                                 |                                               |
+|                  |                           | Reglemente: Gemeindenummer "-" und Kürzel Reglementart (ZR Zonenereglement, BR Baureglement und                 | 109-BR                                        |
 |                  |                           | BZR Bau- und Zonenreglement                                                                                     |                                               |
-|                  |                           |                                                                                                                 | 2002/855                                      |
-|                  |                           | Bei `RRB <https://rrb.so.ch/>`_ ist die RRB Nr. aufzuführen (YYYY/RRB Nr.)                                      |                                               |
+|                  |                           |                                                                                                                 |                                               |
+|                  |                           | Gestaltungsplan: Gemeindennummer "-" Plannummer nach Planregister "-" P (für Plan)                              | 109-31-P                                      |
+|                  |                           |                                                                                                                 |                                               |
+|                  |                           |                                                                                                                 |                                               |
+|                  |                           | Bei `RRB <https://rrb.so.ch/>`_ ist die RRB Nr. aufzuführen (YYYY/RRB Nr.)                                      | 2001/1585                                     |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | Kanton           | CHCantonCode              | Abkürzung Kanton                                                                                                | SO                                            |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Gemeinde         | CHMunicipalityCode        | Gemeindenummer vom schweizerischen Bundesamt für Statistik (BFS-Nr.)                                            | 2498                                          |
+| Gemeinde         | CHMunicipalityCode        | Gemeindenummer vom schweizerischen Bundesamt für Statistik (BFS-Nr.)                                            | 2502                                          |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | publiziertAb     | Datum                     | Datum des Regierungsratsbeschlusses                                                                             | 2002-04-23                                    |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
@@ -184,14 +193,14 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 |                  +---------------------------+-----------------------------------------------------------------------------------------------------------------+                                               |
 |                  | laufende_Aenderung        | Rechtsstatus des Dokuments. Das Dokument ist noch nicht in Kraft, eine Änderung ist in Vorbereitung.            |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| TextImWeb        | URI                       | Relative Internetadresse des Dokuments auf `Planregister <https://www.so.ch/planregister>`_.                    | 105-Rohr/Entscheide/105-5_5e-E.pdf            |
+| TextImWeb        | URI                       | Relative Internetadresse des Dokuments auf `Planregister <https://www.so.ch/planregister>`_.                    | 109-Wisen/Entscheide/109-31-E.pdf             |
 |                  |                           | D.h. stabiler Teil, ohne "http://www.so.ch.../"                                                                 |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | Bemerkung        | Text mit max. 240 Zeichen | Erläuternder Text oder Bemerkungen zum Dokument                                                                 | ersetzt den RRB vom 13.12.2001                |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Rechtsvorschrift | ja                        | RRB, Zonenreglement                                                                                             | ja                                            |
+| Rechtsvorschrift | ja                        | RRB, Zonenreglement, Baureglement, Bauzonenreglement, Sonderbauvorschrift, Gestaltungsplan                      | ja                                            |
 |                  +---------------------------+-----------------------------------------------------------------------------------------------------------------+                                               |
-|                  | nein                      | Bericht, zusätzliches Dokument (Plan, etc.)                                                                     |                                               |
+|                  | nein                      | Raumplanungsbericht, Umweltverträglichkeitsbericht                                                              |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 
 	
@@ -199,40 +208,32 @@ Die zu referenzierenden Dokumente stehen im `Planregister <https://www.so.ch/pla
 
 Die Dokumente werden mit dem ``Typ_Grundnutzung`` verknüpft. Dies sind in der Regel:
 
-*	RRB
-*	Baureglemente und Zonenreglemente.
+*	Baureglemente und Zonenreglemente
+*	(RRB - werden an Baureglemente oder Zonenreglemente verknüpft)
 
-Gemäss Datenmodell kann für die Dokumente eine Hierarchie erfasst werden. Als primäres Dokument gilt immer der RRB. Die anderen Dokumente werden dem RRB zugewiesen. So wird mit dem ``Typ_Grundnutzung`` jeweils nur ein Dokument (RRB) verknüpft (siehe Beispiel)
-
-.. _img_reglementehierarchie:
-
-.. figure:: _static/reglementehierarchie.jpg               
-   :scale: 100%                                         
-   :align: center
-
-   Hierarchie der Dokumente. 
-	
-Auf die Erfassung der Rechtsgrundlagen des Bundes und des Kantons im Bereich der Nutzungsplanung:
+Auf die Erfassung der folgenden Rechtsgrundlagen des Bundes und des Kantons im Bereich der Nutzungsplanung wird verzichtet.
 
 *	Bundesgesetz über die Raumplanung `RPG, SR 700 <https://www.admin.ch/ch/d/sr/c700.html>`_
 *	Raumplanungsverordnung `RPV, SR 700.1 <https://www.admin.ch/ch/d/sr/c700_1.html>`_ 
 *	Kantonales Planungs- und Baugesetz `PBG, BGS 711.1 <http://bgs.so.ch/frontend/versions/4116>`_)
 *	Kantonale Bauverordnung `KBV, BGS 711.61 <http://bgs.so.ch/frontend/versions/4169>`_
 
-wird verzichtet.
-Weil ein Teil der zu verknüpfenden Dokumente erst nach der Genehmigung der Ortsplanung vorliegt (der Genehmigungsbeschluss selber und die Reglemente) wird der Zeitpunkt der endgültigen Datenabgabe im Genehmigungsbeschluss festgelegt.
-	
-Für den ``Typ_Grundnutzng`` mit Verbindlichkeit gleich orientierend oder hinweisend sind meist keine Dokumente zu erfassen resp. zuzuweisen (Ausnahme Grundwasserschutzzone mit RRB). 
-Falls die Grundnutzungsgeometrien angepasst werden z.B. bei einer Teilrevision ist der RRB für diese Änderung mit der Grundnutzungsgeometrie zu verknüpfen (siehe :ref:`Beispiel <img_rrbteilrevision>`). D.h. diese Verknüpfung kommt weniger vor als die Verknüpfung Dokument zum ``Typ_Grundnutzung``.
+Gemäss Datenmodell kann für die Dokumente eine Hierarchie erfasst werden. Als primäres Dokument (Ursprung) gilt immer die Rechtsvorschrift (Baureglement, Zonenreglement, Sonderbauvorschrift, Gestaltungsplan etc.), dort wo die eigentumsbeschränktenden Informationen festgehalten sind. Die RRBs (Hinweis) werden diesen Rechtsvorschriften zugewiesen. Ist keine Rechtsvorschrift vorhanden, so wird der ``Typ_Grundnutzung`` direkt mit dem RRB verknüpft.
 
-.. _img_rrbteilrevision:
+.. _img_hierarchie_np:
 
-.. figure:: _static/rrbteilrevision.jpg               
+.. figure:: _static/hierarchie_np.jpg               
    :scale: 100%                                         
    :align: center
 
-   Beispiel einer Zuweisung des Dokuments zur Geometrie Grundnutzung. 
+   Hierarchie der Dokumente, sowie Beispiel einer Zuweisung des Dokuments zur Geometrie Grundnutzung.
 	
+Weil ein Teil der zu verknüpfenden Dokumente erst nach der Genehmigung der Ortsplanung vorliegt (der Genehmigungsbeschluss selber und die Reglemente) wird der Zeitpunkt der endgültigen Datenabgabe im Genehmigungsbeschluss festgelegt.
+
+
+Falls die Grundnutzungsgeometrien angepasst werden z.B. bei einer Teilrevision ist ein neuer ``Typ_Grundnutzung`` zu erstellen, welcher mit dem Zonenreglement Verknüpft ist und sich auf den neuen RRB bezieht (siehe :ref:`Beispiel <img_hierarchie_np>`).
+
+Für den ``Typ_Grundnutzung`` mit Verbindlichkeit gleich orientierend oder hinweisend sind keine Dokumente zu erfassen. 
 
 .. _ref_ÜberlagerndeObjekte:
 
@@ -242,7 +243,8 @@ Nutzungsplanung, überlagernde Objekte
 Attribute der überlagenden Objekte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Folgende Attribute sind für die überlagernden Objekte zu erfassen:
-Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer erfasst werden.
+
+:orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Typ_Ueberlagernd_Flaeche, Klasse Typ_Ueberlagernd_Linie, KlasseTyp_Ueberlagernd_Punkt 
 
@@ -347,55 +349,63 @@ Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werd
 
 Analog zur :ref:`Klasse Dokument <klasse_dokument_grundnutzung>` der Grundnutzung.
 
-.. index:: Klasse Plandokument
+.. _img_hierarchie_snp:
 
-``Klasse Plandokument``
-'''''''''''''''''''''''
+.. figure:: _static/hierarchie_snp.jpg               
+   :scale: 100%                                         
+   :align: center
+   
+   Beispiel Perimeter Gestaltungsplan - setzt sich aus der Sonderbauvorschrift und dem Gestaltungsplan mit zugehörigen RRB zusammen (Typ wird mit mehreren Dokumenten [SBV, GP] verknüpft).  
 
-.. rst-class:: plandokument
-
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| **Bezeichnung**  | **Typ / Wert**            | **Beschreibung**                                                                                                | **Beispiel**                                  |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| PlandokumentID   | Text mit max. 16 Zeichen  | leer lassen                                                                                                     |                                               |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Titel            | Text mit max. 80 Zeichen  | Dokumentart z.B. Erschliessungsplan, Gestaltungsplan                                                            | Gestaltungsplan                               |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| OffiziellerTitel | Text mit max. 240 Zeichen | Vollständiger Titel des Dokuments                                                                               | Gestaltungsplan Asylweg mit                   |
-|                  |                           |                                                                                                                 | Sonderbauvorschriften (GB Nr.3060)            |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| OffizielleNr     | Text mit max. 20 Zeichen  | Eindeutiger Identifikator gemäss `Planregister <https://www.so.ch/planregister>`_. Die ID setzt sich            |                                               |
-|                  |                           | folgendermassen zusammen:                                                                                       |                                               |
-|                  |                           |                                                                                                                 | 64-164-P                                      |			
-|                  |                           | Gemeindennummer "-" Plannummer nach Planregister "-" P (für Plan)                                               |                                               |
-|                  |                           |                                                                                                                 |                                               |
-|                  |                           |                                                                                                                 |                                               |
-|                  |                           |                                                                                                                 |                                               |
-|                  |                           |                                                                                                                 |                                               |
-|                  |                           |                                                                                                                 |                                               |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Kanton           | CHCantonCode              | Abkürzung Kanton                                                                                                | SO                                            |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Gemeinde         | CHMunicipalityCode        | Gemeindenummer vom schweizerischen Bundesamt für Statistik (BFS-Nr.)                                            | 2534                                          |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| publiziertAb     | Datum                     | Datum des Regierungsratsbeschlusses                                                                             | 2002-04-23                                    |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Rechtsstatus     | inKraft                   | Rechtsstatus des Dokuments. Das Dokument ist in Kraft                                                           | inKraft                                       |
-|                  +---------------------------+-----------------------------------------------------------------------------------------------------------------+                                               |
-|                  | laufende_Aenderung        | Rechtsstatus des Plandokuments. Das Plandokument ist noch nicht in Kraft, eine Änderung ist in Vorbereitung.    |                                               |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| PlanImWeb        | URI                       | Relative Internetadresse des Plandokuments auf `Planregister <https://www.so.ch/planregister>`_.                | 64-Zuchwil/Plaene/64-165-P.pdf                |
-|                  |                           | D.h. stabiler Teil, ohne "http://www.so.ch.../"                                                                 |                                               |
-+------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-
+.. .. index:: Klasse Plandokument
+.. 
+.. ``Klasse Plandokument``
+.. '''''''''''''''''''''''
+.. 
+.. .. rst-class:: plandokument
+.. 
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | **Bezeichnung**  | **Typ / Wert**            | **Beschreibung**                                                                                                | **Beispiel**                                  |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | PlandokumentID   | Text mit max. 16 Zeichen  | leer lassen                                                                                                     |                                               |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | Titel            | Text mit max. 80 Zeichen  | Dokumentart z.B. Erschliessungsplan, Gestaltungsplan                                                            | Gestaltungsplan                               |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | OffiziellerTitel | Text mit max. 240 Zeichen | Vollständiger Titel des Dokuments                                                                               | Gestaltungsplan Asylweg mit                   |
+.. |                  |                           |                                                                                                                 | Sonderbauvorschriften (GB Nr.3060)            |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | OffizielleNr     | Text mit max. 20 Zeichen  | Eindeutiger Identifikator gemäss `Planregister <https://www.so.ch/planregister>`_. Die ID setzt sich            |                                               |
+.. |                  |                           | folgendermassen zusammen:                                                                                       |                                               |
+.. |                  |                           |                                                                                                                 | 64-164-P                                      |			
+.. |                  |                           | Gemeindennummer "-" Plannummer nach Planregister "-" P (für Plan)                                               |                                               |
+.. |                  |                           |                                                                                                                 |                                               |
+.. |                  |                           |                                                                                                                 |                                               |
+.. |                  |                           |                                                                                                                 |                                               |
+.. |                  |                           |                                                                                                                 |                                               |
+.. |                  |                           |                                                                                                                 |                                               |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | Kanton           | CHCantonCode              | Abkürzung Kanton                                                                                                | SO                                            |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | Gemeinde         | CHMunicipalityCode        | Gemeindenummer vom schweizerischen Bundesamt für Statistik (BFS-Nr.)                                            | 2534                                          |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | publiziertAb     | Datum                     | Datum des Regierungsratsbeschlusses                                                                             | 2002-04-23                                    |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | Rechtsstatus     | inKraft                   | Rechtsstatus des Dokuments. Das Dokument ist in Kraft                                                           | inKraft                                       |
+.. |                  +---------------------------+-----------------------------------------------------------------------------------------------------------------+                                               |
+.. |                  | laufende_Aenderung        | Rechtsstatus des Plandokuments. Das Plandokument ist noch nicht in Kraft, eine Änderung ist in Vorbereitung.    |                                               |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. | PlanImWeb        | URI                       | Relative Internetadresse des Plandokuments auf `Planregister <https://www.so.ch/planregister>`_.                | 64-Zuchwil/Plaene/64-165-P.pdf                |
+.. |                  |                           | D.h. stabiler Teil, ohne "http://www.so.ch.../"                                                                 |                                               |
+.. +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
+.. 
 	
-Im Planregister sind Plandokumente vorhanden bei welchen bei der Erfassung der digitalen Nutzungsplanungsdaten nur der Perimeter des Planes erfasst wird. Das Plandokument (PDF) wird mit dem Perimeter verknüpft. Bei folgenden Plänen wird nur der Perimeter unter der ``Klasse Ueberlagernd_Flaeche`` erfasst und auf das Plandokument verwiesen:
+Bei folgenden Plänen wird nur der Perimeter unter der ``Klasse Ueberlagernd_Flaeche`` erfasst und auf das Dokument verwiesen:
 
-*	Kantonaler Nutzungsplan (Typ_Kt: N610_Perimeter_kantonaler_Nutzungsplan)
-*	Kommunaler Gestaltungsplan (Typ_Kt: N611_Perimeter_kommunaler_Gestaltungsplan)
-*	Kantonaler Erschliessungsplan (Typ_Kt: N610_Permimeter_kantonaler_Nutzungsplan)
+*	:ref:`Kantonaler Nutzungsplan (Typ_Kt: N610_Perimeter_kantonaler_Nutzungsplan)<ref_PKNP>`
+*	:ref:`Kommunaler Gestaltungsplan (Typ_Kt: N611_Perimeter_kommunaler_Gestaltungsplan)<ref_PKGP>`
+*	:ref:`Kantonaler Erschliessungsplan (Typ_Kt: N610_Permimeter_kantonaler_Nutzungsplan)<ref_PKNP>`
 
-Diese Lösung wurde gewählt, weil die Planinhalte der kantonalen Nutzungspläne und die Gestaltungspläne derart unterschiedlich ausfallen, dass sie nicht im Datenmodell modelliert werden können.
+Diese Lösung wurde gewählt, weil die Planinhalte der kantonalen Nutzungspläne und die Gestaltungspläne derart unterschiedlich ausfallen, dass sie nicht im Datenmodell modelliert werden können. Der Perimeter ist nach Möglichkeit an vorhanden Geometrieen aus der Grundnutzung zu verknüpfen (Liegenschaftsgrenzen, Strassen).
 
 .. _img_gestaltungsplan:
 
@@ -417,14 +427,14 @@ Erschliessungsplanung
 .. _img_erschliessung:
 
 .. figure:: _static/Klassendiagramm_Erschliessung.jpg               
-   :width: 800px                                         
+   :width: 650px                                      
    :align: center
 
    UML-Klassendiagramm Erschliessungsplanung.
 	
 Attribute der Erschliessungsplanung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer erfasst werden.
+:orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Typ_Erschliessung_Flaecheobjekt, Klasse Typ_Erschliessung_Linienobjekt, Klasse Typ_Erschliessung_Punktobjekt
 
@@ -536,6 +546,14 @@ Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werd
 
 Analog zur :ref:`Klasse Dokument <klasse_dokument_grundnutzung>` der Grundnutzung.	
 
+.. _img_hierarchie_es:
+
+.. figure:: _static/hierarchie_es.jpg               
+   :scale: 100%                                         
+   :align: center
+   
+   Beispiel Erschliessungsplan-Teilrevision. Sammelstrassen setzen sich aus mehreren Plänen mit zugehörigen RRBs zusammen (Typ wird mit mehreren Dokumenten [RRB 1, 2, ..] verknüpft).  
+
 
 .. _ref_TransferMetadaten:
 .. index:: TransferMetadaten
@@ -547,7 +565,7 @@ TransferMetadaten
 .. _img_transfermetadaten:
 
 .. figure:: _static/transfermetadaten.jpg               
-   :width: 800px   
+   :width: 650px   
    :align: center            
 
    UML-Klassendiagramm TransferMetadaten. 
@@ -557,7 +575,7 @@ Datenabgabe
 Das Topic „TransferMetadaten“ muss bei jedem Datentransfer mitgeliefert werden.
 
 Folgende Attribute sind für die TransferMetadaten zu erfassen:
-Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer erfasst werden.
+Hinweis: :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Amt
 
@@ -613,7 +631,7 @@ Verfahrensstand
 
 Folgende Attribute sind für die Verfahrensstand zu erfassen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer erfasst werden.
+:orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse VS_Perimeter_Verfahrensstand
 
@@ -678,3 +696,4 @@ Hinweis: Orange markierte Attribute sind Pflicht. D.h. diese Werte müssen immer
 | Grösse          | klein, mittel, gross         | Grösse der Beschriftung                                                                      | mittel       |
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 
+* :ref:`genindex`
