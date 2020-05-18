@@ -120,7 +120,7 @@ Objektkatalog
 +                                              +------------------------------------------------------------------------------+-------------------------------+-------------------------------------------------------------+--------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 |                                              | :ref:`weitere Verkehrsflächen <ref_WVF>`                                     | :ref:`4291-4299 <ref_WVF>`    | von Gemeinde zu vergeben                                    | :ref:`orientierend <ref_ORIE>`             |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +----------------------------------------------+------------------------------------------------------------------------------+-------------------------------+-------------------------------------------------------------+--------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
-| Reservezonen nach Art. 18 Abs. 2 RPG         | :ref:`Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszonen <ref_RZW>` | :ref:`4300 <ref_RZW>`         | Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszonen | :ref:`Nutzungsplan- festlegung <ref_NPFL>` |                   |                   | :ref:`3 <ref_x3>` |                                           |
+| Reservezonen nach Art. 18 Abs. 2 RPG         | :ref:`Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone  <ref_RZW>` | :ref:`4300 <ref_RZW>`         | Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone  | :ref:`Nutzungsplan- festlegung <ref_NPFL>` |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +                                              +------------------------------------------------------------------------------+-------------------------------+-------------------------------------------------------------+--------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 |                                              | :ref:`Reservezone Arbeiten <ref_RZA>`                                        | :ref:`4310 <ref_RZA>`         | Reservezone Arbeiten                                        | :ref:`Nutzungsplan- festlegung <ref_NPFL>` |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +                                              +------------------------------------------------------------------------------+-------------------------------+-------------------------------------------------------------+--------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
@@ -182,7 +182,11 @@ Objektkatalog
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 |                                                           | :ref:`Bauliche Einschränkungen <ref_BE>`                                 | :ref:`5911-5919 <ref_BE>`     | von der Gemeinde zu vergeben                   | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
-|                                                           | :ref:`Hecken, Feldgehölz und Ufergehölz <ref_HFU>`                       | :ref:`5921-5929 <ref_HFU>`    | von der Gemeinde zu vergeben                   | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
+|                                                           | :ref:`Hecken, Feldgehölz und Ufergehölz <ref_HFU>`                       | :ref:`5921 <ref_HFU>`         | Hecken                                         | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
++                                                           +                                                                          +-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
+|                                                           |                                                                          | :ref:`5922 <ref_HFU>`         | Feldgehölz                                     | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
++                                                           +                                                                          +-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
+|                                                           |                                                                          | :ref:`5923-5929 <ref_HFU>`    | von der Gemeinde zu vergeben                   | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 |                                                           | :ref:`Grundwasser- schutzzone S1 <ref_GWSZ1>`                            | :ref:`5930 <ref_GWSZ1>`       | Grundwasserschutzzone S1                       | :ref:`orientierend <ref_ORIE>`                                        | :ref:`1 <ref_x1>` |                   |                   |                                           |
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
@@ -196,7 +200,7 @@ Objektkatalog
 +-----------------------------------------------------------+--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 | Bereiche rechtsgültiger Sondernutzungs- pläne             | :ref:`Perimeter kantonaler Nutzungsplan <ref_PKNP>`                      | :ref:`6100 <ref_PKNP>`        | Perimeter kantonaler Nutzungsplan              | :ref:`orientierend <ref_ORIE>`                                        | :ref:`13 <ref_4>` |                   | :ref:`13 <ref_4>` | Erhebung planspezifisch nach Absprache    |
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
-|                                                           | :ref:`Perimeter kommunaler Gestaltungsplan <ref_PKGP>`                   | :ref:`6110 <ref_PKGP>`        | Perimeter kommunaler Gestaltungsplan           | :ref:`orientierend <ref_ORIE>`                                        |                   |                   | :ref:`3 <ref_x3>` |                                           |
+|                                                           | :ref:`Perimeter kommunaler Gestaltungsplan <ref_PKGP>`                   | :ref:`6110 <ref_PKGP>`        | Perimeter kommunaler Gestaltungsplan           | :ref:`Nutzungsplan- festlegung <ref_ORIE>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +-----------------------------------------------------------+--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 | Bereiche mit Sondernutzungs- planpflicht                  | :ref:`Perimeter Gestaltungsplanpflicht <ref_PGPP>`                       | :ref:`6200 <ref_PGPP>`        | Perimeter Gestaltungsplanpflicht               | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            |                   |                   | :ref:`3 <ref_x3>` |                                           |
 +-----------------------------------------------------------+--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
@@ -230,7 +234,7 @@ Objektkatalog
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 |                                                           | :ref:`kommunal geschütztes Kulturobjekt <ref_KOGKO2>`                    | :ref:`8210 <ref_KOGKO2>`      | kommunal geschütztes Kulturobjekt              | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            | :ref:`13 <ref_4>` |                   | :ref:`13 <ref_4>` | z.B. Archäologische Fundstellen, etc.     |
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
-|                                                           | :ref:`schützenswertes Kulutobjket <ref_SKO2>`                            | :ref:`8220 <ref_SKO2>`        | schützenswertes Kulturobjkekt                  | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            | :ref:`1 <ref_x1>` |                   |                   |                                           |
+|                                                           | :ref:`schützenswertes Kulturobjekt <ref_SKO2>`                           | :ref:`8220 <ref_SKO2>`        | schützenswertes Kulturobjekt                   | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            | :ref:`1 <ref_x1>` |                   |                   |                                           |
 +                                                           +--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
 |                                                           | :ref:`erhaltenswertes Kulturobjekt <ref_EKO2>`                           | :ref:`8230 <ref_EKO2>`        | erhaltenswertes Kulturobjekt                   | :ref:`Nutzungsplan- festlegung <ref_NPFL>`                            | :ref:`1 <ref_x1>` |                   |                   |                                           |
 +-----------------------------------------------------------+--------------------------------------------------------------------------+-------------------------------+------------------------------------------------+-----------------------------------------------------------------------+-------------------+-------------------+-------------------+-------------------------------------------+
@@ -487,7 +491,7 @@ Zone für Ortsteile, die als Zentren bereits bestehen oder als solche neu gebild
 
 1421-1429 Erhaltungszone
 ''''''''''''''''''''''''
-Zone für den Erhalt von historisch bedeutender Bausubstanz
+Zone für den Erhalt von historisch bedeutender Bausubstanz. U.a. bei  Ortsbildschutzzone, die  als Grundnutzung definiert ist, anzuwenden.
 
 .. _ref_ZOEB:
 
@@ -596,7 +600,7 @@ Zone, welche weitere Verkehrsflächen innerhalb der Bauzone umfasst
 
 1901-1909 Spezialzonen
 ''''''''''''''''''''''
-Zone, welche weitere Verkehrsflächen innerhalb der Bauzone umfasst
+Weitere Bauzonen für Nutzungen mit speziellen Vorschriften, welche keiner gängigen Zonenart zugeordnet werden können. Ist zurückhaltend anzuwenden.
 
 .. _ref_LWZ:
 
@@ -782,6 +786,8 @@ Wald; innerhalb Bauzone gemäss Waldfeststellung, ausserhalb Bauzone gemäss amt
 
 Ausserhalb der Bauzone gilt der dynamische Waldbegriff, dort wo eine Waldfeststellung vorhanden ist, der statische. Es ist deshalb davon auszugehen, dass ausserhalb Bauzone die :ref:`AV - Liegenschaften <ref_AV-L>` bezüglich Wald aktueller ist als der Gesamtplan der Gemeinde. Bei der Digitalisierung ist deshalb grundsätzlich und mit Ausnahme von Bereichen mit Waldfeststellung die :ref:`AV - Liegenschaften <ref_AV-L>` zu berücksichtigen. Auf die Standartbemerkung wird verzichtet.
 
+*	Abgrenzung Gewässer: siehe :ref:`Gewässer <ref_GEW>`
+*	Abgrenzung Verkehrsflächen: siehe :ref:`Verkehrsflächen <ref_VFS>`
 
 .. _ref_GZ:
 
@@ -791,11 +797,15 @@ Ausserhalb der Bauzone gilt der dynamische Waldbegriff, dort wo eine Waldfestste
 ''''''''''''''''''
 Zone für Golfanlagen
 
+Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.
+
 .. _ref_ABZ:
 
 4911-4919 Abbauzone
 '''''''''''''''''''
 Zone für Abbaugebiete
+
+Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.
 
 .. _ref_DZ:
 
@@ -803,12 +813,15 @@ Zone für Abbaugebiete
 '''''''''''''''''''''
 Zone für Deponien
 
+Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.
+
 .. _ref_WBZ:
 
 4991-4999 weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen
+weitere Bauzonen nach Art. 18 Abs. 1 RPG ausserhalb Bauzonen
 
+Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.  
 
 .. _ref_Ueb:
 
@@ -824,7 +837,9 @@ zurück zum :ref:`Objektkatalog <ref_Objektkatalog>`
 
 5101-5109 überlagernde Ortsbildschutzzone
 '''''''''''''''''''''''''''''''''''''''''
-Überlagernd Zone zum Schutz, Erhalt oder Aufwertung historisch wertvoller Ortsbilder, -teile und Areale und deren Umgebung
+Überlagernd Zone zum Schutz, Erhalt oder Aufwertung historisch wertvoller Ortsbilder, -teile und Areale und deren Umgebung.
+
+In einzelnen Gemeinden ist die Ortsbildschutzzone als Grundnutzung definiert. In diesen Fällen ist sie der :ref:`Erhaltungszone <ref_EZ>` zuzuweisen.
 
 .. _ref_BLN:
 
@@ -834,6 +849,7 @@ zurück zum :ref:`Objektkatalog <ref_Objektkatalog>`
 '''''''''''''''
 Landschaften, die entweder schweizweit einzigartig sind, einen charakteristischen Landschaftstyp vertreten oder aufgrund ihrer Ruhe, Ungestörtheit oder ausserordentlichen Schönheit eine besondere Attraktivität aufweisen.
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 *	aneinandergrenzende BLN-Gebiete dürfen nicht verschmolzen werden. Betrifft die Gemeinden Wisen und Kienberg.
 
 .. _ref_JSZ:
@@ -848,6 +864,8 @@ Landschaften, die entweder schweizweit einzigartig sind, einen charakteristische
 ''''''''''''''''''''''''''''''''
 Mit Schutzverfügungen oder Nutzungsplänen geschützte Gebiete oder Objekte zur Erhaltung und Aufwertung von Lebensräumen (Biotope), Landschaftsformen sowie erdgeschichtlicher Zeugnisse (Geotope)
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_LSZ:
 
 5231-5239 Landschaftsschutzzone
@@ -860,17 +878,23 @@ Mit Schutzverfügungen oder Nutzungsplänen geschützte Gebiete oder Objekte zur
 ''''''''''''''''''''''''''''''''''''''''''''''''''
 Überlagernde kommunale Zone zur langfristigen Sicherung zusammenhängender Landschaftsräume und zur Verhinderung des Zusammenwachsens von Siedlungen oder deren Ausdehnung in charakteristischen unverbauten Landschaftskammern
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_STGKT:
 
 5250 Siedlungstrenngürtel von kantonaler Bedeutung
 ''''''''''''''''''''''''''''''''''''''''''''''''''
 Überlagernde kantonale Zone zur langfristigen Sicherung grösserer zusammenhängender Landschaftsräume und zur Verhinderung des Zusammenwachsens von Siedlungen oder deren Ausdehnung in charakteristischen unverbauten Landschaftskammern
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_WITI:
 
 5260 kantonale Landwirtschafts- und Schutzzone Witi
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 Zone von kantonaler Bedeutung für die landwirtschaftliche Nutzung und gleichzeitigen Schutz des Gebietes Witi zwischen Grenchen und Solothurn
+
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_KTUSZ2:
 
@@ -879,6 +903,7 @@ Zone von kantonaler Bedeutung für die landwirtschaftliche Nutzung und gleichzei
 5270 kantonale Uferschutzzone
 '''''''''''''''''''''''''''''
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 *	*Abgrenzung Uferschutzzone:* bsp. die Uferschutzzone ist 10 m parallel zum :ref:`Gewässer <ref_GEW>` definiert. Der 10 m breite Streifen überlagert die :ref:`Verkehrsfläche Strasse <ref_VFS>`. **Priorität liegt bei der Strassenfläche**.
 
 .. _ref_KOUSZ:
@@ -903,11 +928,15 @@ Weitere Zonen zum Schutz von bestimmten Objekten und ihrer Umgebung oder Gebiete
 ''''''''''''''''''''''''''''''''''''''''
 Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser / Steinschlag erheblich bedroht sind (Verbotsbereich)
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_NG2:
 
 5310 Naturgefahren mittlere Gefährdung
 ''''''''''''''''''''''''''''''''''''''
 Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser / Steinschlag bedroht sind (Gebotsbereich)
+
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_NG3:
 
@@ -915,11 +944,15 @@ Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser / Stei
 '''''''''''''''''''''''''''''''''''''
 Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser  / Steinschlag bedroht sind (Hinweisbereich)
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_NG4:
 
 5330 Naturgefahren Restgefährdung
 '''''''''''''''''''''''''''''''''
 Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser  / Steinschlag bedroht sind (Hinweisbereich)
+
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_HSZ:
 
@@ -940,13 +973,31 @@ Zone mit baulicher Einschränkung
 
 5921-5929 Hecken, Feldgehölz, Ufergehölz
 ''''''''''''''''''''''''''''''''''''''''
-Hecke nach Heckenrichtlinie, Feld- und Ufergehölz nach Natur- und Heimatschutzverordnung
+Hecke nach Heckenrichtlinie, Feldgehölz nach Natur- und Heimatschutzverordnung 
+
+Hecken, Feldgehölze, Ufergehölz ist eine überlagerte Ebene; Die Abgrenzung von Wald, Feldgehölzen (Definition siehe `§ 7 der kantonalen Waldverordnung <https://bgs.so.ch/frontend/versions/3309>`_ ) und Hecken ist Sache der Ortsplanung.
+
+Hecken
+
+*	Der Code 5921 ist für Hecken frei zu halten.
+
+Feldgehölz
+
+*	Der Code 5922 ist für Feldgehölze frei zu halten.
+*	Feldgehölze sind bei der Ersterfassung  als :ref:`Wald <ref_WALD>` zu erfassen. Dies, weil Feldgehölze rechtlich dem :ref:`Wald <ref_WALD>` gleichgestellt sind und somit eine Grundnutzung darstellen. 
+*	Feldgehölze sind in der Ortsplanung doppelt zu erfassen: in der Grundnutzung als :ref:`Wald <ref_WALD>` und in der überlagerten Nutzung als Feldgehölz mit dem kommunalen Code 5922.
+
+Ufergehölz 
+
+*	«Ufergehölz» ist ein rechtlich nicht definierter Begriff. Ufergehölze sind rechtlich dem Wald, den Feldgehölzen oder den Hecken zuzuordnen. Ufervegetation im Sinne von `Art. 21 / 22 der eidg. Natur- und heimatschutzverordnung <https://www.admin.ch/opc/de/classified-compilation/19910005/index.html#a21a>`_ respektive `§ 32 Gesetz über Wasser, Boden und Abfall <https://bgs.so.ch/frontend/versions/3270>`_ ist keine eigene Flächenkategorie im Objektkatalog.
 
 .. _ref_GWSZ1:
 
 5930 Grundwasserschutzzone S1
 '''''''''''''''''''''''''''''
-Die Zone S1 dient dem Schutz der Fassungsanlagen sowie deren unmittelbaren Umgebung, ferner - bei stark heterogenen Karst- und Kluft-Grundwasserleitern - dem Schutz der unmittelbaren Umgebung geologischer Strukturen, bei denen Oberflächenwasser konzentriert in den Untergrund gelangt (Schluckstellen
+Die Zone S1 dient dem Schutz der Fassungsanlagen sowie deren unmittelbaren Umgebung, ferner - bei stark heterogenen Karst- und Kluft-Grundwasserleitern - dem Schutz der unmittelbaren Umgebung geologischer Strukturen, bei denen Oberflächenwasser konzentriert in den Untergrund gelangt (Schluckstellen).
+
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_GWSZ2:
 
@@ -954,11 +1005,15 @@ Die Zone S1 dient dem Schutz der Fassungsanlagen sowie deren unmittelbaren Umgeb
 '''''''''''''''''''''''''''''
 Die Zone S2 soll verhindern, dass Krankheitserreger sowie Stoffe, die Wasser verunreinigen können, in solchen Mengen in die Fassungsanlagen gelangen, dass sie die Trinkwassernutzung gefährden, ferner soll der Grundwasserzufluss durch unterirdische Anlagen nicht behindert werden.  
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_GWSZ3:
 
 5950 Grundwasserschutzzone S3
 '''''''''''''''''''''''''''''
 Die Zone S3 (weitere Schutzzone) dient als Pufferzone um die Zone S2. Sie gewährleistet den Schutz vor Anlagen und Tätigkeiten, die ein besonderes Risiko für das Grundwasser darstellen und soll ermöglichen, dass bei unmittelbar drohender Gefahr (z. B. Unfall mit Gefahrengut) für die erforderlichen Interventions- oder Sanierungsmassnahmen genügend Zeit und Raum zur Verfügung stehen.
+
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_GWSA:
 
@@ -966,17 +1021,23 @@ Die Zone S3 (weitere Schutzzone) dient als Pufferzone um die Zone S2. Sie gewäh
 '''''''''''''''''''''''''''
 Grundwasserschutzareale sind Gebiete, welche im Hinblick auf eine künftige Grundwassernutzung zu Trinkwasserzwecken freigehalten und wo der Schutz des Grundwassers vorsorglich sichergestellt wird. In diesen Arealen dürfen keine Bauten und Anlagen erstellt werden, welche die künftige Grundwassernutzung beeinträchtigen können.
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_GWSH:
 
 .. 59?? Grundwasserschutzzone Sh
 .. '''''''''''''''''''''''''''''
 .. Die Zonen Sh und Sm sollen bei stark heterogenen Karst- und Kluft-Grundwasserleitern verhindern, dass das Grundwasser durch den Bau und Betrieb von Anlagen und das Ausbringen von Stoffen verunreinigt wird sowie die Hydrodynamik des Grundwassers durch bauliche Eingriffe beeinträchtigt wird. Die Zone Sh umfasst die Gebiete von hoher Vulnerabilität im Einzugsgebiet einer Grundwasserfassung.
 
+.. *	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_GWSM:
 
 .. 59?? Grundwasserschutzzone Sm
 .. '''''''''''''''''''''''''''''
 .. Die Zonen Sh und Sm sollen bei stark heterogenen Karst- und Kluft-Grundwasserleitern verhindern, dass das Grundwasser durch den Bau und Betrieb von Anlagen und das Ausbringen von Stoffen verunreinigt wird sowie die Hydrodynamik des Grundwassers durch bauliche Eingriffe beeinträchtigt wird. Die Zone Sm umfasst die Gebiete von mindestens mittlerer Vulnerabilität im Einzugsgebiet einer Grundwasserfassung.
+
+.. *	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_WUENZ:
 
@@ -990,14 +1051,18 @@ Weitere überlagernde Nutzungszonen
 
 6100 Perimeter kantonaler Nutzungsplan
 ''''''''''''''''''''''''''''''''''''''
-Gebiet, in dem ein kantonaler Nutzungsplan rechtsgültig ist
+Gebiet, in dem ein kantonaler Nutzungsplan rechtsgültig ist.
 
 .. _ref_PKGP:
 
 6110 Perimeter kommunaler Gestaltungsplan
 '''''''''''''''''''''''''''''''''''''''''
-Gebiet, in dem ein kommunaler Nutzungsplan rechtsgültig ist
+Gebiet, in dem ein kommunaler Nutzungsplan rechtsgültig ist.
 
+.. *	Bei Gestaltungsplänen, die teilweise überarbeitet werden, ist jeweils nur derjenige Teilperimeter zu erfassen, der den rechtskräftigen Zustand abbildet; bei teilaufgehobenen Plänen umfasst der Perimeter also nur noch den nicht aufgehobenen Teil. 
+.. *	Ein Gestaltungsplan kann einen anderen Gestaltungsplan nicht überlagern.  
+
+..    Beispiel Dulliken Gestaltungsplan Langmatt: links - Gebietsgrenze des Gestaltungsplanes `84-65-P <https://geoweb.so.ch/zonenplaene/Zonenplaene_pdf/84-Dulliken/Plaene/84-65-P.pdf>`_ (rot), Gebietsgrenze des Gestaltungsplanes `84-75-P <https://geoweb.so.ch/zonenplaene/Zonenplaene_pdf/84-Dulliken/Plaene/84-75-P.pdf>`_ (schwarz); rechts - Umsetzung der Teilaufhebung des Gestaltungsplans. Der Perimeter des Gestaltungsplans 65 (rote Fläche) ist anzupassen (Perimeter wird kleiner, altes RRB Datum bleibt bestehen).
 
 .. _ref_PGPP:
 
@@ -1066,17 +1131,19 @@ Gebiete ohne Lärmempfindlichkeitsstufe
 ''''''''''''''''''''''''''''''''''''''''''''''''''
 Gebiet von kantonaler Bedeutung zur Erhaltung und Aufwertung von Landschaften und Lebensräumen schützenswerter Tiere und Pflanzen
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_KOMVNL:
 
 6911-6919 kommunales Vorranggebiet Natur und Landschaft
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Gebiet von kommunaler Bedeutung zur Erhaltung und Aufwertung von Landschaften und Lebensräumen schützenswerter Tiere und Pflanzen
+Gebiet von kommunaler Bedeutung zur Erhaltung und Aufwertung von Landschaften und Lebensräumen schützenswerter Tiere und Pflanzen.
 
 .. _ref_PZ:
 
 6921-6929 Planungszone
 ''''''''''''''''''''''
-Genau bezeichnete Gebiete, in denen keine baulichen Veränderungen oder sonstigen Vorkehren getroffen werden dürfen, die einer laufenden Planung widersprechen
+Genau bezeichnete Gebiete, in denen keine baulichen Veränderungen oder sonstigen Vorkehren getroffen werden dürfen, die einer laufenden Planung widersprechen.
 
 .. _ref_WFBFNP:
 
@@ -1091,7 +1158,8 @@ Dies sind z.B. geschützte archäologische Fundstellen.
 ''''''''''''''''''''''''
 geologisches Objekt
 
-*	kann als überlagernde Fläche oder :ref:`Punkt <ref_GO>` erfasst werden
+*	Kantonaler Datensatz. Muss nicht erhoben werden.
+*	Kann als überlagernde Fläche oder :ref:`Punkt <ref_GO>` erfasst werden.
 
 .. _ref_NO2:
 
@@ -1099,7 +1167,7 @@ geologisches Objekt
 ''''''''''''''''
 Naturobjekt
 
-*	kann als überlagernde Fläche oder :ref:`Punkt <ref_NO>` erfasst werden
+*	Kann als überlagernde Fläche oder :ref:`Punkt <ref_NO>` erfasst werden.
 
 .. _ref_KTGKO2:
 
@@ -1149,17 +1217,23 @@ Wanderweg gemäss Inventar Wanderwege
 '''''''''''''''''''''''''''''
 historische Verkehrswege gemäss kantonalem Inventarplan
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_WG:
 
 7920 Waldgrenze
 '''''''''''''''
 Grenze des Waldes gemäss Waldfeststellung
 
+*	kantonaler Datensatz. Muss nicht erhoben werden.
+
 .. _ref_NWF:
 
 7930 negative Waldfeststellung
 ''''''''''''''''''''''''''''''
 Festgestellte Flächen, die nicht als Wald gelten
+
+*	kantonaler Datensatz. Muss nicht erhoben werden.
 
 .. _ref_EGEW:
 
@@ -1177,6 +1251,7 @@ unterirdische künstliche Gewässerführung
 weitere linienbezogene Festlegungen
 
 *	Der Code 5691 ist für Sichtzonen frei zu halten.
+*	Hochspannungsleitungen sind nicht zu erfassen. Diese wurden bereits über die :ref:`AV <ref_AV>` erfasst und werden auch über diese dargestellt.
 
 .. _ref_GEB:
 
@@ -1198,6 +1273,7 @@ kommunal erhaltenswerter Einzelbaum
 ''''''''''''''''''''''''
 geologisches Objekt
 
+*	Kantonaler Datensatz. Muss nicht erhoben werden.
 *	kann als :ref:`überlagernde Fläche <ref_GO2>` oder Punkt erfasst werden
 
 .. _ref_NO:
@@ -1257,7 +1333,17 @@ Beschreibung Erschliessungen
 zurück zum :ref:`Objektkatalog <ref_Objektkatalog>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Flächen der Verkehrszonen (:ref:`180<ref_VZS>`, :ref:`181<ref_VZB>`, :ref:`182<ref_VZF>`, :ref:`189<ref_WZV>`) und Verkehrsflächen (:ref:`420<ref_VFS>`, :ref:`421<ref_VFB>`, :ref:`422<ref_VFF>`, :ref:`420<ref_WVF>`) der Grundnutzung müssen gleich gross sein wie die Fläche der Erschliessung.
+Die Fläche der Erschliessung (Flächen innerhalb der Bauzone sowie Flächen mit Erschliessungsplan) muss grundsätzlich gleich gross sein wie die Flächen der Verkehrszonen (:ref:`180 <ref_VZS>`, :ref:`181 <ref_VZB>`, :ref:`182 <ref_VZF>`, :ref:`189 <ref_WZV>`) und Verkehrsflächen (:ref:`420 <ref_VFS>`, :ref:`421 <ref_VFB>`, :ref:`422 <ref_VFF>`, :ref:`420 <ref_WVF>`) der Grundnutzung.
+
+Wurde z.B. der Strassenverlauf auf einem Erschliessungsplan geändert (zb. neuer Kreisel statt Kreuzung, neubau Trottoir), so ist die Grundnutzung an den neueren Erschliessungsplan anzupassen. Im Perimeter aller Erschliessungspläne muss die Fläche der Verkehrsflächen der Grundflächen gleich sein, wie jene der Erschliessung. Existiert in einem Bereich des BZP kein Erschliessungsplan, so gibt es logischerweise kein Überlagerung (und folglich können sie auch nicht gleich gross sein).
+
+Für sämtliche Pläne gilt die Feststellung, dass jeweils nur Genehmigungsinhalte zu übernehmen sind.
+
+Bei Kantonalen Strassenplänen gilt:
+
+*	Es wird lediglich die :ref:`5610 Kantonsstrasse <ref_KS>` und die :ref:`7110 Baulinien Strasse kantonal <ref_BLSKT>`, :ref:`7120 Vorbaulinien kantonal <ref_VBLKT>` und :ref:`7130 Gestaltungsbaulinien kantonal  <ref_GBLKT>` erfasst. 
+*	Gehwege werden nur soweit erfasst, wie sie im kommunalen Erschliessungsplan als solche aufgeführt sind.
+*	Alle übrigen Planinhalte der kantonalen Erschliessungspläne (Radstreifen, Verkehrsinseln, Grünflächen etc. sind ``nicht`` zu erfassen.
 
 .. _ref_NS:
 
@@ -1272,6 +1358,8 @@ Alle Strassenflächeninnerhalb der Bauzonengrenze die als Nationalstrasse klassi
 5610 Kantonsstrasse
 '''''''''''''''''''
 Alle Strassenflächen von Strassen innerhalb der Bauzonengrenze die als Kantonsstrasse klassiert sind (Kantonsstrassenverzeichnis und Strassenkategorienplan, kantonale Erschliessungspläne)
+
+*	
 
 .. _ref_SSKOM:
 
@@ -1370,10 +1458,20 @@ Alle Flächen, die für Grünstreifen oder Rabatte vorgesehen sind (Strassenkate
 übrige Flächen Langsamverkehr
 
 
+.. index:: Baulinien, Bauabstände
 
 Baulinien
 ^^^^^^^^^
-Was ist mit den Baulinien zu tun wenn sich ein Gebäude baulich verändert hat? Baulinien an die neue (:ref:`AV <ref_AV>`) Situation anpassen und mit dem Kommentar **Abweichung zum rechtsgültigen Plan** ergänzen. Es werden nur bestehende Linien angepasst und keine neu erstellt oder einem anderen Code zugewiesen.
+
+.. _ref_BAULINIENKBV:
+
+Was ist zu tun wenn keine Baulinien vorhanden sind (gestützt auf `§46 KBV <https://bgs.so.ch/app/de/texts_of_law/711.61/versions/4169/>`_ )?
+
+*	Bauabstände gelten unabhängig davon, ob sie eine öffentlichen Auflage durchlaufen haben. Die Linien sind demzufolge zu erfassen. Im Informationssystem gibt es dazu keinen RRB welcher verknüpft werden könnte. Darum wird direkt die gesetzliche Grundlage `200-Kanton/Erlasse/Auszug-Kantonale-Bauverordnung.pdf <https://geoweb.so.ch/zonenplaene/Zonenplaene_pdf/200-Kanton/Erlasse/>`_ an Stelle des RRB verknüpft. Das PubliziertAb des Dokument ist der 01.01.1991. Ein Genehmigungsdatum der Baulinie gibt es nicht (Datenmodell verlangt jedoch ein Datum). Deshalb ist das Datum 01.01.1900 zu verwenden.
+
+Was ist mit den Baulinien zu tun, wenn sich ein Gebäude baulich verändert hat? 
+
+*	Baulinien an die neue (:ref:`AV <ref_AV>`) Situation anpassen und mit dem Kommentar **Abweichung zum rechtsgültigen Plan** ergänzen. Es werden nur bestehende Linien angepasst und keine neu erstellt oder einem anderen Code zugewiesen.
 
 
 .. _ref_NBL:
@@ -1439,6 +1537,8 @@ Vorbaulinien entlang kommunaler Strassen gemäss kommunaler Erschliessungspläne
 7220 Gestaltungsbaulinie
 ''''''''''''''''''''''''
 Gestaltungsbaulinien entlang kommunaler Strassen gemäss kommunaler Erschliessungspläne
+
+Gestaltungsbaulinien, die Teil von Sondernutzugnsplänen sind, sind nicht zu erfassen. Sie sind aus dem referenzierten Dokumenten (Pläne) ersichtlich und entfallen, sobald der jeweilige Plan aufgehoben oder überarbeitet wird.
 
 .. _ref_RWBL:
 

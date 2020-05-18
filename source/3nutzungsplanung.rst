@@ -1,6 +1,7 @@
 .. include:: .style.rst
 
 .. _ref_NP:
+.. _ref_Datenmodell:
 
 Datenmodell
 ===========
@@ -8,16 +9,19 @@ Datenmodell
 
 .. _img_ermodell:
 
-.. figure:: _static/klassendiagramm_nutzungsplanung.png               
+.. figure:: _static/klassendiagramm_nutzungsplanung.png 
    :width: 650px   
    :align: center
 
    UML-Klassendiagramm Nutzungsplanung. 
 
+.. _ref_Nutzungsplanung:
    
 Nutzungsplanung, Grundnutzung
 -----------------------------
 Das gesamte Gemeindegebiet ist flächendeckend, lückenlos und ohne Überlappungen einer Grundnutzung zuzuordnen. 
+
+.. _ref_AttributeGrundnutzung:
 
 Attribute der Grundnutzung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -25,7 +29,16 @@ Folgende Attribute sind für die Grundnutzung zu erfassen:
 
 :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
+:fuchsia:`Pink markierte Attribute müssen im Widerspruch zum Datenmodell ebenfalls ausgefüllt sein`. Diese Anpassungen sind jedoch nötig um die Durchlässigkeit der Daten für den ÖREB-Kataster gewährleisten zu können, ohne eine Anpassung am Datenmodell vorzunehmen. Bei folgenden Attributten der ``Klasse Dokument`` wurde der Validator angepasst und liefert eine Fehlermeldung wenn es nicht ausgefüllt ist.
+
+
+*	Rechtsvorschrift
+*	Kanton
+*	Gemeinde
+*	OffiziellerTitel
+
 .. index:: Klasse Typ_Grundnutzung
+.. _ref_KlasseTyp_Grundnutzung:
 
 ``Klasse Typ_Grundnutzung``
 '''''''''''''''''''''''''''
@@ -78,10 +91,8 @@ Folgende Attribute sind für die Grundnutzung zu erfassen:
 	
 Ein ``Typ_Grundnutzung`` kann mehrere Grundnutzungsgeometrien haben (siehe :ref:`Beziehung in der Übersicht <img_ermodell>`).
 
-
-.. _klasse_dokument_grundnutzung:
-
 .. index :: Klasse Grundnutzung
+.. _ref_KlasseGrundnutzung:
 
 ``Klasse Grundnutzung``
 '''''''''''''''''''''''
@@ -121,6 +132,7 @@ Nebeneinanderliegende Grundnutzungsgeometrien mit demselben kommunalen Code dür
    :align: center  
  
 .. index:: Klasse Grundnutzung_Pos
+.. _ref_KlasseGrundnutzung_Pos:
 
 ``Klasse Grundnutzung_Pos``
 '''''''''''''''''''''''''''
@@ -145,11 +157,12 @@ Nebeneinanderliegende Grundnutzungsgeometrien mit demselben kommunalen Code dür
 | Grösse          | klein, mittel, gross         | Grösse der Beschriftung                                                                      | mittel       |
 +-----------------+------------------------------+----------------------------------------------------------------------------------------------+--------------+
 	
-Beschriftet wir die Abkürzung welche in der ``Klasse Typ_Grundnutzung`` erfasst wird. Eine Beschriftung der Grundnutzungsgeometrie macht nur Sinn, wenn eine Abkürzung unter der ``Klasse Typ_Grundnutzung`` erfasst ist. Eine Beschriftung der Grundnutzungsgeometrie ist nicht zwingend (siehe :ref:`Beziehung in der Übersicht <img_ermodell>`). 
+Beschriftet wird die Abkürzung welche in der ``Klasse Typ_Grundnutzung`` erfasst wird. Eine Beschriftung der Grundnutzungsgeometrie macht nur Sinn, wenn eine Abkürzung unter der ``Klasse Typ_Grundnutzung`` erfasst ist. Eine Beschriftung der Grundnutzungsgeometrie ist nicht zwingend (siehe :ref:`Beziehung in der Übersicht <img_ermodell>`), wird aber dringend empfohlen. 
 Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.
 Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grundnutzungsgeometrie liegen.
 
 .. index:: Klasse Dokument
+.. _ref_KlasseDokument:
 
 ``Klasse Dokument``
 '''''''''''''''''''
@@ -168,7 +181,7 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 |                  |                           | Planbezeichnung aus der Planliste zu übernehmen.                                                                |                                               |
 |                  |                           |                                                                                                                 |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Abkuerzung       | Text mit max. 10 Zeichen  | Abkürzung der Dokumentkategorie (Regierungsratsbeschluss, Sonderbauvorschrift, Zonenreglement)                  | RRB, SBV,ZR                                   |
+| Abkuerzung       | Text mit max. 10 Zeichen  | Abkürzung der Dokumentkategorie (Regierungsratsbeschluss, Sonderbauvorschrift, Zonenreglement)                  | RRB, SBV, ZR                                  |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | OffizielleNr     | Text mit max. 20 Zeichen  | Eindeutiger Identifikator gemäss `Planregister <https://www.so.ch/planregister>`_.                              |                                               |
 |                  |                           | Die ID setzt sich folgendermassen zusammen:                                                                     |                                               |
@@ -198,7 +211,7 @@ Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grund
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 | Bemerkung        | Text mit max. 240 Zeichen | Erläuternder Text oder Bemerkungen zum Dokument                                                                 | ersetzt den RRB vom 13.12.2001                |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-| Rechtsvorschrift | ja                        | RRB, Zonenreglement, Baureglement, Bauzonenreglement, Sonderbauvorschrift, Gestaltungsplan                      | ja                                            |
+| Rechtsvorschrift | ja                        | RRB, Zonenreglement, Baureglement, Bauzonenreglement, Sonderbauvorschrift, Gestaltungsplan                      | 1                                             |
 |                  +---------------------------+-----------------------------------------------------------------------------------------------------------------+                                               |
 |                  | nein                      | Raumplanungsbericht, Umweltverträglichkeitsbericht                                                              |                                               |
 +------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
@@ -236,9 +249,12 @@ Falls die Grundnutzungsgeometrien angepasst werden z.B. bei einer Teilrevision i
 Für den ``Typ_Grundnutzung`` mit Verbindlichkeit gleich orientierend oder hinweisend sind keine Dokumente zu erfassen. 
 
 .. _ref_ÜberlagerndeObjekte:
+.. _ref_NutzungsplanungüberlagerndeObjekte:
 
 Nutzungsplanung, überlagernde Objekte
 -------------------------------------
+
+.. _ref_AttributeüberlagerndeObjekte:
 
 Attribute der überlagenden Objekte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -247,6 +263,7 @@ Folgende Attribute sind für die überlagernden Objekte zu erfassen:
 :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Typ_Ueberlagernd_Flaeche, Klasse Typ_Ueberlagernd_Linie, KlasseTyp_Ueberlagernd_Punkt 
+.. _ref_KlasseTyp_Ueberlagernd:
 
 ``Klasse Typ_Ueberlagernd_Flaeche`` / ``Klasse Typ_Ueberlagernd_Linie`` / ``KlasseTyp_Ueberlagernd_Punkt``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -256,7 +273,7 @@ Folgende Attribute sind für die überlagernden Objekte zu erfassen:
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | **Bezeichnung**    | **Typ / Werte**                             | **Beschreibung**                                                                                                                                            | **Beispiel**                                                               |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-| Bezeichnung        | Text mit max. 80 Zeichen                    | Name des überlagernden Objekts. Wird von der Gemeinde definiert.                                                                                            | Landschaftsschutzzone                                                      |
+| Bezeichnung        | Text mit max. 80 Zeichen                    | Name des überlagernden Objekts / Wird von der Gemeinde definiert.                                                                                           | Landschaftsschutzzone                                                      |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | Abkuerzung         | Text mit max. 12 Zeichen                    | Abkürzung des überlagernden Objekts. Kann von der Gemeinde vergeben werden. Falls keine Abkürzungen verhanden ist bleibt das Feld leer.                     | LS                                                                         |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
@@ -283,6 +300,7 @@ Folgende Attribute sind für die überlagernden Objekte zu erfassen:
 Ein ``Typ_Ueberlagernd_Flaeche`` / ``Typ_Ueberlagernd_Linie`` / ``Typ_Ueberlagernd_Punkt`` kann mehrere überlagernde Geometrien haben ( siehe :ref:`Beziehung in der Übersicht <img_ermodell>`).
 
 .. index:: Klasse Ueberlagernd_Flaeche, Klasse Ueberlagernd_Linie, Klasse Ueberlagernd_Punkt
+.. _ref_KlasseUeberlagernd:
 
 ``Klasse Ueberlagernd_Flaeche`` / ``Klasse Ueberlagernd_Linie`` / ``Klasse Ueberlagernd_Punkt``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -316,6 +334,7 @@ Ein ``Typ_Ueberlagernd_Flaeche`` / ``Typ_Ueberlagernd_Linie`` / ``Typ_Ueberlager
 Eine überlagernde Fläche, Linie oder ein überlagernder Punkt ist immer einem Typ (``Typ_Ueberlagernd_Flaeche`` / ``Typ_Ueberlagernd_Linie`` / ``Typ_Ueberlagernd_Punkt``) zugewiesen ( :ref:`siehe Beziehung in der Übersicht <img_ermodell>`).
 
 .. index:: Klasse Ueberlagernd_Flaeche_Pos, Klasse Ueberlagernd_Linie_Pos, Klasse Ueberlagernd_Punkt_Pos 
+.. _ref_KlasseUeberlagernd_Pos:
 
 ``Klasse Ueberlagernd_Flaeche_Pos`` / ``Klasse Ueberlagernd_Linie_Pos`` / ``Klasse Ueberlagernd_Punkt_Pos``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -343,11 +362,12 @@ Beschriftet wird die Abkürzung, welche in der ``Klasse Ueberlagernd_Flaeche`` /
 Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.
 
 .. index:: Klasse Dokument
+.. _ref_KlasseDomument2:
 
 ``Klasse Dokument``
 '''''''''''''''''''
 
-Analog zur :ref:`Klasse Dokument <klasse_dokument_grundnutzung>` der Grundnutzung.
+Analog zur :ref:`Klasse Dokument <ref_KlasseDokument>` der Grundnutzung.
 
 .. _img_hierarchie_snp:
 
@@ -417,7 +437,6 @@ Diese Lösung wurde gewählt, weil die Planinhalte der kantonalen Nutzungspläne
 
 
 .. _ref_Erschliessung:
-
 .. index:: Erschliessung
 
 Erschliessungsplanung
@@ -431,12 +450,15 @@ Erschliessungsplanung
    :align: center
 
    UML-Klassendiagramm Erschliessungsplanung.
-	
+
+.. _ref_AttributeErschliessungsplanung:
+   
 Attribute der Erschliessungsplanung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Typ_Erschliessung_Flaecheobjekt, Klasse Typ_Erschliessung_Linienobjekt, Klasse Typ_Erschliessung_Punktobjekt
+.. _ref_KlasseTyp_Erschliessung:
 
 ``Klasse Typ_Erschliessung_Flaecheobjekt`` / ``Klasse Typ_Erschliessung_Linienobjekt`` / ``Klasse Typ_Erschliessung_Punktobjekt``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -446,7 +468,7 @@ Attribute der Erschliessungsplanung
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | **Bezeichnung**    | **Typ / Werte**                             | **Beschreibung**                                                                                                                                            | **Beispiel**                                                               |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-| Bezeichnung        | Text mit max. 80 Zeichen                    | Name des Objekts. Wird von der Gemeinde definiert.                                                                                                          | Sammelstrasse kommunal                                                     |
+| Bezeichnung        | Text mit max. 80 Zeichen                    | Name des Objekts / Wird von der Gemeinde definiert.                                                                                                         | Sammelstrasse kommunal                                                     |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 | Abkuerzung         | Text mit max. 12 Zeichen                    | Abkürzung des überlagernden Objekts. Kann von der Gemeinde vergeben werden. Falls keine Abkürzungen verhanden ist bleibt das Feld leer.                     |                                                                            |
 +--------------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
@@ -480,6 +502,7 @@ Attribute der Erschliessungsplanung
 Ein ``Klasse Erschliessung_Flaecheobjekt`` / ``Klasse Erschliessung_Linienobjekt`` / ``Klasse Erschliessung_Punktobjekt`` kann mehrere Geometrien haben.
 
 .. index:: Klasse Erschliessung_Flaecheobjekt, Klasse Erschliessung_Linienobjekt, Klasse Erschliessung_Punktobjekt
+.. _ref_KlasseErschliessung:
 
 ``Klasse Erschliessung_Flaecheobjekt`` / ``Klasse Erschliessung_Linienobjekt`` / ``Klasse Erschliessung_Punktobjekt``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -513,6 +536,7 @@ Ein ``Klasse Erschliessung_Flaecheobjekt`` / ``Klasse Erschliessung_Linienobjekt
 Eine Erschliessungsgeometrie (Fläche, Linie oder Punkt) ist immer einem Typ (``Typ_Erschliessung_Flaecheobjekt`` / ``Typ_Erschliessung_Linienobjekt`` / ``Typ_Erschliessung_Punktobjekt``) zugewiesen (siehe :ref:`Beziehung in der Übersicht <img_erschliessung>`).
 
 .. index:: Klasse Erschliessung_Flaecheobjekt_Pos, Klasse Erschliessung_Flaecheobjekt_Pos, Klasse Erschliessung_Flaecheobjekt_Pos
+.. _ref_KlasserErschliessung_Pos:
 
 ``Klasse Erschliessung_Flaecheobjekt_Pos`` / ``Klasse Erschliessung_Flaecheobjekt_Pos`` / ``Klasse Erschliessung_Flaecheobjekt_Pos``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -540,11 +564,12 @@ Beschriftet wir die Abkürzung, welche in der ``Klasse Typ_Erschliessung_Flaeche
 Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.
 
 .. index:: Klasse Dokument
+.. _ref_KlasseDokument3:
 
 ``Klasse Dokument``
 '''''''''''''''''''
 
-Analog zur :ref:`Klasse Dokument <klasse_dokument_grundnutzung>` der Grundnutzung.	
+Analog zur :ref:`Klasse Dokument <ref_KlasseDokument>` der Grundnutzung.	
 
 .. _img_hierarchie_es:
 
@@ -578,6 +603,7 @@ Folgende Attribute sind für die TransferMetadaten zu erfassen:
 Hinweis: :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse Amt
+.. _ref_KlasseAmt:
 
 ``Klasse Amt``
 ''''''''''''''
@@ -595,6 +621,7 @@ Hinweis: :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte mü
 Diese Klasse enthält Angaben zur zuständigen Stelle resp. zum Planungsbüro, das die Geobasisdaten in deren Auftrag bearbeitet hat.
 
 .. index:: Klasse Datenbestand
+.. _ref_Klasse Datenbestand:
 
 ``Klasse Datenbestand``
 '''''''''''''''''''''''
@@ -614,7 +641,6 @@ Diese Klasse enthält Angaben zur zuständigen Stelle resp. zum Planungsbüro, d
 Diese Klasse enthält Angaben zum gelieferten Datensatz. Einem Amt (Firma) können mehrere Datenbestände zugewiesen werden (siehe :ref:`Beziehung in der Übersicht <img_transfermetadaten>`).
 
 .. _ref_Verfahrensstand:
-
 .. index:: Verfahrensstand
 
 Verfahrensstand
@@ -634,6 +660,7 @@ Folgende Attribute sind für die Verfahrensstand zu erfassen
 :orange:`Orange markierte Attribute sind Pflicht`. D.h. diese Werte müssen immer erfasst werden.
 
 .. index:: Klasse VS_Perimeter_Verfahrensstand
+.. _ref_KlasseVS_Perimeter_Verfahrensstand:
 
 ``Klasse VS_Perimeter_Verfahrensstand``
 '''''''''''''''''''''''''''''''''''''''
@@ -672,10 +699,11 @@ Folgende Attribute sind für die Verfahrensstand zu erfassen
 | Datum           | Datum                        | Datum Verfahrensbeginn                                 | 2017-08-25                     |
 +-----------------+------------------------------+--------------------------------------------------------+--------------------------------+	
 	
-.. index:: VS_Permimeter_Pos
+.. index:: VS_Perimeter_Pos
+.. _ref_KlasseVS_Perimeter_Pos:
 	
-``Klasse VS_Permimeter_Pos``
-''''''''''''''''''''''''''''
+``Klasse VS_Perimeter_Pos``
+'''''''''''''''''''''''''''
 
 .. rst-class:: vsperimeterpos
 

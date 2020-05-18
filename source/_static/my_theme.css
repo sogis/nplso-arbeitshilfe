@@ -352,6 +352,14 @@ p::selection {
 .dokument tr:nth-child(11){
 	background-color: #FAF2CC;
 } 
+.dokument tr:nth-child(4),
+.dokument tr:nth-child(7),
+.dokument tr:nth-child(8),
+.dokument tr:nth-child(14),
+.dokument tr:nth-child(15){
+	background-color: #f2ccfa;
+} 
+
 
 .typueberlagerndflp tr:nth-child(2),
 .typueberlagerndflp tr:nth-child(4),
@@ -436,6 +444,10 @@ p::selection {
 
 .orange {
     background-color: #FAF2CC;
+} 
+
+.fuchsia {
+    background-color: #f2ccfa;
 } 
 /* 
 .black {

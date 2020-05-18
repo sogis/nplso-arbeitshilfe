@@ -14,16 +14,17 @@ Arbeitshilfe für die Digitalisierung der Nutzungsplanung
    2ablaufdererfassung
    3nutzungsplanung
    11objektkatalog
+   99changelog
    
 .. 12grundnutzung
-   13ueberlagernd
-   14erschliessung
-   4erschliessung
-   5transfermetadaten
-   6verfahrensstand	
-   xallgemein
-   xtoleranz
-   99genindex
+.. 13ueberlagernd
+.. 14erschliessung
+.. 4erschliessung
+.. 5transfermetadaten
+.. 6verfahrensstand	
+.. xallgemein
+.. xtoleranz
+.. 99genindex
    * :ref:`modindex`
 
 Index und Suche
