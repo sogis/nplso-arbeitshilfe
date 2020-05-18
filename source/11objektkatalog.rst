@@ -567,7 +567,7 @@ Die angrenzenden W2 Zonen erhalten die Bemerkung **Abweichung zur rechtsgültige
 
 .. _img_1800A:
 
-.. figure:: static/1800verkehrszonestrasse.jpg
+.. figure:: _static/1800verkehrszonestrasse.jpg
    :width: 850px
    :align: center   
 
@@ -678,7 +678,7 @@ Fliessendes oder stehendes Gewässer gemäss amtlicher Vermessung
 
 .. _img_320:
 
-.. figure:: static/320gewaesser.png
+.. figure:: _static/320gewaesser.png
    :width: 850px
    :align: center   
 
@@ -722,7 +722,7 @@ Weg wird nicht erfasst, jedoch über die Hintergrundkarte im WebGIS eingeblendet
 
 .. _img_1800B:
 
-.. figure:: static/1800parzelliert.png
+.. figure:: _static/1800parzelliert.png
    :width: 850px
    :align: center   
 

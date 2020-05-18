@@ -7,7 +7,7 @@ Eine Übersicht über den Ablauf der digitalen Erfassung der Nutzungsplanungsdat
 
 .. _img_erfassungsschema:
 
-.. figure:: static/erfassungsschema2.jpg               
+.. figure:: _static/erfassungsschema2.jpg               
    :width: 400px   
    :align: center            
 
@@ -40,7 +40,7 @@ Dazu ist die `Excel-Tabelle Objektkatalog <https://www.so.ch/fileadmin/internet/
 
 .. _img_objektkatalog:
 
-.. figure:: static/objektkatalog.jpg
+.. figure:: _static/objektkatalog.jpg
    :width: 80%
    :align: center   
 
@@ -65,7 +65,7 @@ Planliste
 ^^^^^^^^^
 .. _img_planliste:
 
-.. figure:: static/Zuweisung_Dokumente_Plandokumente.jpg
+.. figure:: _static/Zuweisung_Dokumente_Plandokumente.jpg
    :width: 80%
    :align: center   
 
@@ -75,7 +75,7 @@ Analog zur Objektliste wird die Planliste gesichtet und die zu verwendenden Doku
 
 .. _img_planlisteindex:
 
-.. figure:: static/planlisteindex.png
+.. figure:: _static/planlisteindex.png
    :width: 80%
    :align: center   
 
@@ -93,7 +93,7 @@ Basis für die Erfassung der Nutzungsplanungsdaten sind die analogen, rechtsgül
 
 .. _img_planregister:
 
-.. figure:: static/planregister.jpg               
+.. figure:: _static/planregister.jpg               
    :width: 80%
    :align: center               
 
@@ -238,7 +238,7 @@ Tritt ein offensichtlicher Fehler auf so ist die neue Situation zu erfassen und 
 
 .. _img_fehler:
 
-.. figure:: static/fehler_halten_wald.jpg
+.. figure:: _static/fehler_halten_wald.jpg
    :width: 850px
    :align: center   
 
