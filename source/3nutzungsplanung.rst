@@ -9,7 +9,7 @@ Datenmodell
 
 .. _img_ermodell:
 
-.. figure:: _static/klassendiagramm_nutzungsplanung.png 
+.. figure:: static/klassendiagramm_nutzungsplanung.png 
    :width: 650px   
    :align: center
 
@@ -127,7 +127,7 @@ Nebeneinanderliegende Grundnutzungsgeometrien mit demselben kommunalen Code dür
 
 .. _img_grundnutzung:
 
-.. figure:: _static/grundnutzung.jpg               
+.. figure:: static/grundnutzung.jpg               
    :scale: 100%                                         
    :align: center  
  
@@ -235,7 +235,7 @@ Gemäss Datenmodell kann für die Dokumente eine Hierarchie erfasst werden. Als 
 
 .. _img_hierarchie_np:
 
-.. figure:: _static/hierarchie_np.jpg               
+.. figure:: static/hierarchie_np.jpg               
    :scale: 100%                                         
    :align: center
 
@@ -371,7 +371,7 @@ Analog zur :ref:`Klasse Dokument <ref_KlasseDokument>` der Grundnutzung.
 
 .. _img_hierarchie_snp:
 
-.. figure:: _static/hierarchie_snp.jpg               
+.. figure:: static/hierarchie_snp.jpg               
    :scale: 100%                                         
    :align: center
    
@@ -429,7 +429,7 @@ Diese Lösung wurde gewählt, weil die Planinhalte der kantonalen Nutzungspläne
 
 .. _img_gestaltungsplan:
 
-.. figure:: _static/gestaltungsplan.jpg               
+.. figure:: static/gestaltungsplan.jpg               
    :scale: 100%                                         
    :align: center
 
@@ -445,7 +445,7 @@ Erschliessungsplanung
 
 .. _img_erschliessung:
 
-.. figure:: _static/Klassendiagramm_Erschliessung.jpg               
+.. figure:: static/Klassendiagramm_Erschliessung.jpg               
    :width: 650px                                      
    :align: center
 
@@ -573,7 +573,7 @@ Analog zur :ref:`Klasse Dokument <ref_KlasseDokument>` der Grundnutzung.
 
 .. _img_hierarchie_es:
 
-.. figure:: _static/hierarchie_es.jpg               
+.. figure:: static/hierarchie_es.jpg               
    :scale: 100%                                         
    :align: center
    
@@ -589,7 +589,7 @@ TransferMetadaten
 
 .. _img_transfermetadaten:
 
-.. figure:: _static/transfermetadaten.jpg               
+.. figure:: static/transfermetadaten.jpg               
    :width: 650px   
    :align: center            
 
@@ -649,7 +649,7 @@ Verfahrensstand
 
 .. _img_verfahrensstand:
 
-.. figure:: _static/verfahrensstand.jpg               
+.. figure:: static/verfahrensstand.jpg               
    :width: 650px   
    :align: center            
 
