@@ -22,7 +22,9 @@
 
 #import sphinx_bootstrap_theme
 import sphinx_rtd_theme
+import sys; 
 
+sys.setrecursionlimit(5000)
 
 # -- General configuration ------------------------------------------------
 
