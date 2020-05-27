@@ -1,0 +1,2724 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Objektkatalog &mdash; np SO-Arbeitshilfe 0.1.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="Changelog" href="99changelog.html" />
+    <link rel="prev" title="Datenmodell" href="3nutzungsplanung.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> np SO-Arbeitshilfe
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Inhalt:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1allgemein.html">Allgemein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2ablaufdererfassung.html">Ablauf der Erfassung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3nutzungsplanung.html">Datenmodell</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Objektkatalog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#grundnutzung"><span class="xref std std-ref">Grundnutzung</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uberlagernde-festlegungen"><span class="xref std std-ref">überlagernde Festlegungen</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#erschliessung"><span class="xref std std-ref">Erschliessung</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beschreibung-grundnutzungen">Beschreibung Grundnutzungen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#zuruck-zum-objektkatalog">zurück zum <span class="xref std std-ref">Objektkatalog</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-1-g">1101-1109 Wohnzone 1 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-2-g">1111-1119 Wohnzone 2 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-3-g">1121-1129 Wohnzone 3 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-4-g">1131-1139 Wohnzone 4 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-5-g">1141-1149 Wohnzone 5 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-6-g">1151-1159 Wohnzone 6 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wohnzone-7-g-und-grosser">1161-1169 Wohnzone 7 G und grösser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zone-fur-terrassenhauser-terrassensiedlung">1171-1179 Zone für Terrassenhäuser / Terrassensiedlung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gewerbezonen-ohne-wohnen">1201-1209 Gewerbezonen ohne Wohnen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#industriezone">1211-1219 Industriezone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arbeitszone">1221-1229 Arbeitszone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gewerbezone-mit-wohnen-mischzone">1301-1309 Gewerbezone mit Wohnen / Mischzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gewerbezone-mit-wohnen-mischzone-2-g">1311-1319 Gewerbezone mit Wohnen / Mischzone 2 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gewerbezone-mit-wohnen-mischzone-3-g">1321-1329 Gewerbezone mit Wohnen / Mischzone 3 G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gewerbezone-mit-wohnen-mischzone-4-g-und-grosser">1331-1339 Gewerbezone mit Wohnen / Mischzone 4 G und grösser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zone-fur-publikumsintensive-anlagen">1341-1349 Zone für publikumsintensive Anlagen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernzone">1401-1409 Kernzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zentrumszone">1411-1419 Zentrumszone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#erhaltungszone">1421-1429 Erhaltungszone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zone-fur-offentliche-bauten">1501-1509 Zone für öffentliche Bauten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zone-fur-offentliche-anlagen">1511-1519 Zone für öffentliche Anlagen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grun-und-freihaltezone-innerhalb-bauzone">1601-1609 Grün- und Freihaltezone innerhalb Bauzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kommunale-uferschutzzone-innerhalb-bauzone">1611-1619 kommunale Uferschutzzone innerhalb Bauzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#landwirtschaftliche-kernzone">1620 Landwirtschaftliche Kernzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weilerzone">1631-1639 Weilerzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-eingeschrankte-bauzonen">1691-1699 weitere eingeschränkte Bauzonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zone-fur-freizeit-und-erholung">1701-1709 Zone für Freizeit und Erholung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verkehrszone-strasse-innerhalb-bauzone">1800 Verkehrszone Strasse (innerhalb Bauzone)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verkehrszone-bahnareal">1810 Verkehrszone Bahnareal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verkehrszone-flugplatzareal-innerhalb-bauzone">1820 Verkehrszone Flugplatzareal (innerhalb Bauzone)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-verkehrszonen-innerhalb-bauzone">1891-1899 weitere Verkehrszonen (innerhalb Bauzone)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spezialzonen">1901-1909 Spezialzonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#landwirtschaftszone">2100 Landwirtschaftszone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spezielle-landwirtschaftszonen">2201-2209 Spezielle Landwirtschaftszonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rebbauzonen">2301-2309 Rebbauzonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-landwirtschaftszonen">2901-2909 weitere Landwirtschaftszonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kommunale-naturschutzzone">3101-3109 kommunale Naturschutzzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#waldrandschutzzone">3111-3119 Waldrandschutzzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-schutzzonen-fur-lebensraume-und-landschaften">3191-3199 weitere Schutzzonen für Lebensräume und Landschaften</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gewasser">3200 Gewässer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-zonen-fur-gewasser-und-ihre-ufer">3291-3299 weitere Zonen für Gewässer und ihre Ufer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-schutzzonen-ausserhalb-bauzonen">3901-3909 weitere Schutzzonen ausserhalb Bauzonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verkehrsflache-strasse">4200 Verkehrsfläche Strasse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verkehrsflache-bahnareal">4210 Verkehrsfläche Bahnareal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verkehrsflache-flugplatzareal">4220 Verkehrsfläche Flugplatzareal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-verkehrsflachen">4291-4299 weitere Verkehrsflächen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reservezone-wohnzone-mischzone-kernzone-und-zentrumszone">4300 Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reservezone-arbeiten">4310 Reservezone Arbeiten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reservezone-oeba">4320 Reservezone OeBA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reservezone">4391-4399 Reservezone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wald">4400 Wald</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#golfzone">4901-4919 Golfzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#abbauzone">4911-4919 Abbauzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deponiezone">4921-4929 Deponiezone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-bauzonen-nach-art-18-rpg-ausserhalb-bauzonen">4991-4999 weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#beschreibung-uberlagernde-festlegungen">Beschreibung überlagernde Festlegungen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">zurück zum <span class="xref std std-ref">Objektkatalog</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uberlagernde-ortsbildschutzzone">5101-5109 überlagernde Ortsbildschutzzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bln-gebiet">5200 BLN Gebiet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#juraschutzzone">5210 Juraschutzzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naturreservat-inkl-geotope">5220 Naturreservat inkl. Geotope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#landschaftsschutzzone">5231-5239 Landschaftsschutzzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#siedlungstrenngurtel-von-kommunaler-bedeutung">5240 Siedlungstrenngürtel von kommunaler Bedeutung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#siedlungstrenngurtel-von-kantonaler-bedeutung">5250 Siedlungstrenngürtel von kantonaler Bedeutung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kantonale-landwirtschafts-und-schutzzone-witi">5260 kantonale Landwirtschafts- und Schutzzone Witi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kantonale-uferschutzzone">5270 kantonale Uferschutzzone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kommunale-uferschutzzone-ausserhalb-bauzonen">5281-5289 kommunale Uferschutzzone ausserhalb Bauzonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-wszll2">5291-5299 weitere Schutzzonen für Lebensräume und Landschaften</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naturgefahren-erhebliche-gefahrdung">5300 Naturgefahren erhebliche Gefährdung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naturgefahren-mittlere-gefahrdung">5310 Naturgefahren mittlere Gefährdung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naturgefahren-geringe-gefahrdung">5320 Naturgefahren geringe Gefährdung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naturgefahren-restgefahrdung">5330 Naturgefahren Restgefährdung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hofstattzone-freihaltezone">5901-5909 Hofstattzone / Freihaltezone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bauliche-einschrankungen">5911-5919 Bauliche Einschränkungen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hecken-feldgeholz-ufergeholz">5921-5929 Hecken, Feldgehölz, Ufergehölz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grundwasserschutzzone-s1">5930 Grundwasserschutzzone S1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grundwasserschutzzone-s2">5940 Grundwasserschutzzone S2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grundwasserschutzzone-s3">5950 Grundwasserschutzzone S3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grundwasserschutzareal">5960 Grundwasserschutzareal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-uberlagernde-nutzungszonen">5991-5999 weitere überlagernde Nutzungszonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#perimeter-kantonaler-nutzungsplan">6100 Perimeter kantonaler Nutzungsplan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#perimeter-kommunaler-gestaltungsplan">6110 Perimeter kommunaler Gestaltungsplan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#perimeter-gestaltungsplanpflicht">6200 Perimeter Gestaltungsplanpflicht</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#empfindlichkeitsstufe-i">6800 Empfindlichkeitsstufe I</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#empfindlichkeitsstufe-ii">6810 Empfindlichkeitsstufe II</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#empfindlichkeitsstufe-ii-aufgestuft">6820 Empfindlichkeitsstufe II aufgestuft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#empfindlichkeitsstufe-iii">6830 Empfindlichkeitsstufe III</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#empfindlichkeitsstufe-iii-aufgestuft">6840 Empfindlichkeitsstufe III aufgestuft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#empfindlichkeitsstufe-iv">6850 Empfindlichkeitsstufe IV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#keine-empfindlichkeitsstufe">6860 keine Empfindlichkeitsstufe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kantonales-vorranggebiet-natur-und-landschaft">6900 kantonales Vorranggebiet Natur und Landschaft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kommunales-vorranggebiet-natur-und-landschaft">6911-6919 kommunales Vorranggebiet Natur und Landschaft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#planungszone">6921-6929 Planungszone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-flachenbezogene-festlegungen-np">6991-6999 weitere flächenbezogene Festlegungen NP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geologisches-objekt">8120 geologisches Objekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naturobjekt">8130 Naturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kantonal-geschutztes-kulturobjekt">8200 kantonal geschütztes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kommunal-geschutztes-kulturobjekt">8210 kommunal geschütztes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#schutzenswertes-kulturobjekt">8220 schützenswertes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#erhaltenswertes-kulturobjekt">8230 erhaltenswertes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wanderweg">7900 Wanderweg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#historischer-verkehrsweg">7910 historischer Verkehrsweg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#waldgrenze">7920 Waldgrenze</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#negative-waldfeststellung">7930 negative Waldfeststellung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eingedolte-gewasser">7991 eingedolte Gewässer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-linienbezogene-festlegungen">7992-7999 weitere linienbezogene Festlegungen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geschutzter-einzelbaum">8100 geschützter Einzelbaum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#erhaltenswerter-einzelbaum">8110 erhaltenswerter Einzelbaum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-go">8120 geologisches Objekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-no">8130 Naturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#index-32">8200 kantonal geschütztes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-kogko">8210 kommunal geschütztes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-sko">8220 schützenswertes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-eko">8230 erhaltenswertes Kulturobjekt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-punktbezogene-festlegungen-np">8991-8999 weitere punktbezogene Festlegungen NP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#beschreibung-erschliessungen">Beschreibung Erschliessungen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">zurück zum <span class="xref std std-ref">Objektkatalog</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nationalstrasse">5600 Nationalstrasse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kantonsstrasse">5610 Kantonsstrasse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sammelstrasse-kommunal">5620 Sammelstrasse kommunal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#erschliessungsstrasse-kommunal">5630 Erschliessungsstrasse kommunal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flurweg-mit-erschliessungsfunktion">5640 Flurweg mit Erschliessungsfunktion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flurweg-ohne-erschliessungsfunktion">5650 Flurweg ohne Erschliessungsfunktion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#private-erschliessungsstrassen">5660 private Erschliessungsstrassen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unklassierte-strasse">5670 unklassierte Strasse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#strassenbankett-verkehrsinsel">5680 Strassenbankett, Verkehrsinsel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sichtzonen">5691 Sichtzonen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubrige-verkehrsflachen">5692-5699 übrige Verkehrsflächen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gehweg-trottoir">5700 Gehweg / Trottoir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fussweg">5710 Fussweg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#radweg">5720 Radweg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fuss-und-radweg">5730 Fuss- und Radweg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grunstreifen-rabatte">5740 Grünstreifen, Rabatte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubrige-flachen-langsamverkehr">5791-5799 übrige Flächen Langsamverkehr</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#baulinien">Baulinien</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nationale-baulinien">7101-4109 nationale Baulinien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#baulinie-strasse-kantonal">7110 Baulinie Strasse kantonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vorbaulinie-kantonal">7120 Vorbaulinie kantonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gestaltungsbaulinie-kantonal">7130 Gestaltungsbaulinie kantonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ruckwartige-baulinie-kantonal">7140 Rückwärtige Baulinie kantonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#baulinien-infrastruktur-kantonal">7150 Baulinien Infrastruktur kantonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-nationale-und-kantonale-baulinien">7191-7199 weitere nationale und kantonale Baulinien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#baulinie-strasse">7200 Baulinie Strasse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vorbaulinie">7210 Vorbaulinie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gestaltungsbaulinie">7220 Gestaltungsbaulinie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ruckwartige-baulinie">7230 Rückwärtige Baulinie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#baulinie-infrastruktur">7240 Baulinie Infrastruktur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#waldabstandslinie">7250 Waldabstandslinie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#baulinie-hecken">7260 Baulinie Hecken</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#baulinie-gewasser">7270 Baulinie Gewässer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#immissionsstreifen">7280 Immissionsstreifen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-kommunale-baulinien">7291-7299 weitere kommunale Baulinien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-linienbezogene-objekte-ep">7891-7899 weitere linienbezogene Objekte EP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weitere-punktbezogene-objekte-ep">8891-8899 weitere punktbezogene Objekte EP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">zurück zum <span class="xref std std-ref">Objektkatalog</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="99changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+    <a href="genindex.html">Stichwortverzeichnis</a>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">np SO-Arbeitshilfe</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Objektkatalog</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/11objektkatalog.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="objektkatalog">
+<span id="ref-objektkatalog"></span><h1>Objektkatalog<a class="headerlink" href="#objektkatalog" title="Link zu dieser Überschrift">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ref-gn2"><span class="std std-ref">Grundnutzung</span></a></p></li>
+<li><p><a class="reference internal" href="#ref-ueb2"><span class="std std-ref">überlagernde Festlegungen</span></a></p></li>
+<li><p><a class="reference internal" href="#ref-er2"><span class="std std-ref">Erschliessung</span></a></p></li>
+<li><p><a class="reference internal" href="#ref-gn"><span class="std std-ref">Beschreibung Grundnutzung</span></a></p></li>
+<li><p><a class="reference internal" href="#ref-ueb"><span class="std std-ref">Beschreibung überlagernde Festlegungen</span></a></p></li>
+<li><p><a class="reference internal" href="#ref-er"><span class="std std-ref">Beschreibung Erschliessungen</span></a></p></li>
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Stichwortverzeichnis</span></a></p></li>
+</ul>
+<div class="section" id="grundnutzung">
+<span id="ref-gn2"></span><h2><a class="reference internal" href="#ref-gn"><span class="std std-ref">Grundnutzung</span></a><a class="headerlink" href="#grundnutzung" title="Link zu dieser Überschrift">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 22%" />
+<col style="width: 9%" />
+<col style="width: 17%" />
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung Bund</strong></p></td>
+<td><p><strong>Bezeichnung Kanton</strong></p></td>
+<td><p><strong>Code kommunal</strong></p></td>
+<td><p><strong>Bezeichnung Gemeinde</strong></p></td>
+<td><p><strong>Verbindlichkeit</strong></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x2"><span class="std std-ref">2</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td><p>Bemerkungen</p></td>
+</tr>
+<tr class="row-even"><td rowspan="8"><p>Wohnzonen</p></td>
+<td><p><a class="reference internal" href="#ref-wz1"><span class="std std-ref">Wohnzone 1 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz1"><span class="std std-ref">1101-1109</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wz2"><span class="std std-ref">Wohnzone 2 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz2"><span class="std std-ref">1111-1119</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wz3"><span class="std std-ref">Wohnzone 3 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz3"><span class="std std-ref">1121-1129</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wz4"><span class="std std-ref">Wohnzone 4 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz4"><span class="std std-ref">1131-1139</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wz5"><span class="std std-ref">Wohnzone 5 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz5"><span class="std std-ref">1141-1149</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wz6"><span class="std std-ref">Wohnzone 6 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz6"><span class="std std-ref">1151-1159</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wz7"><span class="std std-ref">Wohnzone 7 G und grösser</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz7"><span class="std std-ref">1161-1169</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-zt"><span class="std std-ref">Zone für Terrassenhäuser / Terrassensiedlung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-zt"><span class="std std-ref">1171-1179</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><p>Arbeitszonen</p></td>
+<td><p><a class="reference internal" href="#ref-gwz"><span class="std std-ref">Gewerbezone ohne Wohnen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gwz"><span class="std std-ref">1201-1209</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-iz"><span class="std std-ref">Industriezone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-iz"><span class="std std-ref">1211-1219</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-az"><span class="std std-ref">Arbeitszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-az"><span class="std std-ref">1221-1229</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="5"><p>Mischzonen</p></td>
+<td><p><a class="reference internal" href="#ref-wmz"><span class="std std-ref">Gewerbezone mit Wohnen / Mischzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wmz"><span class="std std-ref">1301-1309</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wmz2"><span class="std std-ref">Gewerbezone mit Wohnen / Mischzone 2 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wmz2"><span class="std std-ref">1311-1319</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wmz3"><span class="std std-ref">Gewerbezone mit Wohnen / Mischzone 3 G</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wmz3"><span class="std std-ref">1321-1329</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wmz4"><span class="std std-ref">Gewerbezone mit Wohnen / Mischzone 4 G und grösser</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wmz4"><span class="std std-ref">1331-1339</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-zpuba"><span class="std std-ref">Zone für publikumsintensive Anlagen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-zpuba"><span class="std std-ref">1341-1349</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><p>Kernzonen</p></td>
+<td><p><a class="reference internal" href="#ref-kz"><span class="std std-ref">Kernzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-kz"><span class="std std-ref">1401-1409</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-zz"><span class="std std-ref">Zentrumszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-zz"><span class="std std-ref">1411-1419</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-ez"><span class="std std-ref">Erhaltungszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ez"><span class="std std-ref">1421-1429</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>Zone für öffentliche Nutzungen</p></td>
+<td><p><a class="reference internal" href="#ref-zoeb"><span class="std std-ref">Zone für öffentliche Bauten</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-zoeb"><span class="std std-ref">1501-1509</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-zoea"><span class="std std-ref">Zone für öffentliche Anlagen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-zoea"><span class="std std-ref">1511-1519</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="5"><p>eingeschränkte Bauzonen</p></td>
+<td><p><a class="reference internal" href="#ref-gfz"><span class="std std-ref">Grün- und Freihaltezone (innerhalb Bauzone)</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gfz"><span class="std std-ref">1601-1609</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-komusz"><span class="std std-ref">kommunale Uferschutzzone innerhalb Bauzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-komusz"><span class="std std-ref">1611-1619</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-lwkz"><span class="std std-ref">Landwirtschaftliche Kernzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-lwkz"><span class="std std-ref">1620</span></a></p></td>
+<td><p>Landwirtschaftliche Kernzone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wz"><span class="std std-ref">Weilerzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wz"><span class="std std-ref">1631-1639</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-webz"><span class="std std-ref">weitere eingeschränkte Bauzonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-webz"><span class="std std-ref">1691-1699</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Tourismus- und Freizeitzonen</p></td>
+<td><p><a class="reference internal" href="#ref-zfe"><span class="std std-ref">Zone für Freizeit und Erholung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-zfe"><span class="std std-ref">1701-1709</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>Verkehrszonen innerhalb Baugebiet</p></td>
+<td><p><a class="reference internal" href="#ref-vzs"><span class="std std-ref">Verkehrszone Strasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vzs"><span class="std std-ref">1800</span></a></p></td>
+<td><p>Verkehrszone Strasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-vzb"><span class="std std-ref">Verkehrszone Bahnareal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vzb"><span class="std std-ref">1810</span></a></p></td>
+<td><p>Verkehrszone Bahnareal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-vzf"><span class="std std-ref">Verkehrszone Flugplatzareal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vzf"><span class="std std-ref">1820</span></a></p></td>
+<td><p>Verkehrszone Flugplatzareal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wzv"><span class="std std-ref">weitere Verkehrszonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wzv"><span class="std std-ref">1891-1899</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>weitere Bauzonen</p></td>
+<td><p><a class="reference internal" href="#ref-sz"><span class="std std-ref">Spezialzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-sz"><span class="std std-ref">1901-1919</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>allgemeine Landwirt- schaftszone</p></td>
+<td><p><a class="reference internal" href="#ref-lwz"><span class="std std-ref">Landwirtschaftszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-lwz"><span class="std std-ref">2100</span></a></p></td>
+<td><p>Landwirtschaftszone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Spezialland- wirtschafts- zonen</p></td>
+<td><p><a class="reference internal" href="#ref-slwz"><span class="std std-ref">Spezielle Landwirtschaftszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-slwz"><span class="std std-ref">2201-2209</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Rebbauzonen</p></td>
+<td><p><a class="reference internal" href="#ref-rbz"><span class="std std-ref">Rebbauzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rbz"><span class="std std-ref">2301-2309</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>weitere Landwirtschafts- zonen</p></td>
+<td><p><a class="reference internal" href="#ref-wlwz"><span class="std std-ref">weitere Landwirtschaftszonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wlwz"><span class="std std-ref">2901-2909</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><p>Schutzzonen für Lebensräume und Landschaften</p></td>
+<td><p><a class="reference internal" href="#ref-knsz"><span class="std std-ref">kommunale Naturschutzzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-knsz"><span class="std std-ref">3101-3109</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wrsz"><span class="std std-ref">Waldrandschutzzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wrsz"><span class="std std-ref">3111-3119</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wszll"><span class="std std-ref">weitere Schutzzonen für Lebensräume und Landschaften</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wszll"><span class="std std-ref">3191-3199</span></a></p></td>
+<td><p>von der Gemeinde/Kanton zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>Zonen für Gewässer und ihre Ufer</p></td>
+<td><p><a class="reference internal" href="#ref-gew"><span class="std std-ref">Gewässer</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gew"><span class="std std-ref">3200</span></a></p></td>
+<td><p>Gewässer</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wzgu"><span class="std std-ref">weitere Zonen für Gewässer und ihre Ufer</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wzgu"><span class="std std-ref">3291-3299</span></a></p></td>
+<td><p>von der Gemeinde/Kanton zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>weitere Schutzzonen ausserhalb der Bauzonen</p></td>
+<td><p><a class="reference internal" href="#ref-wszab"><span class="std std-ref">weitere Schutzzonen ausserhalb Bauzonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wszab"><span class="std std-ref">3901-3909</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Zonen für Kleinsiedlungen</p></td>
+<td colspan="4"><p>Zonen für Kleinsiedlungen sind im Planungs- und Baugesetz des Kantons Solothurn nicht vorgesehen.</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>Verkehrsflächen ausserhalb Baugebiet</p></td>
+<td><p><a class="reference internal" href="#ref-vfs"><span class="std std-ref">Verkehrsfläche Strasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vfs"><span class="std std-ref">4200</span></a></p></td>
+<td><p>Verkehrsfläche Strasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-vfb"><span class="std std-ref">Verkehrsfläche Bahnareal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vfb"><span class="std std-ref">4210</span></a></p></td>
+<td><p>Verkehrsfläche Bahnareal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-vff"><span class="std std-ref">Verkehrsfläche Flugplatzareal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vff"><span class="std std-ref">4220</span></a></p></td>
+<td><p>Verkehrsfläche Flugplatzareal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wvf"><span class="std std-ref">weitere Verkehrsflächen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wvf"><span class="std std-ref">4291-4299</span></a></p></td>
+<td><p>von Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>Reservezonen nach Art. 18 Abs. 2 RPG</p></td>
+<td><p><a class="reference internal" href="#ref-rzw"><span class="std std-ref">Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rzw"><span class="std std-ref">4300</span></a></p></td>
+<td><p>Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-rza"><span class="std std-ref">Reservezone Arbeiten</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rza"><span class="std std-ref">4310</span></a></p></td>
+<td><p>Reservezone Arbeiten</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-rzoeb"><span class="std std-ref">Reservezone OeBA</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rzoeb"><span class="std std-ref">4320</span></a></p></td>
+<td><p>Reservezone OeBA</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-rz"><span class="std std-ref">Reservezone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rz"><span class="std std-ref">4391-4399</span></a></p></td>
+<td><p>Reservezone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Wald</p></td>
+<td><p><a class="reference internal" href="#ref-wald"><span class="std std-ref">Wald</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wald"><span class="std std-ref">4400</span></a></p></td>
+<td><p>Wald</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><p>weitere Bauzonen nach Art. 18 Abs. 1 RPG
+ausserhalb Bauzonen</p></td>
+<td><p><a class="reference internal" href="#ref-gz"><span class="std std-ref">Golfzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gz"><span class="std std-ref">4901-4909</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-abz"><span class="std std-ref">Abbauzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-abz"><span class="std std-ref">4911-4919</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-dz"><span class="std std-ref">Deponiezone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-dz"><span class="std std-ref">4921-4929</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wbz"><span class="std std-ref">weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wbz"><span class="std std-ref">4991-4999</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uberlagernde-festlegungen">
+<span id="ref-ueb2"></span><h2><a class="reference internal" href="#ref-ueb"><span class="std std-ref">überlagernde Festlegungen</span></a><a class="headerlink" href="#uberlagernde-festlegungen" title="Link zu dieser Überschrift">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+<col style="width: 19%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung Bund</strong></p></td>
+<td><p><strong>Bezeichnung Kanton</strong></p></td>
+<td><p><strong>Code kommunal</strong></p></td>
+<td><p><strong>Bezeichnung Gemeinde</strong></p></td>
+<td><p><strong>Verbindlichkeit</strong></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x2"><span class="std std-ref">2</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td><p>Bemerkungen</p></td>
+</tr>
+<tr class="row-even"><td><p>überlagernde Ortsbild- schutzzonen</p></td>
+<td><p><a class="reference internal" href="#ref-ueobsz"><span class="std std-ref">überlagernde Ortsbildschutzzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ueobsz"><span class="std std-ref">5101-5109</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="10"><p>überlagernde Schutzzonen für Lebensräume und Landschaften</p></td>
+<td><p><a class="reference internal" href="#ref-bln"><span class="std std-ref">BLN Gebiet</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-bln"><span class="std std-ref">5200</span></a></p></td>
+<td><p>BLN Gebiet</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-hwd"><span class="std std-ref">hinweisend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-jsz"><span class="std std-ref">Juraschutzzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-jsz"><span class="std std-ref">5210</span></a></p></td>
+<td><p>Juraschutzzone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-wld"><span class="std std-ref">wegleitend</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-nr"><span class="std std-ref">Naturreservat inkl. Geotope</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-nr"><span class="std std-ref">5220</span></a></p></td>
+<td><p>Naturreservat  inkl. Geotope</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-lsz"><span class="std std-ref">Landschaftsschutz- zone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-lsz"><span class="std std-ref">5231-5239</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-stgkom"><span class="std std-ref">Siedlungstrenn- gürtel von kommunaler Bedeutung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-stgkom"><span class="std std-ref">5240</span></a></p></td>
+<td><p>Siedlungstrenngürtel von kommunaler Bedeutung</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-wld"><span class="std std-ref">wegleitend</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-stgkt"><span class="std std-ref">Siedlungstrenn- gürtel von kantonaler Bedeutung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-stgkt"><span class="std std-ref">5250</span></a></p></td>
+<td><p>Siedlungstrenngürtel von kantonaler Bedeutung</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-wld"><span class="std std-ref">wegleitend</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-witi"><span class="std std-ref">kantonale Landwirtschafts- und Schutzzone Witi</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-witi"><span class="std std-ref">5260</span></a></p></td>
+<td><p>kantonale Landwirtschafts- und Schutzzone Witi</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-ktusz2"><span class="std std-ref">kantonale Uferschutzzone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ktusz2"><span class="std std-ref">5270</span></a></p></td>
+<td><p>kantonale Uferschutzzone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-wld"><span class="std std-ref">wegleitend</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-kousz"><span class="std std-ref">kommunale Uferschutzzone ausserhalb Bauzonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-kousz"><span class="std std-ref">5281-5289</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wszll2"><span class="std std-ref">weitere Schutzzonen für Lebensräume und Landschaften</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wszll2"><span class="std std-ref">5291-5299</span></a></p></td>
+<td><p>von der Gemeinde/Kanton zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>überlagernde Gefahrenzonen</p></td>
+<td><p><a class="reference internal" href="#ref-ng1"><span class="std std-ref">Naturgefahren erhebliche Gefährdung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ng1"><span class="std std-ref">5300</span></a></p></td>
+<td><p>erhebliche Gefährdung, synoptisch</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>separater Plan gemäss eigenem Datenmodell</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-ng2"><span class="std std-ref">Naturgefahren mittlere Gefährdung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ng2"><span class="std std-ref">5310</span></a></p></td>
+<td><p>mittlere Gefährdung, synoptisch</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>separater Plan gemäss eigenem Datenmodell</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-ng3"><span class="std std-ref">Naturgefahren geringe Gefährdung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ng3"><span class="std std-ref">5320</span></a></p></td>
+<td><p>geringe Gefährdung, synoptisch</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>separater Plan gemäss eigenem Datenmodell</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-ng4"><span class="std std-ref">Naturgefahren Restgefährdung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ng4"><span class="std std-ref">5330</span></a></p></td>
+<td><p>Restgefährdung, synoptisch</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>separater Plan gemäss eigenem Datenmodell</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="10"><p>weitere überlagernde Nutzungszonen</p></td>
+<td><p><a class="reference internal" href="#ref-hsz"><span class="std std-ref">Hofstattzone/ Freihaltezone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-hsz"><span class="std std-ref">5901-5909</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-be"><span class="std std-ref">Bauliche Einschränkungen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-be"><span class="std std-ref">5911-5919</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><p><a class="reference internal" href="#ref-hfu"><span class="std std-ref">Hecken, Feldgehölz und Ufergehölz</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-hfu"><span class="std std-ref">5921</span></a></p></td>
+<td><p>Hecken</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-hfu"><span class="std std-ref">5922</span></a></p></td>
+<td><p>Feldgehölz</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-hfu"><span class="std std-ref">5923-5929</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-gwsz1"><span class="std std-ref">Grundwasser- schutzzone S1</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gwsz1"><span class="std std-ref">5930</span></a></p></td>
+<td><p>Grundwasserschutzzone S1</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-gwsz2"><span class="std std-ref">Grundwasser- schutzzone S2</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gwsz2"><span class="std std-ref">5940</span></a></p></td>
+<td><p>Grundwasserschutzzone S2</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-gwsz3"><span class="std std-ref">Grundwasser- schutzzone S3</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gwsz3"><span class="std std-ref">5950</span></a></p></td>
+<td><p>Grundwasserschutzzone S3</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-gwsa"><span class="std std-ref">Grundwasser- schutzareal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gwsa"><span class="std std-ref">5960</span></a></p></td>
+<td><p>Grundwasserschutzareal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wuenz"><span class="std std-ref">weitere überlagernde Nutzungszonen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wuenz"><span class="std std-ref">5991-5999</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>Bereiche rechtsgültiger Sondernutzungs- pläne</p></td>
+<td><p><a class="reference internal" href="#ref-pknp"><span class="std std-ref">Perimeter kantonaler Nutzungsplan</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-pknp"><span class="std std-ref">6100</span></a></p></td>
+<td><p>Perimeter kantonaler Nutzungsplan</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td><p>Erhebung planspezifisch nach Absprache</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-pkgp"><span class="std std-ref">Perimeter kommunaler Gestaltungsplan</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-pkgp"><span class="std std-ref">6110</span></a></p></td>
+<td><p>Perimeter kommunaler Gestaltungsplan</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Bereiche mit Sondernutzungs- planpflicht</p></td>
+<td><p><a class="reference internal" href="#ref-pgpp"><span class="std std-ref">Perimeter Gestaltungsplanpflicht</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-pgpp"><span class="std std-ref">6200</span></a></p></td>
+<td><p>Perimeter Gestaltungsplanpflicht</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="7"><p>Lärmempfindlich- keitsstufen</p></td>
+<td><p><a class="reference internal" href="#ref-es1"><span class="std std-ref">Empfindlichkeits- stufe I</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-es1"><span class="std std-ref">6800</span></a></p></td>
+<td><p>Empfindlichkeitsstufe I</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-es2"><span class="std std-ref">Empfindlichkeits- stufe II</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-es2"><span class="std std-ref">6810</span></a></p></td>
+<td><p>Empfindlichkeitsstufe II</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#id3"><span class="std std-ref">Empfindlichkeits- stufe II aufgestuft</span></a></p></td>
+<td><p><a class="reference internal" href="#id3"><span class="std std-ref">6820</span></a></p></td>
+<td><p>Empfindlichkeitsstufe II aufgestuft</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-es3"><span class="std std-ref">Empfindlichkeits- stufe III</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-es3"><span class="std std-ref">6830</span></a></p></td>
+<td><p>Empfindlichkeitsstufe III</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#id4"><span class="std std-ref">Empfindlichkeits- stufe III aufgestuft</span></a></p></td>
+<td><p><a class="reference internal" href="#id4"><span class="std std-ref">6840</span></a></p></td>
+<td><p>Empfindlichkeitsstufe III aufgestuft</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-es4"><span class="std std-ref">Empfindlichkeits- stufe IV</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-es4"><span class="std std-ref">6850</span></a></p></td>
+<td><p>Empfindlichkeitsstufe IV</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-kes"><span class="std std-ref">keine Empfindlichkeits- stufe</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-kes"><span class="std std-ref">6860</span></a></p></td>
+<td><p>keine Empfindlichkeitsstufe</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="10"><p>weitere flächenhafte Festlegungen NP</p></td>
+<td><p><a class="reference internal" href="#ref-ktvnl"><span class="std std-ref">kantonales Vorranggebiet Natur und Landschaft</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ktvnl"><span class="std std-ref">6900</span></a></p></td>
+<td><p>kantonales Vorranggebiet Natur und Landschaft</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-komvnl"><span class="std std-ref">kommunales Vorranggebiet Natur und Landschaft</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-komvnl"><span class="std std-ref">6911-6919</span></a></p></td>
+<td><p>kommunales Vorranggebiet Natur und Landschaft</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-pz"><span class="std std-ref">Planungszone</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-pz"><span class="std std-ref">6921-6929</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wfbfnp"><span class="std std-ref">weitere flächenbezogene Festlegungen NP</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wfbfnp"><span class="std std-ref">6991-6999</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-all"><span class="std std-ref">Nutzungsplan- festlegung / orientierend / hinweisend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td><p>z.B. Archäologische Fundstellen, etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-go2"><span class="std std-ref">geologisches Objekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-go2"><span class="std std-ref">8120</span></a></p></td>
+<td><p>geologisches Objekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-hwd"><span class="std std-ref">hinweisend</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-no2"><span class="std std-ref">Naturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-no2"><span class="std std-ref">8130</span></a></p></td>
+<td><p>Naturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-ktgko2"><span class="std std-ref">kantonal geschütztes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ktgko2"><span class="std std-ref">8200</span></a></p></td>
+<td><p>kantonal geschütztes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-kogko2"><span class="std std-ref">kommunal geschütztes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-kogko2"><span class="std std-ref">8210</span></a></p></td>
+<td><p>kommunal geschütztes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td><p>z.B. Archäologische Fundstellen, etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-sko2"><span class="std std-ref">schützenswertes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-sko2"><span class="std std-ref">8220</span></a></p></td>
+<td><p>schützenswertes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-eko2"><span class="std std-ref">erhaltenswertes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-eko2"><span class="std std-ref">8230</span></a></p></td>
+<td><p>erhaltenswertes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="6"><p>weitere linienbezogene Festlegungen NP</p></td>
+<td><p><a class="reference internal" href="#ref-ww"><span class="std std-ref">Wanderweg</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ww"><span class="std std-ref">7900</span></a></p></td>
+<td><p>Wanderweg</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-hwd"><span class="std std-ref">hinweisend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-hvw"><span class="std std-ref">historische Verkehrsweg</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-hvw"><span class="std std-ref">7910</span></a></p></td>
+<td><p>historische Verkehrsweg</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-hwd"><span class="std std-ref">hinweisend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wg"><span class="std std-ref">Waldgrenze</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wg"><span class="std std-ref">7920</span></a></p></td>
+<td><p>Waldgrenze</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-nwf"><span class="std std-ref">negative Waldfeststellung</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-nwf"><span class="std std-ref">7930</span></a></p></td>
+<td><p>negative Waldfeststellung</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-egew"><span class="std std-ref">eingedolte Gewässer</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-egew"><span class="std std-ref">7991</span></a></p></td>
+<td><p>eingedolte Gewässer</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-wlflnp"><span class="std std-ref">weitere linienbezogene Festlegungen NP</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wlflnp"><span class="std std-ref">7992-7999</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-all"><span class="std std-ref">Nutzungsplan- festlegung / orientierend / hinweisend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td><p>z.B. Velorouten</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>Naturobjekte</p></td>
+<td><p><a class="reference internal" href="#ref-geb"><span class="std std-ref">geschützter Einzelbaum</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-geb"><span class="std std-ref">8100</span></a></p></td>
+<td><p>geschützter Einzelbaum</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-eweb"><span class="std std-ref">erhaltenswerter Einzelbaum</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-eweb"><span class="std std-ref">8110</span></a></p></td>
+<td><p>erhaltenswerter Einzelbaum</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-go"><span class="std std-ref">geologisches Objekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-go"><span class="std std-ref">8120</span></a></p></td>
+<td><p>geologisches Objekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-hwd"><span class="std std-ref">hinweisend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-no"><span class="std std-ref">Naturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-no"><span class="std std-ref">8130</span></a></p></td>
+<td><p>Naturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>Kulturobjekte</p></td>
+<td><p><a class="reference internal" href="#ref-ktgko"><span class="std std-ref">kantonal geschütztes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ktgko"><span class="std std-ref">8200</span></a></p></td>
+<td><p>kantonal geschütztes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-orie"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-4"><span class="std std-ref">13</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-kogko"><span class="std std-ref">kommunal geschütztes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-kogko"><span class="std std-ref">8210</span></a></p></td>
+<td><p>kommunal geschütztes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-sko"><span class="std std-ref">schützenswertes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-sko"><span class="std std-ref">8220</span></a></p></td>
+<td><p>schützenswertes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-eko"><span class="std std-ref">erhaltenswertes Kulturobjekt</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-eko"><span class="std std-ref">8230</span></a></p></td>
+<td><p>erhaltenswertes Kulturobjekt</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npfl"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>weitere punktbezogene Festlegungen NP</p></td>
+<td><p><a class="reference internal" href="#ref-wpfnp"><span class="std std-ref">weitere punktbezogene Festlegungen NP</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wpfnp"><span class="std std-ref">8991-8999</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-all"><span class="std std-ref">Nutzungsplan- festlegung / orientierend / hinweisend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="erschliessung">
+<span id="ref-er2"></span><h2><a class="reference internal" href="#ref-er"><span class="std std-ref">Erschliessung</span></a><a class="headerlink" href="#erschliessung" title="Link zu dieser Überschrift">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung Bund</strong></p></td>
+<td><p><strong>Bezeichnung Kanton</strong></p></td>
+<td><p><strong>Code kommunal</strong></p></td>
+<td><p><strong>Bezeichnung Gemeinde</strong></p></td>
+<td><p><strong>Verbindlichkeit</strong></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x2"><span class="std std-ref">2</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td><p>Bemerkungen</p></td>
+</tr>
+<tr class="row-even"><td rowspan="11"><p>Strassen- und allg. Verkehrsflächen</p></td>
+<td><p><a class="reference internal" href="#ref-ns"><span class="std std-ref">Nationalstrasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ns"><span class="std std-ref">5600</span></a></p></td>
+<td><p>Nationalstrasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-ks"><span class="std std-ref">Kantonsstrasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ks"><span class="std std-ref">5610</span></a></p></td>
+<td><p>Kantonsstrasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-sskom"><span class="std std-ref">Sammelstrasse kommunal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-sskom"><span class="std std-ref">5620</span></a></p></td>
+<td><p>Sammelstrasse kommunal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-eskom"><span class="std std-ref">Erschliessungsstrasse kommunal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-eskom"><span class="std std-ref">5630</span></a></p></td>
+<td><p>Erschliessungsstrasse kommunal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-fwef"><span class="std std-ref">Flurweg mit Erschliessungsfunktion</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-fwef"><span class="std std-ref">5640</span></a></p></td>
+<td><p>Flurweg mit Erschliessungsfunktion</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-fwes"><span class="std std-ref">Flurweg ohne Erschliessungsfunktion</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-fwes"><span class="std std-ref">5650</span></a></p></td>
+<td><p>Flurweg ohne Erschliessungsfunktion</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-hw2"><span class="std std-ref">hinweisend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-pes"><span class="std std-ref">private Erschliessungsstrasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-pes"><span class="std std-ref">5660</span></a></p></td>
+<td><p>private Erschliessungsstrasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-us"><span class="std std-ref">unklassierte Strasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-us"><span class="std std-ref">5670</span></a></p></td>
+<td><p>unklassierte Strasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-sb"><span class="std std-ref">Strassenbankett, Verkehrsinsel</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-sb"><span class="std std-ref">5680</span></a></p></td>
+<td><p>Strassenbankett, Verkehrsinsel</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p><a class="reference internal" href="#ref-uevf"><span class="std std-ref">übrige Verkehrsflächen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-szo"><span class="std std-ref">5691</span></a></p></td>
+<td><p>Sichtzone</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-uevf"><span class="std std-ref">5692-5699</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="6"><p>Langsam-verkehrsflächen</p></td>
+<td><p><a class="reference internal" href="#ref-gw"><span class="std std-ref">Gehweg, Trottoir</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gw"><span class="std std-ref">5700</span></a></p></td>
+<td><p>Gehweg, Trottoir</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-fw"><span class="std std-ref">Fussweg</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-fw"><span class="std std-ref">5710</span></a></p></td>
+<td><p>Fussweg</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-rw"><span class="std std-ref">Radweg</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rw"><span class="std std-ref">5720</span></a></p></td>
+<td><p>Radweg</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-frw"><span class="std std-ref">Fuss- und Radweg</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-frw"><span class="std std-ref">5730</span></a></p></td>
+<td><p>Fuss- und Radweg</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-gsr"><span class="std std-ref">Grünstreifen, Rabatte</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gsr"><span class="std std-ref">5740</span></a></p></td>
+<td><p>Grünstreifen, Rabatte</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-ueflv"><span class="std std-ref">übrige Flächen Langsamverkehr</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-ueflv"><span class="std std-ref">5791-5799</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="7"><p>nationale und kantonale Baulinien</p></td>
+<td><p><a class="reference internal" href="#ref-nbl"><span class="std std-ref">nationale Baulinie</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-nbl"><span class="std std-ref">7101-7109</span></a></p></td>
+<td><p>vom Kanton zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-blskt"><span class="std std-ref">Baulinie Strasse kantonal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-blskt"><span class="std std-ref">7110</span></a></p></td>
+<td><p>Baulinie Strasse kantonal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-vblkt"><span class="std std-ref">Vorbaulinie kantonal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vblkt"><span class="std std-ref">7120</span></a></p></td>
+<td><p>Vorbaulinie kantonal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-gblkt"><span class="std std-ref">Gestaltungsbaulinie kantonal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gblkt"><span class="std std-ref">7130</span></a></p></td>
+<td><p>Gestaltungsbaulinie kantonal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-rwblkt"><span class="std std-ref">Rückwärtige Baulinie kantonal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rwblkt"><span class="std std-ref">7140</span></a></p></td>
+<td><p>Rückwärtige Baulinie kantonal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-blikt"><span class="std std-ref">Baulinie Infrastruktur kantonal</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-blikt"><span class="std std-ref">7150</span></a></p></td>
+<td><p>Baulinie Infrastruktur kantonal</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wnktbl"><span class="std std-ref">weitere nationale und kantonale Baulinien</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wnktbl"><span class="std std-ref">7191-7199</span></a></p></td>
+<td><p>vom Kanton zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-ori2"><span class="std std-ref">orientierend</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-x1"><span class="std std-ref">1</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="10"><p>kommunale Baulinien</p></td>
+<td><p><a class="reference internal" href="#ref-bls"><span class="std std-ref">Baulinie Strasse</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-bls"><span class="std std-ref">7200</span></a></p></td>
+<td><p>Baulinie Strasse</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-vbl"><span class="std std-ref">Vorbaulinie</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-vbl"><span class="std std-ref">7210</span></a></p></td>
+<td><p>Vorbaulinie</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-gbl"><span class="std std-ref">Gestaltungsbaulinie</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-gbl"><span class="std std-ref">7220</span></a></p></td>
+<td><p>Gestaltungsbaulinie</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-rwbl"><span class="std std-ref">Rückwärtige Baulinie</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-rwbl"><span class="std std-ref">7230</span></a></p></td>
+<td><p>Rückwärtige Baulinie</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-bli"><span class="std std-ref">Baulinie Infrastruktur</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-bli"><span class="std std-ref">7240</span></a></p></td>
+<td><p>Baulinie Infrastruktur</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wal"><span class="std std-ref">Waldabstandslinie</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wal"><span class="std std-ref">7250</span></a></p></td>
+<td><p>Waldabstandslinie</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-blh"><span class="std std-ref">Baulinie Hecke</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-blh"><span class="std std-ref">7260</span></a></p></td>
+<td><p>Baulinie Hecke</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-blgw"><span class="std std-ref">Baulinie Gewässer</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-blgw"><span class="std std-ref">7270</span></a></p></td>
+<td><p>Baulinie Gewässer</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ref-is"><span class="std std-ref">Immissionsstreifen</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-is"><span class="std std-ref">7280</span></a></p></td>
+<td><p>Immissionsstreifen</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ref-wkombl"><span class="std std-ref">weitere kommunale Baulinien</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wkombl"><span class="std std-ref">7291-7299</span></a></p></td>
+<td><p>weitere kommunale Baulinien</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2"><span class="std std-ref">Nutzungsplan- festlegung</span></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x3"><span class="std std-ref">3</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>weitere linienbezogene Objekte EP</p></td>
+<td><p><a class="reference internal" href="#ref-wlboep"><span class="std std-ref">weitere linienbezogene Objekte EP</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wlboep"><span class="std std-ref">7891-7899</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x2"><span class="std std-ref">2</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>weitere punktbezogene  Objekte EP</p></td>
+<td><p><a class="reference internal" href="#ref-wpboep"><span class="std std-ref">weitere punktbezogene Objekte EP</span></a></p></td>
+<td><p><a class="reference internal" href="#ref-wpboep"><span class="std std-ref">8891-8899</span></a></p></td>
+<td><p>von der Gemeinde zu vergeben</p></td>
+<td><p><a class="reference internal" href="3nutzungsplanung.html#ref-npf2orie"><span class="std std-ref">Nutzungsplan- festlegung / orientierend</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="#ref-x2"><span class="std std-ref">2</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="ref-4"><span id="ref-x3"></span><span id="ref-x2"></span><span id="ref-x1"></span>1, 13: Datenabgabe / -erhebung Kanton</p>
+<p>2:     Datenabgabe mit Anpassungsauftrag</p>
+<p>3, 13: von der Gemeinde zu erheben</p>
+</div>
+<div class="section" id="beschreibung-grundnutzungen">
+<span id="ref-gn"></span><h2>Beschreibung Grundnutzungen<a class="headerlink" href="#beschreibung-grundnutzungen" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="zuruck-zum-objektkatalog">
+<h3>zurück zum <a class="reference internal" href="#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a><a class="headerlink" href="#zuruck-zum-objektkatalog" title="Link zu dieser Überschrift">¶</a></h3>
+<span class="target" id="ref-wz1"></span><div class="section" id="wohnzone-1-g">
+<span id="index-0"></span><h4>1101-1109 Wohnzone 1 G<a class="headerlink" href="#wohnzone-1-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, max. 1 Vollgeschoss</p>
+</div>
+<div class="section" id="wohnzone-2-g">
+<span id="ref-wz2"></span><h4>1111-1119 Wohnzone 2 G<a class="headerlink" href="#wohnzone-2-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, max. 2 Vollgeschosse</p>
+</div>
+<div class="section" id="wohnzone-3-g">
+<span id="ref-wz3"></span><h4>1121-1129 Wohnzone 3 G<a class="headerlink" href="#wohnzone-3-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, max. 3 Vollgeschosse</p>
+</div>
+<div class="section" id="wohnzone-4-g">
+<span id="ref-wz4"></span><h4>1131-1139 Wohnzone 4 G<a class="headerlink" href="#wohnzone-4-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, max. 4 Vollgeschoss</p>
+</div>
+<div class="section" id="wohnzone-5-g">
+<span id="ref-wz5"></span><h4>1141-1149 Wohnzone 5 G<a class="headerlink" href="#wohnzone-5-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, max. 5 Vollgeschoss</p>
+</div>
+<div class="section" id="wohnzone-6-g">
+<span id="ref-wz6"></span><h4>1151-1159 Wohnzone 6 G<a class="headerlink" href="#wohnzone-6-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, max. 6 Vollgeschoss</p>
+</div>
+<div class="section" id="wohnzone-7-g-und-grosser">
+<span id="ref-wz7"></span><h4>1161-1169 Wohnzone 7 G und grösser<a class="headerlink" href="#wohnzone-7-g-und-grosser" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe, ab 7 Vollgeschoss</p>
+</div>
+<div class="section" id="zone-fur-terrassenhauser-terrassensiedlung">
+<span id="ref-zt"></span><h4>1171-1179 Zone für Terrassenhäuser / Terrassensiedlung<a class="headerlink" href="#zone-fur-terrassenhauser-terrassensiedlung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Wohnbauten und nichtstörende Gewerbe- und Dienstleistungsbetriebe in Terrassenbauweise</p>
+<span class="target" id="ref-gwz"></span></div>
+<div class="section" id="gewerbezonen-ohne-wohnen">
+<span id="index-1"></span><h4>1201-1209 Gewerbezonen ohne Wohnen<a class="headerlink" href="#gewerbezonen-ohne-wohnen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für mässig störende Gewerbebetriebe, nur betriebsnotwendige Wohnungen</p>
+</div>
+<div class="section" id="industriezone">
+<span id="ref-iz"></span><h4>1211-1219 Industriezone<a class="headerlink" href="#industriezone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Industriebetriebe und betriebsnotwendige Wohnungen</p>
+</div>
+<div class="section" id="arbeitszone">
+<span id="ref-az"></span><h4>1221-1229 Arbeitszone<a class="headerlink" href="#arbeitszone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für nicht oder mässig störende Dienstleistungs-, Gewerbe- und Industriebetriebe</p>
+<span class="target" id="ref-wmz"></span></div>
+<div class="section" id="gewerbezone-mit-wohnen-mischzone">
+<span id="index-2"></span><h4>1301-1309 Gewerbezone mit Wohnen / Mischzone<a class="headerlink" href="#gewerbezone-mit-wohnen-mischzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für mässig störende Gewerbebetriebe und Wohnnutzungen, welche über betriebsnotwendige Wohnungen hinausgeht</p>
+</div>
+<div class="section" id="gewerbezone-mit-wohnen-mischzone-2-g">
+<span id="ref-wmz2"></span><h4>1311-1319 Gewerbezone mit Wohnen / Mischzone 2 G<a class="headerlink" href="#gewerbezone-mit-wohnen-mischzone-2-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für mässig störende Gewerbebetriebe und Wohnnutzungen, welche über betriebsnotwendige Wohnungen hinausgeht, max. 2 Vollgeschosse</p>
+</div>
+<div class="section" id="gewerbezone-mit-wohnen-mischzone-3-g">
+<span id="ref-wmz3"></span><h4>1321-1329 Gewerbezone mit Wohnen / Mischzone 3 G<a class="headerlink" href="#gewerbezone-mit-wohnen-mischzone-3-g" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für mässig störende Gewerbebetriebe und Wohnnutzungen, welche über betriebsnotwendige Wohnungen hinausgeht, max. 3 Vollgeschosse</p>
+</div>
+<div class="section" id="gewerbezone-mit-wohnen-mischzone-4-g-und-grosser">
+<span id="ref-wmz4"></span><h4>1331-1339 Gewerbezone mit Wohnen / Mischzone 4 G und grösser<a class="headerlink" href="#gewerbezone-mit-wohnen-mischzone-4-g-und-grosser" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für mässig störende Gewerbebetriebe und Wohnnutzungen, welche über betriebsnotwendige Wohnungen hinausgeht, ab 4 Vollgeschosse</p>
+</div>
+<div class="section" id="zone-fur-publikumsintensive-anlagen">
+<span id="ref-zpuba"></span><h4>1341-1349 Zone für publikumsintensive Anlagen<a class="headerlink" href="#zone-fur-publikumsintensive-anlagen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für publikumsintensive Anlagen (mehr als 1‘500 Fahrten/Tag)</p>
+<span class="target" id="ref-kz"></span></div>
+<div class="section" id="kernzone">
+<span id="index-3"></span><h4>1401-1409 Kernzone<a class="headerlink" href="#kernzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Ortsteile, die als Zentren bereits bestehen oder als solche neu gebildet werden. Zone für öffentliche Bauten, Geschäfts-, Wohnbauten und teils für nicht störende oder mässig störende Gewerbe- und Dienstleistungsbetriebe.</p>
+</div>
+<div class="section" id="zentrumszone">
+<span id="ref-zz"></span><h4>1411-1419 Zentrumszone<a class="headerlink" href="#zentrumszone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Ortsteile, die als Zentren bereits bestehen oder als solche neu gebildet werden. Zone für öffentliche Bauten, Geschäfts-, Wohnbauten und teils für nicht störende oder mässig störende Gewerbe- und Dienstleistungsbetriebe.</p>
+</div>
+<div class="section" id="erhaltungszone">
+<span id="ref-ez"></span><h4>1421-1429 Erhaltungszone<a class="headerlink" href="#erhaltungszone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für den Erhalt von historisch bedeutender Bausubstanz. U.a. bei  Ortsbildschutzzone, die  als Grundnutzung definiert ist, anzuwenden.</p>
+<span class="target" id="ref-zoeb"></span></div>
+<div class="section" id="zone-fur-offentliche-bauten">
+<span id="index-4"></span><h4>1501-1509 Zone für öffentliche Bauten<a class="headerlink" href="#zone-fur-offentliche-bauten" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für öffentliche oder öffentlichen Zwecken dienenden Bauten</p>
+</div>
+<div class="section" id="zone-fur-offentliche-anlagen">
+<span id="ref-zoea"></span><h4>1511-1519 Zone für öffentliche Anlagen<a class="headerlink" href="#zone-fur-offentliche-anlagen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für öffentliche oder öffentlichen Zwecken Anlagen.</p>
+<span class="target" id="ref-gfz"></span></div>
+<div class="section" id="grun-und-freihaltezone-innerhalb-bauzone">
+<span id="index-5"></span><h4>1601-1609 Grün- und Freihaltezone innerhalb Bauzone<a class="headerlink" href="#grun-und-freihaltezone-innerhalb-bauzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone, welche weitgehend vor einer Überbauung mit Bauten und Anlagen freizuhalten ist und die zur Siedlungsqualität beiträgt.</p>
+</div>
+<div class="section" id="kommunale-uferschutzzone-innerhalb-bauzone">
+<span id="ref-komusz"></span><h4>1611-1619 kommunale Uferschutzzone innerhalb Bauzone<a class="headerlink" href="#kommunale-uferschutzzone-innerhalb-bauzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Kommunale Zone für den Schutz von Ufern innerhalb der Bauzone</p>
+<p>Damit keine Uferschutzexklaven entstehen haben wir folgende Lösung gefunden.
+Die Uferschutzzone welche an eine Bauzone grenzt ist eine kommunale Uferschutzzone innerhalb Bauzone 1611 – 1619. <a class="reference internal" href="#ref-gew"><span class="std std-ref">Gewässer</span></a> sind ausserhalb der Bauzone. Die der Bauzone abgewandten Seite, sind entweder eine der Landwirtschaft überlagerten Fläche <a class="reference internal" href="#ref-ktusz2"><span class="std std-ref">kantonale Uferschutzzone 5270</span></a>, <a class="reference internal" href="#ref-kousz"><span class="std std-ref">kommunale Uferschutzzone ausserhalb der Bauzone 5281-5289</span></a> oder eine <a class="reference internal" href="#ref-wzgu"><span class="std std-ref">weitere Zone für Gewässer und ihre Ufer 3291-3299</span></a>.</p>
+</div>
+<div class="section" id="landwirtschaftliche-kernzone">
+<span id="ref-lwkz"></span><h4>1620 Landwirtschaftliche Kernzone<a class="headerlink" href="#landwirtschaftliche-kernzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone zur Sicherung des Bestandes und der Nutzung der Landwirtschaftsbetriebe im Siedlungsgebiet</p>
+</div>
+<div class="section" id="weilerzone">
+<span id="ref-wz"></span><h4>1631-1639 Weilerzone<a class="headerlink" href="#weilerzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone, welche ein weitgehend überbautes Gebiet von geschlossenen Gebäudegruppen in einer ganzjährig bewohnten Kleinsiedlung umfasst, welche keine nennenswerte Entwicklung aufweist.</p>
+</div>
+<div class="section" id="weitere-eingeschrankte-bauzonen">
+<span id="ref-webz"></span><h4>1691-1699 weitere eingeschränkte Bauzonen<a class="headerlink" href="#weitere-eingeschrankte-bauzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Bauzonen mit gewissen Einschränkungen</p>
+<span class="target" id="ref-zfe"></span></div>
+<div class="section" id="zone-fur-freizeit-und-erholung">
+<span id="index-6"></span><h4>1701-1709 Zone für Freizeit und Erholung<a class="headerlink" href="#zone-fur-freizeit-und-erholung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Bauten und Anlagen für den, Tourismus, die  Freizeit und Erholung</p>
+<span class="target" id="ref-vzs"></span></div>
+<div class="section" id="verkehrszone-strasse-innerhalb-bauzone">
+<span id="index-7"></span><h4>1800 Verkehrszone Strasse (innerhalb Bauzone)<a class="headerlink" href="#verkehrszone-strasse-innerhalb-bauzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>In der Regel die übrig geblieben Fläche in der Bauzone welche keiner anderen Grundnutzung zugewiesen wird.</p>
+<ul class="simple">
+<li><p>Innerhalb der Bauzone sind die Strassen grundsätzlich nach Parzellengrenze der <a class="reference internal" href="2ablaufdererfassung.html#ref-av"><span class="std std-ref">AV - Liegenschaften</span></a> zu erfassen. Folglich kann ein Konflikt zum Grundsatz, dass die rechtsgültige Situation abgebildet werden soll entstehen.</p></li>
+</ul>
+<p>Beispiel Kreisel in Kappel. Hier wird die neue Situation abgebildet. Ein genehmigtes Strassenprojekt ist Voraussetzung dafür, dass die Änderungen in der AV eingespiesen werden. Die Abweichung zum Grundsatz wird in kauf genommen, dafür sind die Pläne aktueller und der Aufwand für eine Ortsplanung oder Revision wird minimiert.</p>
+<p>Die angrenzenden W2 Zonen erhalten die Bemerkung <strong>Abweichung zur rechtsgültigen Situation</strong> (Bemerkung nicht der Strasse anhängen).</p>
+<div class="figure align-center" id="id13">
+<span id="img-1800a"></span><a class="reference internal image-reference" href="_images/1800verkehrszonestrasse.jpg"><img alt="_images/1800verkehrszonestrasse.jpg" src="_images/1800verkehrszonestrasse.jpg" style="width: 850px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Kreisel Kappel: Ist die Nutzungszone an den „neuen“ Kreisel anzupassen? links - rechtskräfitger Bauzonenplan mit angepasster W2 (grün), mitte - <a class="reference external" href="https://geoweb.so.ch/rest/qgis/webgisLauncher.wsgi?uuid=3314616b-06d0-4471-9474-c6246f62a828">AV - schwarz-weiss mit angepasster W2 (grün)</a> , rechts - <a class="reference external" href="https://geoweb.so.ch/rest/qgis/webgisLauncher.wsgi?uuid=26df5463-d771-4726-81fc-f19ec5f1ffb5">Orthophoto mit AV - schwarz-weiss</a> .</span><a class="headerlink" href="#id13" title="Link zu diesem Bild">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><em>Abgrenzung Verkehrsfläche Strasse:</em> Die Bodenbedeckung der amtlichen Vermessung kennt Trottoir und Verkehrsinseln. Gehören sie vorbehaltlos zur Verkehrsfläche Strasse? Bei den Zonencodes 180 und 420 ist keine Differenzierung erforderlich; <strong>Die Unterscheidung erfolgt ausschliesslich über die</strong> <a class="reference internal" href="3nutzungsplanung.html#ref-erschliessung"><span class="std std-ref">Erschliessungsplanung</span></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="verkehrszone-bahnareal">
+<span id="ref-vzb"></span><h4>1810 Verkehrszone Bahnareal<a class="headerlink" href="#verkehrszone-bahnareal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone, welche die Verkehrsflächen des Bahnareals umfasst</p>
+</div>
+<div class="section" id="verkehrszone-flugplatzareal-innerhalb-bauzone">
+<span id="ref-vzf"></span><h4>1820 Verkehrszone Flugplatzareal (innerhalb Bauzone)<a class="headerlink" href="#verkehrszone-flugplatzareal-innerhalb-bauzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone, welche die Verkehrsflächen des Flugplatzareals innerhalb der Bauzone umfasst</p>
+</div>
+<div class="section" id="weitere-verkehrszonen-innerhalb-bauzone">
+<span id="ref-wzv"></span><h4>1891-1899 weitere Verkehrszonen (innerhalb Bauzone)<a class="headerlink" href="#weitere-verkehrszonen-innerhalb-bauzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone, welche weitere Verkehrsflächen innerhalb der Bauzone umfasst</p>
+<span class="target" id="ref-sz"></span></div>
+<div class="section" id="spezialzonen">
+<span id="index-8"></span><h4>1901-1909 Spezialzonen<a class="headerlink" href="#spezialzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere Bauzonen für Nutzungen mit speziellen Vorschriften, welche keiner gängigen Zonenart zugeordnet werden können. Ist zurückhaltend anzuwenden.</p>
+<span class="target" id="ref-lwz"></span></div>
+<div class="section" id="landwirtschaftszone">
+<span id="index-9"></span><h4>2100 Landwirtschaftszone<a class="headerlink" href="#landwirtschaftszone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für die landwirtschaftliche Nutzung oder den produzierenden Gartenbau ausserhalb des Siedlungsgebietes</p>
+<ul class="simple">
+<li><p>Abgrenzung Gewässer: siehe <a class="reference internal" href="#ref-gew"><span class="std std-ref">Gewässer</span></a></p></li>
+<li><p>Abgrenzung Verkehrsflächen: siehe <a class="reference internal" href="#ref-vfs"><span class="std std-ref">Verkehrsflächen</span></a></p></li>
+<li><p>Abgrenzung Wald: siehe <a class="reference internal" href="#ref-wald"><span class="std std-ref">Wald</span></a></p></li>
+</ul>
+<span class="target" id="ref-slwz"></span></div>
+<div class="section" id="spezielle-landwirtschaftszonen">
+<span id="index-10"></span><h4>2201-2209 Spezielle Landwirtschaftszonen<a class="headerlink" href="#spezielle-landwirtschaftszonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone in der nebst der landwirtschaftlichen Nutzungen oder dem produzierenden Gartenbau auch Bauten und Anlagen zulässig sind, welche über die innere Aufstockung hinausgehen und der boden-unabhängigen Produktion von verwertbaren Erzeugnissen aus Tierhaltung und Pflanzenbau dienen.</p>
+<span class="target" id="ref-rbz"></span></div>
+<div class="section" id="rebbauzonen">
+<span id="index-11"></span><h4>2301-2309 Rebbauzonen<a class="headerlink" href="#rebbauzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für den Rebbau</p>
+<span class="target" id="ref-wlwz"></span></div>
+<div class="section" id="weitere-landwirtschaftszonen">
+<span id="index-12"></span><h4>2901-2909 weitere Landwirtschaftszonen<a class="headerlink" href="#weitere-landwirtschaftszonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere Zonen für die landwirtschaftliche Nutzung oder den produzierenden Gartenbau ausserhalb des Siedlung</p>
+<span class="target" id="ref-knsz"></span></div>
+<div class="section" id="kommunale-naturschutzzone">
+<span id="index-13"></span><h4>3101-3109 kommunale Naturschutzzone<a class="headerlink" href="#kommunale-naturschutzzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone von kommunaler Bedeutung zum Schutz von Naturobjekten und ihrer Umgebung oder Gebieten von besonderer Bedeutung</p>
+<span class="target" id="ref-wrsz"></span></div>
+<div class="section" id="waldrandschutzzone">
+<span id="index-14"></span><h4>3111-3119 Waldrandschutzzone<a class="headerlink" href="#waldrandschutzzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone zum Schutz des Waldes vor Beeinträchtigung durch Bauten und bauliche Anlagen oder zum Schutz derer durch Beeinträchtigung durch den Wald.</p>
+<ul class="simple">
+<li><p>Massgebend für die Abgrenzung zwischen <a class="reference internal" href="#ref-wald"><span class="std std-ref">Wald</span></a> und Waldrandschutzzone ist der <strong>Waldfestlegungsplan</strong> und die dort festgehaltene Waldgrenze.</p></li>
+</ul>
+</div>
+<div class="section" id="weitere-schutzzonen-fur-lebensraume-und-landschaften">
+<span id="ref-wszll"></span><h4>3191-3199 weitere Schutzzonen für Lebensräume und Landschaften<a class="headerlink" href="#weitere-schutzzonen-fur-lebensraume-und-landschaften" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für den Schutz weiterer Lebensräume und Landschaften</p>
+<span class="target" id="ref-gew"></span></div>
+<div class="section" id="gewasser">
+<span id="index-15"></span><h4>3200 Gewässer<a class="headerlink" href="#gewasser" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Fliessendes oder stehendes Gewässer gemäss amtlicher Vermessung</p>
+<ul class="simple">
+<li><p>In  der <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> als Fläche ausgeschiedene Gewässer sind immer zu erfassen. Linienförmige Gewässer der <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> hingegen nicht. Folglich wird es meist andere Gewässerverläufe geben als im rechtsgültigen Plan (keine Bemerkung, ist bei allen Gewässern so). Die Uferschutzzonen (<a class="reference internal" href="#ref-komusz"><span class="std std-ref">161</span></a>, <a class="reference internal" href="#ref-wzgu"><span class="std std-ref">329</span></a>, <a class="reference internal" href="#ref-ktusz2"><span class="std std-ref">527</span></a> oder <a class="reference internal" href="#ref-kousz"><span class="std std-ref">528</span></a>) beiben in ihrem ursprünglichen Ausmass bestehen (Abgrenzung zu Siedlungsbereich, Landwirtschaft oder Wald bleibt gleich; Abgrenzung Gewässer- Uferschutzzone wird abweichend zum rechtgültigen Plan sein).</p></li>
+</ul>
+<div class="figure align-center" id="id14">
+<span id="img-320"></span><a class="reference internal image-reference" href="_images/320gewaesser.png"><img alt="_images/320gewaesser.png" src="_images/320gewaesser.png" style="width: 850px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Büsserach, Gewässer anpassen:  links - rechtskräfitger Bauzonenplan mit <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> (schwarz), rechts - Gewässer digitalisiert (grün)</span><a class="headerlink" href="#id14" title="Link zu diesem Bild">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Wenn es der rechtsgültige Plan vorgibt, werden <a class="reference internal" href="#ref-egew"><span class="std std-ref">eingedolte Gewässer</span></a> als weitere linienbezogene Festlegungen NP erfasst (siehe <a class="reference internal" href="#ref-egew"><span class="std std-ref">7991 eingedolte Gewässer</span></a>). Falls eingedolte Gewässer auf den Plänen nicht erfasst sind, aber auf der <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> ausgewiesen werden so ist die Erfassung fakultativ. Eingedolte Gewässer werden über die <a class="reference internal" href="2ablaufdererfassung.html#ref-av-wms"><span class="std std-ref">AV - WMS schwarz-weiss</span></a> in der Webkarte als orientierende Inhalte eingeblentet.</p></li>
+</ul>
+</div>
+<div class="section" id="weitere-zonen-fur-gewasser-und-ihre-ufer">
+<span id="ref-wzgu"></span><h4>3291-3299 weitere Zonen für Gewässer und ihre Ufer<a class="headerlink" href="#weitere-zonen-fur-gewasser-und-ihre-ufer" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere Zonen für Gewässer und ihre Ufer</p>
+<span class="target" id="ref-wszab"></span></div>
+<div class="section" id="weitere-schutzzonen-ausserhalb-bauzonen">
+<span id="index-16"></span><h4>3901-3909 weitere Schutzzonen ausserhalb Bauzonen<a class="headerlink" href="#weitere-schutzzonen-ausserhalb-bauzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere Zonen zum Schutz von bestimmten Objekten und ihrer Umgebung oder Gebieten von besonderer Bedeutung ausserhalb der Bauzone</p>
+<span class="target" id="ref-vfs"></span></div>
+<div class="section" id="verkehrsflache-strasse">
+<span id="index-17"></span><h4>4200 Verkehrsfläche Strasse<a class="headerlink" href="#verkehrsflache-strasse" title="Link zu dieser Überschrift">¶</a></h4>
+<ul class="simple">
+<li><p>Ausserhalb der Bauzone sollen nur die vom <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Liegenschaften</span></a> abgebildeten Strassen müssen erfasst werden. Diese werden über den Hintergrundlayer <a class="reference internal" href="2ablaufdererfassung.html#ref-av-wms"><span class="std std-ref">AV - WMS schwarz - weiss</span></a> eingeblendet. Bei grösseren Abweichungen wird aus der <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Bodenbedeckung</span></a> die genaue Abgrenzung übernommen.</p></li>
+</ul>
+<p><strong>Fall 1</strong>: bestehende Erschliessung in <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Liegenschaften</span></a> nicht ausgeschieden, in <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> jedoch als Weg markiert.
+Weg wird nicht erfasst, jedoch über die Hintergrundkarte im WebGIS eingeblendet. Im Zweifelsfall an den Gesamtplan halten</p>
+<p><strong>Fall 2a</strong>: noch nicht ausgeführte Erschliessung muss erfasst werden wenn es im Gesamtplan ausgewiesen wurde (für das Beispiel Seusethof bei Selzach gilt 2a).</p>
+<p><strong>Fall 2b</strong>: noch nicht ausgeführte Erschliessung muss nicht erfasst werden wenn es im Gesamtplan nicht ausgewiesen wurde.</p>
+<p><strong>Fall 3</strong>: grössere Abweichung von der <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Liegenschaften</span></a> von der aktuellen Situation. In diesem Fall die <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> verwenden.</p>
+<div class="figure align-center" id="id15">
+<span id="img-1800b"></span><a class="reference internal image-reference" href="_images/1800parzelliert.png"><img alt="_images/1800parzelliert.png" src="_images/1800parzelliert.png" style="width: 850px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Seusethof  bei Selzach: <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Liegenschaften</span></a> (magenta), <a class="reference internal" href="2ablaufdererfassung.html#ref-av-b"><span class="std std-ref">AV - Bodenbedeckung</span></a> (farbig mit schwarzen Linien).</span><a class="headerlink" href="#id15" title="Link zu diesem Bild">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><em>Abgrenzung Verkehrsfläche Strasse:</em> Die Bodenbedeckung der amtlichen Vermessung kennt Trottoir und Verkehrsinseln. Bei den Zonencodes 180 und 420 ist keine Differenzierung erforderlich; Die Unterscheidung erfolgt ausschliesslich über die <a class="reference internal" href="3nutzungsplanung.html#ref-erschliessung"><span class="std std-ref">Erschliessungsplanung</span></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="verkehrsflache-bahnareal">
+<span id="ref-vfb"></span><h4>4210 Verkehrsfläche Bahnareal<a class="headerlink" href="#verkehrsflache-bahnareal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Verkehrsfläche des Bahnareals, die keiner Zone zugewiesen sind</p>
+</div>
+<div class="section" id="verkehrsflache-flugplatzareal">
+<span id="ref-vff"></span><h4>4220 Verkehrsfläche Flugplatzareal<a class="headerlink" href="#verkehrsflache-flugplatzareal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Verkehrsfläche des Flugplatzareals, die keiner Zone zugewiesen sind</p>
+</div>
+<div class="section" id="weitere-verkehrsflachen">
+<span id="ref-wvf"></span><h4>4291-4299 weitere Verkehrsflächen<a class="headerlink" href="#weitere-verkehrsflachen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere Verkehrsflächen, die keiner Zone zugewiesen sind</p>
+<span class="target" id="ref-rzw"></span></div>
+<div class="section" id="reservezone-wohnzone-mischzone-kernzone-und-zentrumszone">
+<span id="index-18"></span><h4>4300 Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone<a class="headerlink" href="#reservezone-wohnzone-mischzone-kernzone-und-zentrumszone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Land, das aus siedlungspolitischen Gründen für eine spätere Überbauung in Frage kommt, wobei die voraussichtliche Nutzung Wohnen / Misch- / Kern- Zentrumszone sein wird</p>
+</div>
+<div class="section" id="reservezone-arbeiten">
+<span id="ref-rza"></span><h4>4310 Reservezone Arbeiten<a class="headerlink" href="#reservezone-arbeiten" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Land, das aus siedlungspolitischen Gründen für eine spätere Überbauung in Frage kommt, wobei die voraussichtliche Nutzung Gewerbe/Industrie/Arbeiten sein wird</p>
+</div>
+<div class="section" id="reservezone-oeba">
+<span id="ref-rzoeb"></span><h4>4320 Reservezone OeBA<a class="headerlink" href="#reservezone-oeba" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Land, das aus siedlungspolitischen Gründen für eine spätere Überbauung in Frage kommt, wobei die voraussichtliche Nutzung öffentliche Bauten und Anlagen sein wird</p>
+</div>
+<div class="section" id="reservezone">
+<span id="ref-rz"></span><h4>4391-4399 Reservezone<a class="headerlink" href="#reservezone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Land, das aus siedlungspolitischen Gründen für eine spätere Überbauung in Frage kommt</p>
+<span class="target" id="ref-wald"></span></div>
+<div class="section" id="wald">
+<span id="index-19"></span><h4>4400 Wald<a class="headerlink" href="#wald" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Wald; innerhalb Bauzone gemäss Waldfeststellung, ausserhalb Bauzone gemäss amtlicher Vermessung</p>
+<p>Ausserhalb der Bauzone gilt der dynamische Waldbegriff, dort wo eine Waldfeststellung vorhanden ist, der statische. Es ist deshalb davon auszugehen, dass ausserhalb Bauzone die <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Liegenschaften</span></a> bezüglich Wald aktueller ist als der Gesamtplan der Gemeinde. Bei der Digitalisierung ist deshalb grundsätzlich und mit Ausnahme von Bereichen mit Waldfeststellung die <a class="reference internal" href="2ablaufdererfassung.html#ref-av-l"><span class="std std-ref">AV - Liegenschaften</span></a> zu berücksichtigen. Auf die Standartbemerkung wird verzichtet.</p>
+<ul class="simple">
+<li><p>Abgrenzung Gewässer: siehe <a class="reference internal" href="#ref-gew"><span class="std std-ref">Gewässer</span></a></p></li>
+<li><p>Abgrenzung Verkehrsflächen: siehe <a class="reference internal" href="#ref-vfs"><span class="std std-ref">Verkehrsflächen</span></a></p></li>
+</ul>
+<span class="target" id="ref-gz"></span></div>
+<div class="section" id="golfzone">
+<span id="index-20"></span><h4>4901-4919 Golfzone<a class="headerlink" href="#golfzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Golfanlagen</p>
+<p>Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.</p>
+</div>
+<div class="section" id="abbauzone">
+<span id="ref-abz"></span><h4>4911-4919 Abbauzone<a class="headerlink" href="#abbauzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Abbaugebiete</p>
+<p>Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.</p>
+</div>
+<div class="section" id="deponiezone">
+<span id="ref-dz"></span><h4>4921-4929 Deponiezone<a class="headerlink" href="#deponiezone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone für Deponien</p>
+<p>Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.</p>
+</div>
+<div class="section" id="weitere-bauzonen-nach-art-18-rpg-ausserhalb-bauzonen">
+<span id="ref-wbz"></span><h4>4991-4999 weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen<a class="headerlink" href="#weitere-bauzonen-nach-art-18-rpg-ausserhalb-bauzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere Bauzonen nach Art. 18 Abs. 1 RPG ausserhalb Bauzonen</p>
+<p>Oft an die zeitliche Dauer der bezeichneten Nutzung gekoppelt, mit Rückführung in die Landwirtschaftszone oder Wald nach Abschluss / Wegfall der Sondernutzung.</p>
+</div>
+</div>
+</div>
+<div class="section" id="beschreibung-uberlagernde-festlegungen">
+<span id="ref-ueb"></span><h2>Beschreibung überlagernde Festlegungen<a class="headerlink" href="#beschreibung-uberlagernde-festlegungen" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="id1">
+<h3>zurück zum <a class="reference internal" href="#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a><a class="headerlink" href="#id1" title="Link zu dieser Überschrift">¶</a></h3>
+<span class="target" id="ref-ueobsz"></span><div class="section" id="uberlagernde-ortsbildschutzzone">
+<span id="index-21"></span><h4>5101-5109 überlagernde Ortsbildschutzzone<a class="headerlink" href="#uberlagernde-ortsbildschutzzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Überlagernd Zone zum Schutz, Erhalt oder Aufwertung historisch wertvoller Ortsbilder, -teile und Areale und deren Umgebung.</p>
+<p>In einzelnen Gemeinden ist die Ortsbildschutzzone als Grundnutzung definiert. In diesen Fällen ist sie der <a class="reference internal" href="#ref-ez"><span class="std std-ref">Erhaltungszone</span></a> zuzuweisen.</p>
+<span class="target" id="ref-bln"></span></div>
+<div class="section" id="bln-gebiet">
+<span id="index-22"></span><h4>5200 BLN Gebiet<a class="headerlink" href="#bln-gebiet" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Landschaften, die entweder schweizweit einzigartig sind, einen charakteristischen Landschaftstyp vertreten oder aufgrund ihrer Ruhe, Ungestörtheit oder ausserordentlichen Schönheit eine besondere Attraktivität aufweisen.</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+<li><p>aneinandergrenzende BLN-Gebiete dürfen nicht verschmolzen werden. Betrifft die Gemeinden Wisen und Kienberg.</p></li>
+</ul>
+</div>
+<div class="section" id="juraschutzzone">
+<span id="ref-jsz"></span><h4>5210 Juraschutzzone<a class="headerlink" href="#juraschutzzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>überlagernde Zone zum Schutze von Gebieten von besonderer Schönheit und Eigenart</p>
+</div>
+<div class="section" id="naturreservat-inkl-geotope">
+<span id="ref-nr"></span><h4>5220 Naturreservat inkl. Geotope<a class="headerlink" href="#naturreservat-inkl-geotope" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit Schutzverfügungen oder Nutzungsplänen geschützte Gebiete oder Objekte zur Erhaltung und Aufwertung von Lebensräumen (Biotope), Landschaftsformen sowie erdgeschichtlicher Zeugnisse (Geotope)</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="landschaftsschutzzone">
+<span id="ref-lsz"></span><h4>5231-5239 Landschaftsschutzzone<a class="headerlink" href="#landschaftsschutzzone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Überlagernde Zone zur Erhaltung und Aufwertung von unverbauten Landschaften, Gebiete von besonderer Schöneheit und empfindlichen Landschaftskammern</p>
+</div>
+<div class="section" id="siedlungstrenngurtel-von-kommunaler-bedeutung">
+<span id="ref-stgkom"></span><h4>5240 Siedlungstrenngürtel von kommunaler Bedeutung<a class="headerlink" href="#siedlungstrenngurtel-von-kommunaler-bedeutung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Überlagernde kommunale Zone zur langfristigen Sicherung zusammenhängender Landschaftsräume und zur Verhinderung des Zusammenwachsens von Siedlungen oder deren Ausdehnung in charakteristischen unverbauten Landschaftskammern</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="siedlungstrenngurtel-von-kantonaler-bedeutung">
+<span id="ref-stgkt"></span><h4>5250 Siedlungstrenngürtel von kantonaler Bedeutung<a class="headerlink" href="#siedlungstrenngurtel-von-kantonaler-bedeutung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Überlagernde kantonale Zone zur langfristigen Sicherung grösserer zusammenhängender Landschaftsräume und zur Verhinderung des Zusammenwachsens von Siedlungen oder deren Ausdehnung in charakteristischen unverbauten Landschaftskammern</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="kantonale-landwirtschafts-und-schutzzone-witi">
+<span id="ref-witi"></span><h4>5260 kantonale Landwirtschafts- und Schutzzone Witi<a class="headerlink" href="#kantonale-landwirtschafts-und-schutzzone-witi" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone von kantonaler Bedeutung für die landwirtschaftliche Nutzung und gleichzeitigen Schutz des Gebietes Witi zwischen Grenchen und Solothurn</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+<span class="target" id="ref-ktusz2"></span></div>
+<div class="section" id="kantonale-uferschutzzone">
+<span id="index-23"></span><h4>5270 kantonale Uferschutzzone<a class="headerlink" href="#kantonale-uferschutzzone" title="Link zu dieser Überschrift">¶</a></h4>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+<li><p><em>Abgrenzung Uferschutzzone:</em> bsp. die Uferschutzzone ist 10 m parallel zum <a class="reference internal" href="#ref-gew"><span class="std std-ref">Gewässer</span></a> definiert. Der 10 m breite Streifen überlagert die <a class="reference internal" href="#ref-vfs"><span class="std std-ref">Verkehrsfläche Strasse</span></a>. <strong>Priorität liegt bei der Strassenfläche</strong>.</p></li>
+</ul>
+</div>
+<div class="section" id="kommunale-uferschutzzone-ausserhalb-bauzonen">
+<span id="ref-kousz"></span><h4>5281-5289 kommunale Uferschutzzone ausserhalb Bauzonen<a class="headerlink" href="#kommunale-uferschutzzone-ausserhalb-bauzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<ul class="simple">
+<li><p><em>Abgrenzung Uferschutzzone:</em> bsp. die Uferschutzzone ist 10 m parallel zum <a class="reference internal" href="#ref-gew"><span class="std std-ref">Gewässer</span></a> definiert. Der 10 m breite Streifen überlagert die <a class="reference internal" href="#ref-vfs"><span class="std std-ref">Verkehrsfläche Strasse</span></a>. <strong>Priorität liegt bei der Strassenfläche</strong>.</p></li>
+<li><p><em>Rechtsgültige Situation aus dem Gesamtplan übernehmen</em> auch wenn in der <a class="reference internal" href="2ablaufdererfassung.html#ref-av"><span class="std std-ref">AV</span></a> kein Gewässer ausgeschieden ist (weder BB Gewässer noch EO eingedoltes Gewässer).</p></li>
+</ul>
+</div>
+<div class="section" id="ref-wszll2">
+<span id="id2"></span><h4>5291-5299 weitere Schutzzonen für Lebensräume und Landschaften<a class="headerlink" href="#ref-wszll2" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere Zonen zum Schutz von bestimmten Objekten und ihrer Umgebung oder Gebieten von besonderer Bedeutung ausserhalb der Bauzone</p>
+<span class="target" id="ref-ng1"></span></div>
+<div class="section" id="naturgefahren-erhebliche-gefahrdung">
+<span id="index-24"></span><h4>5300 Naturgefahren erhebliche Gefährdung<a class="headerlink" href="#naturgefahren-erhebliche-gefahrdung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser / Steinschlag erheblich bedroht sind (Verbotsbereich)</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="naturgefahren-mittlere-gefahrdung">
+<span id="ref-ng2"></span><h4>5310 Naturgefahren mittlere Gefährdung<a class="headerlink" href="#naturgefahren-mittlere-gefahrdung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser / Steinschlag bedroht sind (Gebotsbereich)</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="naturgefahren-geringe-gefahrdung">
+<span id="ref-ng3"></span><h4>5320 Naturgefahren geringe Gefährdung<a class="headerlink" href="#naturgefahren-geringe-gefahrdung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser  / Steinschlag bedroht sind (Hinweisbereich)</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="naturgefahren-restgefahrdung">
+<span id="ref-ng4"></span><h4>5330 Naturgefahren Restgefährdung<a class="headerlink" href="#naturgefahren-restgefahrdung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete, welche - basierend auf der Gefahrenkarte - durch Rutsch / Wasser  / Steinschlag bedroht sind (Hinweisbereich)</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+<span class="target" id="ref-hsz"></span></div>
+<div class="section" id="hofstattzone-freihaltezone">
+<span id="index-25"></span><h4>5901-5909 Hofstattzone / Freihaltezone<a class="headerlink" href="#hofstattzone-freihaltezone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone, welche weitgehend vor einer Überbauung mit Bauten und Anlagen freizuhalten ist und die zur Siedlungsqualität beiträgt.</p>
+</div>
+<div class="section" id="bauliche-einschrankungen">
+<span id="ref-be"></span><h4>5911-5919 Bauliche Einschränkungen<a class="headerlink" href="#bauliche-einschrankungen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zone mit baulicher Einschränkung</p>
+</div>
+<div class="section" id="hecken-feldgeholz-ufergeholz">
+<span id="ref-hfu"></span><h4>5921-5929 Hecken, Feldgehölz, Ufergehölz<a class="headerlink" href="#hecken-feldgeholz-ufergeholz" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Hecke nach Heckenrichtlinie, Feldgehölz nach Natur- und Heimatschutzverordnung</p>
+<p>Hecken, Feldgehölze, Ufergehölz ist eine überlagerte Ebene; Die Abgrenzung von Wald, Feldgehölzen (Definition siehe <a class="reference external" href="https://bgs.so.ch/frontend/versions/3309">§ 7 der kantonalen Waldverordnung</a> ) und Hecken ist Sache der Ortsplanung.</p>
+<p>Hecken</p>
+<ul class="simple">
+<li><p>Der Code 5921 ist für Hecken frei zu halten.</p></li>
+</ul>
+<p>Feldgehölz</p>
+<ul class="simple">
+<li><p>Der Code 5922 ist für Feldgehölze frei zu halten.</p></li>
+<li><p>Feldgehölze sind bei der Ersterfassung  als <a class="reference internal" href="#ref-wald"><span class="std std-ref">Wald</span></a> zu erfassen. Dies, weil Feldgehölze rechtlich dem <a class="reference internal" href="#ref-wald"><span class="std std-ref">Wald</span></a> gleichgestellt sind und somit eine Grundnutzung darstellen.</p></li>
+<li><p>Feldgehölze sind in der Ortsplanung doppelt zu erfassen: in der Grundnutzung als <a class="reference internal" href="#ref-wald"><span class="std std-ref">Wald</span></a> und in der überlagerten Nutzung als Feldgehölz mit dem kommunalen Code 5922.</p></li>
+</ul>
+<p>Ufergehölz</p>
+<ul class="simple">
+<li><p>«Ufergehölz» ist ein rechtlich nicht definierter Begriff. Ufergehölze sind rechtlich dem Wald, den Feldgehölzen oder den Hecken zuzuordnen. Ufervegetation im Sinne von <a class="reference external" href="https://www.admin.ch/opc/de/classified-compilation/19910005/index.html#a21a">Art. 21 / 22 der eidg. Natur- und heimatschutzverordnung</a> respektive <a class="reference external" href="https://bgs.so.ch/frontend/versions/3270">§ 32 Gesetz über Wasser, Boden und Abfall</a> ist keine eigene Flächenkategorie im Objektkatalog.</p></li>
+</ul>
+</div>
+<div class="section" id="grundwasserschutzzone-s1">
+<span id="ref-gwsz1"></span><h4>5930 Grundwasserschutzzone S1<a class="headerlink" href="#grundwasserschutzzone-s1" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Die Zone S1 dient dem Schutz der Fassungsanlagen sowie deren unmittelbaren Umgebung, ferner - bei stark heterogenen Karst- und Kluft-Grundwasserleitern - dem Schutz der unmittelbaren Umgebung geologischer Strukturen, bei denen Oberflächenwasser konzentriert in den Untergrund gelangt (Schluckstellen).</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="grundwasserschutzzone-s2">
+<span id="ref-gwsz2"></span><h4>5940 Grundwasserschutzzone S2<a class="headerlink" href="#grundwasserschutzzone-s2" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Die Zone S2 soll verhindern, dass Krankheitserreger sowie Stoffe, die Wasser verunreinigen können, in solchen Mengen in die Fassungsanlagen gelangen, dass sie die Trinkwassernutzung gefährden, ferner soll der Grundwasserzufluss durch unterirdische Anlagen nicht behindert werden.</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="grundwasserschutzzone-s3">
+<span id="ref-gwsz3"></span><h4>5950 Grundwasserschutzzone S3<a class="headerlink" href="#grundwasserschutzzone-s3" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Die Zone S3 (weitere Schutzzone) dient als Pufferzone um die Zone S2. Sie gewährleistet den Schutz vor Anlagen und Tätigkeiten, die ein besonderes Risiko für das Grundwasser darstellen und soll ermöglichen, dass bei unmittelbar drohender Gefahr (z. B. Unfall mit Gefahrengut) für die erforderlichen Interventions- oder Sanierungsmassnahmen genügend Zeit und Raum zur Verfügung stehen.</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="grundwasserschutzareal">
+<span id="ref-gwsa"></span><h4>5960 Grundwasserschutzareal<a class="headerlink" href="#grundwasserschutzareal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Grundwasserschutzareale sind Gebiete, welche im Hinblick auf eine künftige Grundwassernutzung zu Trinkwasserzwecken freigehalten und wo der Schutz des Grundwassers vorsorglich sichergestellt wird. In diesen Arealen dürfen keine Bauten und Anlagen erstellt werden, welche die künftige Grundwassernutzung beeinträchtigen können.</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+<span class="target" id="ref-gwsh"></span><span class="target" id="ref-gwsm"></span></div>
+<div class="section" id="weitere-uberlagernde-nutzungszonen">
+<span id="ref-wuenz"></span><h4>5991-5999 weitere überlagernde Nutzungszonen<a class="headerlink" href="#weitere-uberlagernde-nutzungszonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere überlagernde Nutzungszonen</p>
+<span class="target" id="ref-pknp"></span></div>
+<div class="section" id="perimeter-kantonaler-nutzungsplan">
+<span id="index-26"></span><h4>6100 Perimeter kantonaler Nutzungsplan<a class="headerlink" href="#perimeter-kantonaler-nutzungsplan" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiet, in dem ein kantonaler Nutzungsplan rechtsgültig ist.</p>
+</div>
+<div class="section" id="perimeter-kommunaler-gestaltungsplan">
+<span id="ref-pkgp"></span><h4>6110 Perimeter kommunaler Gestaltungsplan<a class="headerlink" href="#perimeter-kommunaler-gestaltungsplan" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiet, in dem ein kommunaler Nutzungsplan rechtsgültig ist.</p>
+<span class="target" id="ref-pgpp"></span></div>
+<div class="section" id="perimeter-gestaltungsplanpflicht">
+<span id="index-27"></span><h4>6200 Perimeter Gestaltungsplanpflicht<a class="headerlink" href="#perimeter-gestaltungsplanpflicht" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiet, für dessen Bebauung ein Gestaltungsplan erstellt und vom Regierungsrat genehmigt werden muss</p>
+<span class="target" id="ref-es1"></span></div>
+<div class="section" id="empfindlichkeitsstufe-i">
+<span id="index-28"></span><h4>6800 Empfindlichkeitsstufe I<a class="headerlink" href="#empfindlichkeitsstufe-i" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete mit Lärmempfindlichkeitsstufe I (nicht störende Nutzungen)</p>
+<ul class="simple">
+<li><p>Verkehrsflächen besitzen keine Lärmempfindlichkeitsstufen, weder innerhalb, noch ausserhalb des Baugebietes</p></li>
+</ul>
+</div>
+<div class="section" id="empfindlichkeitsstufe-ii">
+<span id="ref-es2"></span><h4>6810 Empfindlichkeitsstufe II<a class="headerlink" href="#empfindlichkeitsstufe-ii" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete mit Lärmempfindlichkeitsstufe II (nicht störende Nutzungen)</p>
+</div>
+<div class="section" id="empfindlichkeitsstufe-ii-aufgestuft">
+<span id="id3"></span><h4>6820 Empfindlichkeitsstufe II aufgestuft<a class="headerlink" href="#empfindlichkeitsstufe-ii-aufgestuft" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete mit Lärmempfindlichkeitsstufe II (nicht störende Nutzungen), welche um eine Empfindlichkeitsstufe angehoben werden</p>
+</div>
+<div class="section" id="empfindlichkeitsstufe-iii">
+<span id="ref-es3"></span><h4>6830 Empfindlichkeitsstufe III<a class="headerlink" href="#empfindlichkeitsstufe-iii" title="Link zu dieser Überschrift">¶</a></h4>
+<ul class="simple">
+<li><p>gilt für die <a class="reference internal" href="#ref-lwz"><span class="std std-ref">Landwirtschaftszone</span></a> ausserhalb des Siedlungsgebiets.</p></li>
+<li><p>gilt für <a class="reference internal" href="#ref-rzw"><span class="std std-ref">Reservezonen</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="empfindlichkeitsstufe-iii-aufgestuft">
+<span id="id4"></span><h4>6840 Empfindlichkeitsstufe III aufgestuft<a class="headerlink" href="#empfindlichkeitsstufe-iii-aufgestuft" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete mit Lärmempfindlichkeitsstufe III (nicht störende Nutzungen), welche um eine Empfindlichkeitsstufe angehoben werden</p>
+</div>
+<div class="section" id="empfindlichkeitsstufe-iv">
+<span id="ref-es4"></span><h4>6850 Empfindlichkeitsstufe IV<a class="headerlink" href="#empfindlichkeitsstufe-iv" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete mit Lärmempfindlichkeitsstufe IV (stark störende Nutzungen)</p>
+</div>
+<div class="section" id="keine-empfindlichkeitsstufe">
+<span id="ref-kes"></span><h4>6860 keine Empfindlichkeitsstufe<a class="headerlink" href="#keine-empfindlichkeitsstufe" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiete ohne Lärmempfindlichkeitsstufe</p>
+<ul class="simple">
+<li><p>wird auf alle Zonen angewendet, für die keine Empfindlichkeitsstufe nach <a class="reference external" href="https://www.admin.ch/opc/de/classified-compilation/19860372/index.html#a43">Art. 43 LVS</a>. vorgesehen ist.</p></li>
+<li><p><a class="reference internal" href="#ref-vfs"><span class="std std-ref">Verkehrsflächen</span></a> besitzen keine Lämempfindlichkeitsstufen, weder innerhalb, noch ausserhalb des Baugebietes.</p></li>
+</ul>
+<span class="target" id="ref-ktvnl"></span></div>
+<div class="section" id="kantonales-vorranggebiet-natur-und-landschaft">
+<span id="index-29"></span><h4>6900 kantonales Vorranggebiet Natur und Landschaft<a class="headerlink" href="#kantonales-vorranggebiet-natur-und-landschaft" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiet von kantonaler Bedeutung zur Erhaltung und Aufwertung von Landschaften und Lebensräumen schützenswerter Tiere und Pflanzen</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="kommunales-vorranggebiet-natur-und-landschaft">
+<span id="ref-komvnl"></span><h4>6911-6919 kommunales Vorranggebiet Natur und Landschaft<a class="headerlink" href="#kommunales-vorranggebiet-natur-und-landschaft" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiet von kommunaler Bedeutung zur Erhaltung und Aufwertung von Landschaften und Lebensräumen schützenswerter Tiere und Pflanzen.</p>
+</div>
+<div class="section" id="planungszone">
+<span id="ref-pz"></span><h4>6921-6929 Planungszone<a class="headerlink" href="#planungszone" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Genau bezeichnete Gebiete, in denen keine baulichen Veränderungen oder sonstigen Vorkehren getroffen werden dürfen, die einer laufenden Planung widersprechen.</p>
+</div>
+<div class="section" id="weitere-flachenbezogene-festlegungen-np">
+<span id="ref-wfbfnp"></span><h4>6991-6999 weitere flächenbezogene Festlegungen NP<a class="headerlink" href="#weitere-flachenbezogene-festlegungen-np" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere flächenhafte Festlegungen
+Dies sind z.B. geschützte archäologische Fundstellen.</p>
+</div>
+<div class="section" id="geologisches-objekt">
+<span id="ref-go2"></span><h4>8120 geologisches Objekt<a class="headerlink" href="#geologisches-objekt" title="Link zu dieser Überschrift">¶</a></h4>
+<p>geologisches Objekt</p>
+<ul class="simple">
+<li><p>Kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+<li><p>Kann als überlagernde Fläche oder <a class="reference internal" href="#ref-go"><span class="std std-ref">Punkt</span></a> erfasst werden.</p></li>
+</ul>
+</div>
+<div class="section" id="naturobjekt">
+<span id="ref-no2"></span><h4>8130 Naturobjekt<a class="headerlink" href="#naturobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Naturobjekt</p>
+<ul class="simple">
+<li><p>Kann als überlagernde Fläche oder <a class="reference internal" href="#ref-no"><span class="std std-ref">Punkt</span></a> erfasst werden.</p></li>
+</ul>
+</div>
+<div class="section" id="kantonal-geschutztes-kulturobjekt">
+<span id="ref-ktgko2"></span><h4>8200 kantonal geschütztes Kulturobjekt<a class="headerlink" href="#kantonal-geschutztes-kulturobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit Regierungsratsbeschluss geschütztes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als überlagernde Fläche (z.B. bei Gebäude)  oder <a class="reference internal" href="#ref-ktgko"><span class="std std-ref">Punkt</span></a> (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+</div>
+<div class="section" id="kommunal-geschutztes-kulturobjekt">
+<span id="ref-kogko2"></span><h4>8210 kommunal geschütztes Kulturobjekt<a class="headerlink" href="#kommunal-geschutztes-kulturobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit kommunalem Beschluss geschütztes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als überlagernde Fläche (z.B. bei Gebäude)  oder <a class="reference internal" href="#ref-kogko"><span class="std std-ref">Punkt</span></a> (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+</div>
+<div class="section" id="schutzenswertes-kulturobjekt">
+<span id="ref-sko2"></span><h4>8220 schützenswertes Kulturobjekt<a class="headerlink" href="#schutzenswertes-kulturobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit kommunalem Beschluss als schützenswert eingestuftes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als überlagernde Fläche (z.B. bei Gebäude)  oder <a class="reference internal" href="#ref-sko"><span class="std std-ref">Punkt</span></a> (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+</div>
+<div class="section" id="erhaltenswertes-kulturobjekt">
+<span id="ref-eko2"></span><h4>8230 erhaltenswertes Kulturobjekt<a class="headerlink" href="#erhaltenswertes-kulturobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit kommunalem Beschluss als erhaltenswert eingestuftes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als überlagernde Fläche (z.B. bei Gebäude)  oder <a class="reference internal" href="#ref-eko"><span class="std std-ref">Punkt</span></a> (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+<span class="target" id="ref-ww"></span></div>
+<div class="section" id="wanderweg">
+<span id="index-30"></span><h4>7900 Wanderweg<a class="headerlink" href="#wanderweg" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Wanderweg gemäss Inventar Wanderwege</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="historischer-verkehrsweg">
+<span id="ref-hvw"></span><h4>7910 historischer Verkehrsweg<a class="headerlink" href="#historischer-verkehrsweg" title="Link zu dieser Überschrift">¶</a></h4>
+<p>historische Verkehrswege gemäss kantonalem Inventarplan</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="waldgrenze">
+<span id="ref-wg"></span><h4>7920 Waldgrenze<a class="headerlink" href="#waldgrenze" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Grenze des Waldes gemäss Waldfeststellung</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="negative-waldfeststellung">
+<span id="ref-nwf"></span><h4>7930 negative Waldfeststellung<a class="headerlink" href="#negative-waldfeststellung" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Festgestellte Flächen, die nicht als Wald gelten</p>
+<ul class="simple">
+<li><p>kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+</ul>
+</div>
+<div class="section" id="eingedolte-gewasser">
+<span id="ref-egew"></span><h4>7991 eingedolte Gewässer<a class="headerlink" href="#eingedolte-gewasser" title="Link zu dieser Überschrift">¶</a></h4>
+<p>unterirdische künstliche Gewässerführung</p>
+<ul class="simple">
+<li><p>Eingedolte Gewässer werden aus darstellerischer Notwendigkeit immer als Linie statt einer Fläche erfasst (einer Fläche kann keine Richtung zugewiesen werden, was voraussetzung ist für die gewohnte blau geschrichelte Symbolik).</p></li>
+</ul>
+</div>
+<div class="section" id="weitere-linienbezogene-festlegungen">
+<span id="ref-wlflnp"></span><h4>7992-7999 weitere linienbezogene Festlegungen<a class="headerlink" href="#weitere-linienbezogene-festlegungen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere linienbezogene Festlegungen</p>
+<ul class="simple">
+<li><p>Der Code 5691 ist für Sichtzonen frei zu halten.</p></li>
+<li><p>Hochspannungsleitungen sind nicht zu erfassen. Diese wurden bereits über die <a class="reference internal" href="2ablaufdererfassung.html#ref-av"><span class="std std-ref">AV</span></a> erfasst und werden auch über diese dargestellt.</p></li>
+</ul>
+<span class="target" id="ref-geb"></span></div>
+<div class="section" id="geschutzter-einzelbaum">
+<span id="index-31"></span><h4>8100 geschützter Einzelbaum<a class="headerlink" href="#geschutzter-einzelbaum" title="Link zu dieser Überschrift">¶</a></h4>
+<p>kommunal geschützter Einzelbaum</p>
+</div>
+<div class="section" id="erhaltenswerter-einzelbaum">
+<span id="ref-eweb"></span><h4>8110 erhaltenswerter Einzelbaum<a class="headerlink" href="#erhaltenswerter-einzelbaum" title="Link zu dieser Überschrift">¶</a></h4>
+<p>kommunal erhaltenswerter Einzelbaum</p>
+</div>
+<div class="section" id="ref-go">
+<span id="id5"></span><h4>8120 geologisches Objekt<a class="headerlink" href="#ref-go" title="Link zu dieser Überschrift">¶</a></h4>
+<p>geologisches Objekt</p>
+<ul class="simple">
+<li><p>Kantonaler Datensatz. Muss nicht erhoben werden.</p></li>
+<li><p>kann als <a class="reference internal" href="#ref-go2"><span class="std std-ref">überlagernde Fläche</span></a> oder Punkt erfasst werden</p></li>
+</ul>
+</div>
+<div class="section" id="ref-no">
+<span id="id6"></span><h4>8130 Naturobjekt<a class="headerlink" href="#ref-no" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Naturobjekt</p>
+<ul class="simple">
+<li><p>kann als <a class="reference internal" href="#ref-no2"><span class="std std-ref">überlagernde Fläche</span></a> oder Punkt erfasst werden</p></li>
+</ul>
+<span class="target" id="ref-ktgko"></span></div>
+<div class="section" id="index-32">
+<span id="id7"></span><h4>8200 kantonal geschütztes Kulturobjekt<a class="headerlink" href="#index-32" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit Regierungsratsbeschluss geschütztes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als <a class="reference internal" href="#ref-no2"><span class="std std-ref">überlagernde Fläche</span></a> (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+</div>
+<div class="section" id="ref-kogko">
+<span id="id8"></span><h4>8210 kommunal geschütztes Kulturobjekt<a class="headerlink" href="#ref-kogko" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit kommunalem Beschluss geschütztes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als <a class="reference internal" href="#ref-kogko2"><span class="std std-ref">überlagernde Fläche</span></a> (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+</div>
+<div class="section" id="ref-sko">
+<span id="id9"></span><h4>8220 schützenswertes Kulturobjekt<a class="headerlink" href="#ref-sko" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit kommunalem Beschluss als schützenswert eingestuftes Kulturobjekt
+Kulturobjekt können als überlagernde Fläche (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden</p>
+</div>
+<div class="section" id="ref-eko">
+<span id="id10"></span><h4>8230 erhaltenswertes Kulturobjekt<a class="headerlink" href="#ref-eko" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit kommunalem Beschluss als erhaltenswert eingestuftes Kulturobjekt</p>
+<ul class="simple">
+<li><p>kann als <a class="reference internal" href="#ref-eko2"><span class="std std-ref">überlagernde Fläche</span></a> (z.B. bei Gebäude)  oder Punkt (z.B. für Wegkreuz) erfasst werden</p></li>
+</ul>
+<span class="target" id="ref-wpfnp"></span></div>
+<div class="section" id="weitere-punktbezogene-festlegungen-np">
+<span id="index-33"></span><h4>8991-8999 weitere punktbezogene Festlegungen NP<a class="headerlink" href="#weitere-punktbezogene-festlegungen-np" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere punktbezogene Festlegungen NP
+Dies sind z.B. geschützte archäologische Fundstellen.</p>
+</div>
+</div>
+</div>
+<div class="section" id="beschreibung-erschliessungen">
+<span id="ref-er"></span><h2>Beschreibung Erschliessungen<a class="headerlink" href="#beschreibung-erschliessungen" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="id11">
+<h3>zurück zum <a class="reference internal" href="#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a><a class="headerlink" href="#id11" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die Fläche der Erschliessung (Flächen innerhalb der Bauzone sowie Flächen mit Erschliessungsplan) muss grundsätzlich gleich gross sein wie die Flächen der Verkehrszonen (<a class="reference internal" href="#ref-vzs"><span class="std std-ref">180</span></a>, <a class="reference internal" href="#ref-vzb"><span class="std std-ref">181</span></a>, <a class="reference internal" href="#ref-vzf"><span class="std std-ref">182</span></a>, <a class="reference internal" href="#ref-wzv"><span class="std std-ref">189</span></a>) und Verkehrsflächen (<a class="reference internal" href="#ref-vfs"><span class="std std-ref">420</span></a>, <a class="reference internal" href="#ref-vfb"><span class="std std-ref">421</span></a>, <a class="reference internal" href="#ref-vff"><span class="std std-ref">422</span></a>, <a class="reference internal" href="#ref-wvf"><span class="std std-ref">420</span></a>) der Grundnutzung.</p>
+<p>Wurde z.B. der Strassenverlauf auf einem Erschliessungsplan geändert (zb. neuer Kreisel statt Kreuzung, neubau Trottoir), so ist die Grundnutzung an den neueren Erschliessungsplan anzupassen. Im Perimeter aller Erschliessungspläne muss die Fläche der Verkehrsflächen der Grundflächen gleich sein, wie jene der Erschliessung. Existiert in einem Bereich des BZP kein Erschliessungsplan, so gibt es logischerweise kein Überlagerung (und folglich können sie auch nicht gleich gross sein).</p>
+<p>Für sämtliche Pläne gilt die Feststellung, dass jeweils nur Genehmigungsinhalte zu übernehmen sind.</p>
+<p>Bei Kantonalen Strassenplänen gilt:</p>
+<ul class="simple">
+<li><p>Es wird lediglich die <a class="reference internal" href="#ref-ks"><span class="std std-ref">5610 Kantonsstrasse</span></a> und die <a class="reference internal" href="#ref-blskt"><span class="std std-ref">7110 Baulinien Strasse kantonal</span></a>, <a class="reference internal" href="#ref-vblkt"><span class="std std-ref">7120 Vorbaulinien kantonal</span></a> und <a class="reference internal" href="#ref-gblkt"><span class="std std-ref">7130 Gestaltungsbaulinien kantonal</span></a> erfasst.</p></li>
+<li><p>Gehwege werden nur soweit erfasst, wie sie im kommunalen Erschliessungsplan als solche aufgeführt sind.</p></li>
+<li><p>Alle übrigen Planinhalte der kantonalen Erschliessungspläne (Radstreifen, Verkehrsinseln, Grünflächen etc. sind <code class="docutils literal notranslate"><span class="pre">nicht</span></code> zu erfassen.</p></li>
+</ul>
+<span class="target" id="ref-ns"></span><div class="section" id="nationalstrasse">
+<span id="index-34"></span><h4>5600 Nationalstrasse<a class="headerlink" href="#nationalstrasse" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächeninnerhalb der Bauzonengrenze die als Nationalstrasse klassiert sind</p>
+</div>
+<div class="section" id="kantonsstrasse">
+<span id="ref-ks"></span><h4>5610 Kantonsstrasse<a class="headerlink" href="#kantonsstrasse" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen von Strassen innerhalb der Bauzonengrenze die als Kantonsstrasse klassiert sind (Kantonsstrassenverzeichnis und Strassenkategorienplan, kantonale Erschliessungspläne)</p>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<div class="section" id="sammelstrasse-kommunal">
+<span id="ref-sskom"></span><h4>5620 Sammelstrasse kommunal<a class="headerlink" href="#sammelstrasse-kommunal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen von Strassen innerhalb der Bauzonengrenze die als kommunale Sammelstrasse klassiert sind (Strassenkategorienplan, Erschliessungsplan)</p>
+</div>
+<div class="section" id="erschliessungsstrasse-kommunal">
+<span id="ref-eskom"></span><h4>5630 Erschliessungsstrasse kommunal<a class="headerlink" href="#erschliessungsstrasse-kommunal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen von Strassen innerhalb der Bauzonengrenze die als kommunale Erschliessungsstrasse klassiert sind (Strassenkategorienplan, Erschliessungsplan)</p>
+</div>
+<div class="section" id="flurweg-mit-erschliessungsfunktion">
+<span id="ref-fwef"></span><h4>5640 Flurweg mit Erschliessungsfunktion<a class="headerlink" href="#flurweg-mit-erschliessungsfunktion" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen von Strassen die als Flurweg mit Erschliessungsfunktion klassiert sind (Strassenkategorienplan, Erschliessungsplan)</p>
+</div>
+<div class="section" id="flurweg-ohne-erschliessungsfunktion">
+<span id="ref-fwes"></span><h4>5650 Flurweg ohne Erschliessungsfunktion<a class="headerlink" href="#flurweg-ohne-erschliessungsfunktion" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen von Strassen die als Flurweg ohne Erschliessungsfunktion  klassiert sind (Strassenkategorienplan, Erschliessungsplan)</p>
+</div>
+<div class="section" id="private-erschliessungsstrassen">
+<span id="ref-pes"></span><h4>5660 private Erschliessungsstrassen<a class="headerlink" href="#private-erschliessungsstrassen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen von nicht-öffentlichen Strassen (Erschliessungsplan)</p>
+</div>
+<div class="section" id="unklassierte-strasse">
+<span id="ref-us"></span><h4>5670 unklassierte Strasse<a class="headerlink" href="#unklassierte-strasse" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Strassenflächen, die nicht klassiert sind</p>
+</div>
+<div class="section" id="strassenbankett-verkehrsinsel">
+<span id="ref-sb"></span><h4>5680 Strassenbankett, Verkehrsinsel<a class="headerlink" href="#strassenbankett-verkehrsinsel" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Flächen entlang von Strassen, die als Strassenbankett oder Verkehrsinsel dienen</p>
+<span class="target" id="ref-szo"></span></div>
+<div class="section" id="sichtzonen">
+<span id="index-35"></span><h4>5691 Sichtzonen<a class="headerlink" href="#sichtzonen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Sichtzonen gewährleisten eine frei Sicht bei Strasseneinmündungen, Kurven und Ausfahrten auf übergeordnete Strassen (im Sinne von <a class="reference external" href="https://bgs.so.ch/frontend/versions/4169">§ 50 der kant. Bauverordnung, KBV, BGS 711.61</a>).</p>
+</div>
+<div class="section" id="ubrige-verkehrsflachen">
+<span id="ref-uevf"></span><h4>5692-5699 übrige Verkehrsflächen<a class="headerlink" href="#ubrige-verkehrsflachen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle übrigen Verkehrsflächen, die nicht in die aufgeführten Kategorien aufgeteilt werden können.</p>
+<ul class="simple">
+<li><p>Der Code 5691 ist für Sichtzonen frei zu halten.</p></li>
+</ul>
+<span class="target" id="ref-gw"></span></div>
+<div class="section" id="gehweg-trottoir">
+<span id="index-36"></span><h4>5700 Gehweg / Trottoir<a class="headerlink" href="#gehweg-trottoir" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Flächen entlang öffentlicher Strassen, die für Gehwege/Trottoir vorgesehen sind (Erschliessungsplan)</p>
+</div>
+<div class="section" id="fussweg">
+<span id="ref-fw"></span><h4>5710 Fussweg<a class="headerlink" href="#fussweg" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Flächen, die für Fusswege vorgesehen sind (Strassenkategorienplan und Erschliessungspläne)</p>
+</div>
+<div class="section" id="radweg">
+<span id="ref-rw"></span><h4>5720 Radweg<a class="headerlink" href="#radweg" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Flächen, die für Radwege vorgesehen sind (Strassenkategorienplan und Erschliessungspläne)</p>
+</div>
+<div class="section" id="fuss-und-radweg">
+<span id="ref-frw"></span><h4>5730 Fuss- und Radweg<a class="headerlink" href="#fuss-und-radweg" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Flächen, die für kombinierte Fuss- und Radwege vorgesehen sind (Strassenkategorienplan und Erschliessungspläne)</p>
+</div>
+<div class="section" id="grunstreifen-rabatte">
+<span id="ref-gsr"></span><h4>5740 Grünstreifen, Rabatte<a class="headerlink" href="#grunstreifen-rabatte" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Flächen, die für Grünstreifen oder Rabatte vorgesehen sind (Strassenkategorienplan und Erschliessungspläne)</p>
+</div>
+<div class="section" id="ubrige-flachen-langsamverkehr">
+<span id="ref-ueflv"></span><h4>5791-5799 übrige Flächen Langsamverkehr<a class="headerlink" href="#ubrige-flachen-langsamverkehr" title="Link zu dieser Überschrift">¶</a></h4>
+<p>übrige Flächen Langsamverkehr</p>
+</div>
+</div>
+<div class="section" id="baulinien">
+<span id="index-37"></span><h3>Baulinien<a class="headerlink" href="#baulinien" title="Link zu dieser Überschrift">¶</a></h3>
+<p id="ref-baulinienkbv">Was ist zu tun wenn keine Baulinien vorhanden sind (gestützt auf <a class="reference external" href="https://bgs.so.ch/app/de/texts_of_law/711.61/versions/4169/">§46 KBV</a> )?</p>
+<ul class="simple">
+<li><p>Bauabstände gelten unabhängig davon, ob sie eine öffentlichen Auflage durchlaufen haben. Die Linien sind demzufolge zu erfassen. Im Informationssystem gibt es dazu keinen RRB welcher verknüpft werden könnte. Darum wird direkt die gesetzliche Grundlage <a class="reference external" href="https://geoweb.so.ch/zonenplaene/Zonenplaene_pdf/200-Kanton/Erlasse/">200-Kanton/Erlasse/Auszug-Kantonale-Bauverordnung.pdf</a> an Stelle des RRB verknüpft. Das PubliziertAb des Dokument ist der 01.01.1991. Ein Genehmigungsdatum der Baulinie gibt es nicht (Datenmodell verlangt jedoch ein Datum). Deshalb ist das Datum 01.01.1900 zu verwenden.</p></li>
+</ul>
+<p>Was ist mit den Baulinien zu tun, wenn sich ein Gebäude baulich verändert hat?</p>
+<ul class="simple">
+<li><p>Baulinien an die neue (<a class="reference internal" href="2ablaufdererfassung.html#ref-av"><span class="std std-ref">AV</span></a>) Situation anpassen und mit dem Kommentar <strong>Abweichung zum rechtsgültigen Plan</strong> ergänzen. Es werden nur bestehende Linien angepasst und keine neu erstellt oder einem anderen Code zugewiesen.</p></li>
+</ul>
+<span class="target" id="ref-nbl"></span><div class="section" id="nationale-baulinien">
+<span id="index-38"></span><h4>7101-4109 nationale Baulinien<a class="headerlink" href="#nationale-baulinien" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinien entlang von nationalen Infrastrukturen</p>
+</div>
+<div class="section" id="baulinie-strasse-kantonal">
+<span id="ref-blskt"></span><h4>7110 Baulinie Strasse kantonal<a class="headerlink" href="#baulinie-strasse-kantonal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinien entlang Kantonsstrassen gemäss kantonaler Erschliessungspläne</p>
+</div>
+<div class="section" id="vorbaulinie-kantonal">
+<span id="ref-vblkt"></span><h4>7120 Vorbaulinie kantonal<a class="headerlink" href="#vorbaulinie-kantonal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Vorbaulinien entlang Kantonsstrassen gemäss kantonaler Erschliessungspläne</p>
+</div>
+<div class="section" id="gestaltungsbaulinie-kantonal">
+<span id="ref-gblkt"></span><h4>7130 Gestaltungsbaulinie kantonal<a class="headerlink" href="#gestaltungsbaulinie-kantonal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gestaltungsbaulinien entlang Kantonsstrassen gemäss kantonaler Erschliessungspläne</p>
+</div>
+<div class="section" id="ruckwartige-baulinie-kantonal">
+<span id="ref-rwblkt"></span><h4>7140 Rückwärtige Baulinie kantonal<a class="headerlink" href="#ruckwartige-baulinie-kantonal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Rückwärtige Baulinien in kantonalen Nutzungsplänen, rückwärtige Baulinien dienen, v.a. der Freihaltung bestimmter Bereiche</p>
+</div>
+<div class="section" id="baulinien-infrastruktur-kantonal">
+<span id="ref-blikt"></span><h4>7150 Baulinien Infrastruktur kantonal<a class="headerlink" href="#baulinien-infrastruktur-kantonal" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinien entlang Leitungen, Gewässern etc. in kantonalen Nutzungsplänen</p>
+</div>
+<div class="section" id="weitere-nationale-und-kantonale-baulinien">
+<span id="ref-wnktbl"></span><h4>7191-7199 weitere nationale und kantonale Baulinien<a class="headerlink" href="#weitere-nationale-und-kantonale-baulinien" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere nationale und kantonale Baulinien</p>
+<span class="target" id="ref-bls"></span></div>
+<div class="section" id="baulinie-strasse">
+<span id="index-39"></span><h4>7200 Baulinie Strasse<a class="headerlink" href="#baulinie-strasse" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinien entlang kommunaler Strassen gemäss kommunaler Erschliessungspläne</p>
+</div>
+<div class="section" id="vorbaulinie">
+<span id="ref-vbl"></span><h4>7210 Vorbaulinie<a class="headerlink" href="#vorbaulinie" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Vorbaulinien entlang kommunaler Strassen gemäss kommunaler Erschliessungspläne</p>
+</div>
+<div class="section" id="gestaltungsbaulinie">
+<span id="ref-gbl"></span><h4>7220 Gestaltungsbaulinie<a class="headerlink" href="#gestaltungsbaulinie" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gestaltungsbaulinien entlang kommunaler Strassen gemäss kommunaler Erschliessungspläne</p>
+<p>Gestaltungsbaulinien, die Teil von Sondernutzugnsplänen sind, sind nicht zu erfassen. Sie sind aus dem referenzierten Dokumenten (Pläne) ersichtlich und entfallen, sobald der jeweilige Plan aufgehoben oder überarbeitet wird.</p>
+</div>
+<div class="section" id="ruckwartige-baulinie">
+<span id="ref-rwbl"></span><h4>7230 Rückwärtige Baulinie<a class="headerlink" href="#ruckwartige-baulinie" title="Link zu dieser Überschrift">¶</a></h4>
+<p>rückwärtige Baulinien in kommunalen Nutzungsplänen, rückwärtige Baulinien dienen v.a. der Freihaltung bestimmter Bereiche</p>
+</div>
+<div class="section" id="baulinie-infrastruktur">
+<span id="ref-bli"></span><h4>7240 Baulinie Infrastruktur<a class="headerlink" href="#baulinie-infrastruktur" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinien entlang kommunaler Strassen gemäss kommunaler Erschliessungspläne</p>
+</div>
+<div class="section" id="waldabstandslinie">
+<span id="ref-wal"></span><h4>7250 Waldabstandslinie<a class="headerlink" href="#waldabstandslinie" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Waldabstandslinien gemäss kommunaler Nutzungspläne (v.a. Erschliessungsplan)</p>
+</div>
+<div class="section" id="baulinie-hecken">
+<span id="ref-blh"></span><h4>7260 Baulinie Hecken<a class="headerlink" href="#baulinie-hecken" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinie, welche Hecken umgeben gemäss kommunaler Nutzungspläne (v.a. Erschliessungsplan)</p>
+</div>
+<div class="section" id="baulinie-gewasser">
+<span id="ref-blgw"></span><h4>7270 Baulinie Gewässer<a class="headerlink" href="#baulinie-gewasser" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Baulinien entlang öffentlicher Gewässer und Bachleitungen (eingedolte Gewässer) gemäss kommunaler Nutzungspläne (v.a. Erschliessungsplan)</p>
+</div>
+<div class="section" id="immissionsstreifen">
+<span id="ref-is"></span><h4>7280 Immissionsstreifen<a class="headerlink" href="#immissionsstreifen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Gebiet zum Schutze vor Immissionen</p>
+</div>
+<div class="section" id="weitere-kommunale-baulinien">
+<span id="ref-wkombl"></span><h4>7291-7299 weitere kommunale Baulinien<a class="headerlink" href="#weitere-kommunale-baulinien" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Weitere kommunale Baulinien</p>
+<span class="target" id="ref-wlboep"></span></div>
+<div class="section" id="weitere-linienbezogene-objekte-ep">
+<span id="index-40"></span><h4>7891-7899 weitere linienbezogene Objekte EP<a class="headerlink" href="#weitere-linienbezogene-objekte-ep" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere linienbezogene Objekte</p>
+<span class="target" id="ref-wpboep"></span></div>
+<div class="section" id="weitere-punktbezogene-objekte-ep">
+<span id="index-41"></span><h4>8891-8899 weitere punktbezogene Objekte EP<a class="headerlink" href="#weitere-punktbezogene-objekte-ep" title="Link zu dieser Überschrift">¶</a></h4>
+<p>weitere punktbezogene Objekte</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>zurück zum <a class="reference internal" href="#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a><a class="headerlink" href="#id12" title="Link zu dieser Überschrift">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Stichwortverzeichnis</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="99changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="3nutzungsplanung.html" class="btn btn-neutral float-left" title="Datenmodell" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Amt für Raumplanung Kanton Solothurn
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

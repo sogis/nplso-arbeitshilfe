@@ -1,0 +1,1212 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Datenmodell &mdash; np SO-Arbeitshilfe 0.1.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="Objektkatalog" href="11objektkatalog.html" />
+    <link rel="prev" title="Ablauf der Erfassung" href="2ablaufdererfassung.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> np SO-Arbeitshilfe
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Inhalt:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1allgemein.html">Allgemein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2ablaufdererfassung.html">Ablauf der Erfassung</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Datenmodell</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nutzungsplanung-grundnutzung">Nutzungsplanung, Grundnutzung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#attribute-der-grundnutzung">Attribute der Grundnutzung</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-typ-grundnutzung"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Grundnutzung</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-grundnutzung"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Grundnutzung</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-grundnutzung-pos"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Grundnutzung_Pos</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-dokument"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nutzungsplanung-uberlagernde-objekte">Nutzungsplanung, überlagernde Objekte</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#attribute-der-uberlagenden-objekte">Attribute der überlagenden Objekte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-typ-ueberlagernd-flaeche-klasse-typ-ueberlagernd-linie-klassetyp-ueberlagernd-punkt"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">KlasseTyp_Ueberlagernd_Punkt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-ueberlagernd-flaeche-klasse-ueberlagernd-linie-klasse-ueberlagernd-punkt"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Punkt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-ueberlagernd-flaeche-pos-klasse-ueberlagernd-linie-pos-klasse-ueberlagernd-punkt-pos"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Linie_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Punkt_Pos</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-klassedomument2"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#erschliessungsplanung">Erschliessungsplanung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#attribute-der-erschliessungsplanung">Attribute der Erschliessungsplanung</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-typ-erschliessung-flaecheobjekt-klasse-typ-erschliessung-linienobjekt-klasse-typ-erschliessung-punktobjekt"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Punktobjekt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-erschliessung-flaecheobjekt-klasse-erschliessung-linienobjekt-klasse-erschliessung-punktobjekt"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Punktobjekt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-erschliessung-flaecheobjekt-pos-klasse-erschliessung-flaecheobjekt-pos-klasse-erschliessung-flaecheobjekt-pos"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt_Pos</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-klassedokument3"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#transfermetadaten">TransferMetadaten</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#datenabgabe">Datenabgabe</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-amt"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Amt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-datenbestand"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Datenbestand</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verfahrensstand">Verfahrensstand</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#folgende-attribute-sind-fur-die-verfahrensstand-zu-erfassen">Folgende Attribute sind für die Verfahrensstand zu erfassen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-vs-perimeter-verfahrensstand"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">VS_Perimeter_Verfahrensstand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#klasse-vs-perimeter-pos"><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">VS_Perimeter_Pos</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="11objektkatalog.html">Objektkatalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+    <a href="genindex.html">Stichwortverzeichnis</a>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">np SO-Arbeitshilfe</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Datenmodell</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/3nutzungsplanung.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="datenmodell">
+<span id="ref-datenmodell"></span><span id="ref-np"></span><h1>Datenmodell<a class="headerlink" href="#datenmodell" title="Link zu dieser Überschrift">¶</a></h1>
+<p>Übersicht über das Topic Nutzungsplanung:</p>
+<div class="figure align-center" id="id12">
+<span id="img-ermodell"></span><a class="reference internal image-reference" href="_images/klassendiagramm_nutzungsplanung.png"><img alt="_images/klassendiagramm_nutzungsplanung.png" src="_images/klassendiagramm_nutzungsplanung.png" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">UML-Klassendiagramm Nutzungsplanung.</span><a class="headerlink" href="#id12" title="Link zu diesem Bild">¶</a></p>
+</div>
+<div class="section" id="nutzungsplanung-grundnutzung">
+<span id="ref-nutzungsplanung"></span><h2>Nutzungsplanung, Grundnutzung<a class="headerlink" href="#nutzungsplanung-grundnutzung" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Das gesamte Gemeindegebiet ist flächendeckend, lückenlos und ohne Überlappungen einer Grundnutzung zuzuordnen.</p>
+<div class="section" id="attribute-der-grundnutzung">
+<span id="ref-attributegrundnutzung"></span><h3>Attribute der Grundnutzung<a class="headerlink" href="#attribute-der-grundnutzung" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Folgende Attribute sind für die Grundnutzung zu erfassen:</p>
+<p><span class="orange">Orange markierte Attribute sind Pflicht</span>. D.h. diese Werte müssen immer erfasst werden.</p>
+<p><span class="fuchsia">Pink markierte Attribute müssen im Widerspruch zum Datenmodell ebenfalls ausgefüllt sein</span>. Diese Anpassungen sind jedoch nötig um die Durchlässigkeit der Daten für den ÖREB-Kataster gewährleisten zu können, ohne eine Anpassung am Datenmodell vorzunehmen. Bei folgenden Attributten der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code> wurde der Validator angepasst und liefert eine Fehlermeldung wenn es nicht ausgefüllt ist.</p>
+<ul class="simple">
+<li><p>Rechtsvorschrift</p></li>
+<li><p>Kanton</p></li>
+<li><p>Gemeinde</p></li>
+<li><p>OffiziellerTitel</p></li>
+</ul>
+<div class="section" id="klasse-typ-grundnutzung">
+<span id="ref-klassetyp-grundnutzung"></span><span id="index-0"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Grundnutzung</span></code><a class="headerlink" href="#klasse-typ-grundnutzung" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="typgrundnutzung docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 53%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Bezeichnung</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name der Grundnutzung.</p></td>
+<td><p>Kernzone mit Einschränkung</p></td>
+</tr>
+<tr class="row-odd"><td><p>Abkuerzung</p></td>
+<td><p>Text mit max. 12 Zeichen</p></td>
+<td><p>Abkürzung der Grundnutzung. Kann von der Gemeinde vergeben werden. Falls keine Abkürzung vorhanden ist bleit das Feld leer.</p></td>
+<td><p>KE</p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><p>Verbindlichkeit</p></td>
+<td><p id="ref-all"><span id="ref-npflorie"></span><span id="ref-wld"></span><span id="ref-hwd"></span><span id="ref-orie"></span><span id="ref-npfl"></span>Nutzungsplanfestlegung</p>
+</td>
+<td><p>eigentümerverbindlich, im Verfahren der Nutzungsplanung festgelegt.</p></td>
+<td rowspan="4"><p>Nutzungsplanfestlegung</p></td>
+</tr>
+<tr class="row-odd"><td><p>orientierend</p></td>
+<td><p>eigentümerverbindlich, in einem anderen Verfahren festgelegt.</p></td>
+</tr>
+<tr class="row-even"><td><p>hinweisend</p></td>
+<td><p>nicht eigentümerverbindlich, Informationsinhalte.</p></td>
+</tr>
+<tr class="row-odd"><td><p>wegleitend</p></td>
+<td><p>nicht eigentümerverbindlich, sie umfassen Qualitäten, Standards und dergleichen, die zu berücksichtigen sind.</p></td>
+</tr>
+<tr class="row-even"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Erläuternder Text zum Typ_Grundnutzung.</p></td>
+<td><p>Spezialzonen (Zonencode 1901 und 1903 haben einen Wohnanteil von ca. 35%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Typ_Kt</p></td>
+<td><p>Siehe Datenmodel NP_Typ_Kanton_Grundnutzung</p></td>
+<td><p>Siehe <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a></p></td>
+<td><p>N140_Kernzone</p></td>
+</tr>
+<tr class="row-even"><td><p>Code_kommunal</p></td>
+<td><p>Text mit max. 12 Zeichen</p></td>
+<td><p>4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Stelle 1-3 ist identisch zum kantonalen Code (Ausnahme: Spezialzone,
+Code 190 mit 19 möglichen kommunalen Codes). Im <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a>
+ist definiert, welche Werte des kommunalen Codes erlaubt sind. Falls kommunale Werte zugelassen sind, beginnt die 4. Stelle jeweils bei 1.</p></td>
+<td><p>1401</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nutzungsziffer</p></td>
+<td><p>Wert zwischen 0.00 und 9.00.</p></td>
+<td><p>Zahlenwert nach Zonenreglement der Gemeinde (0.05 = 5%)</p></td>
+<td><p>0.4</p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><p>Nutzungsziffer_Art</p></td>
+<td><p>Baumassenziffer</p></td>
+<td><p>Bauvolumen über massgebendem Terrain / anrechenbare Grundstücksfläche (§37ter PBG)</p></td>
+<td rowspan="4"><p>Überbauungsziffer</p></td>
+</tr>
+<tr class="row-odd"><td><p>Geschossflächenziffer</p></td>
+<td><p>Summe aller Geschossflächen / anrechenbare Grundstücksfläche (§37bis PBG)</p></td>
+</tr>
+<tr class="row-even"><td><p>Überbauungsziffer</p></td>
+<td><p>anrechenbare Gebäudefläche / anrechenbare Grundstücksfläche (§35 PBG)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ausnützungsziffer</p></td>
+<td><p>anrechenbare Bruttogeschossfläche / anrechenbare Grundstücksfläche ((§37 PBG, wurde gestrichen)</p></td>
+</tr>
+<tr class="row-even"><td><p>Geschosszahl</p></td>
+<td><p>Wert zwischen 1 und 50</p></td>
+<td><p>Maximal zulässige Anzahl Geschosse</p></td>
+<td><p>z.B. 2</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ein <code class="docutils literal notranslate"><span class="pre">Typ_Grundnutzung</span></code> kann mehrere Grundnutzungsgeometrien haben (siehe <a class="reference internal" href="#img-ermodell"><span class="std std-ref">Beziehung in der Übersicht</span></a>).</p>
+</div>
+<div class="section" id="klasse-grundnutzung">
+<span id="ref-klassegrundnutzung"></span><span id="index-1"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Grundnutzung</span></code><a class="headerlink" href="#klasse-grundnutzung" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="grundnutzung docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 43%" />
+<col style="width: 32%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Geometrie</p></td>
+<td><p>Polygon (AREA)</p></td>
+<td><p>Geometrie als Gebietseinteilung. Überlappungen bei Radien mit einer
+Pfeilhöhe &lt;1 mm werden toleriert.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Name_Nummer</p></td>
+<td><p>Text mit max. 20 Zeichen</p></td>
+<td><p>Leer lassen</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Rechtsstatus</p></td>
+<td><p>inKraft</p></td>
+<td><p>Die Festlegung ist in Kraft.</p></td>
+<td rowspan="2"><p>inKraft</p></td>
+</tr>
+<tr class="row-odd"><td><p>laufende_Aenderung</p></td>
+<td><p>Die Festlegung ist noch nicht in Kraft, eine Änderung ist in Vorbereitung</p></td>
+</tr>
+<tr class="row-even"><td><p>publiziertAb</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum des Regierungsratsbeschlusses</p></td>
+<td><p>2002-04-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Bemerkung zu der einzelnen Grundnutzungsgeometrie.</p></td>
+<td><p>“Dieses Zonenschild (Zonencode 190, Spezialzone) sollte
+im Rahmen der nächsten OP in eine Wohnzone (Zonencode
+11) umgezont werden.“</p></td>
+</tr>
+<tr class="row-even"><td><p>Erfasser</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name der Firma, welche die Daten erfasst hat</p></td>
+<td><p>SutterAG</p></td>
+</tr>
+<tr class="row-odd"><td><p>Datum</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum der Erfassung</p></td>
+<td><p>2017-06-14</p></td>
+</tr>
+</tbody>
+</table>
+<p>Eine Grundnutzung ist immer einem <code class="docutils literal notranslate"><span class="pre">Typ_Grundnutzung</span></code> zugewiesen (siehe <a class="reference internal" href="#img-ermodell"><span class="std std-ref">Beziehung in der Übersicht</span></a>).
+Nebeneinanderliegende Grundnutzungsgeometrien mit demselben kommunalen Code dürfen nicht unterteilt werden, sondern sind als ein Polygon zu erfassen (Siehe <a class="reference internal" href="#img-grundnutzung"><span class="std std-ref">Bild</span></a>).</p>
+<div class="figure align-center" id="img-grundnutzung">
+<a class="reference internal image-reference" href="_images/grundnutzung.jpg"><img alt="_images/grundnutzung.jpg" src="_images/grundnutzung.jpg" style="width: 451.0px; height: 231.0px;" /></a>
+</div>
+</div>
+<div class="section" id="klasse-grundnutzung-pos">
+<span id="ref-klassegrundnutzung-pos"></span><span id="index-2"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Grundnutzung_Pos</span></code><a class="headerlink" href="#klasse-grundnutzung-pos" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="grundnutzungpos docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Pos</p></td>
+<td><p>Punkt</p></td>
+<td><p>Position für die Beschriftung</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Ori</p></td>
+<td><p>Wert zwischen 0 und 399</p></td>
+<td><p>Orientierung der Beschriftung in Gon. 0 gon = Horizontal</p></td>
+<td><p>45</p></td>
+</tr>
+<tr class="row-even"><td><p>HAli</p></td>
+<td><p>left, center, right</p></td>
+<td><p>Mit dem horizontalen Alignment wird festgelegt, ob die Position auf dem linken oder rechten
+Rand des Textes oder in der Textmitte liegt (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>left</p></td>
+</tr>
+<tr class="row-odd"><td><p>VAli</p></td>
+<td><p>top, cap, half, base, bottom</p></td>
+<td><p>Das vertikale Alignment legt die Position in Richtung der Texthöhe fest (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>bottom</p></td>
+</tr>
+<tr class="row-even"><td><p>Grösse</p></td>
+<td><p>klein, mittel, gross</p></td>
+<td><p>Grösse der Beschriftung</p></td>
+<td><p>mittel</p></td>
+</tr>
+</tbody>
+</table>
+<p>Beschriftet wird die Abkürzung welche in der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Grundnutzung</span></code> erfasst wird. Eine Beschriftung der Grundnutzungsgeometrie macht nur Sinn, wenn eine Abkürzung unter der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Grundnutzung</span></code> erfasst ist. Eine Beschriftung der Grundnutzungsgeometrie ist nicht zwingend (siehe <a class="reference internal" href="#img-ermodell"><span class="std std-ref">Beziehung in der Übersicht</span></a>), wird aber dringend empfohlen.
+Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.
+Falls eine Beschriftung erfasst wird, muss diese innerhalb der zugewiesen  Grundnutzungsgeometrie liegen.</p>
+</div>
+<div class="section" id="klasse-dokument">
+<span id="ref-klassedokument"></span><span id="index-3"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code><a class="headerlink" href="#klasse-dokument" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="dokument docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 13%" />
+<col style="width: 55%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Wert</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>DokumentID</p></td>
+<td><p>Text mit max. 16 Zeichen</p></td>
+<td><p>leer lassen</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Titel</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Dokumentart z.B. Regiereungsratsbeschluss, Zonenreglement, Sonderbauvorschriften
+Erschliessungsplan, Gestaltungsplan</p></td>
+<td><p>Sonderbauvorschriften</p></td>
+</tr>
+<tr class="row-even"><td><p>OffiziellerTitel</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Vollständiger Titel des Dokuments, wenn der OffiziellerTitel gleich lautet wie der Titel, so ist die
+Planbezeichnung aus der Planliste zu übernehmen.</p></td>
+<td><p>Gemeinde Oekingen Bau- und Zonenreglement</p></td>
+</tr>
+<tr class="row-odd"><td><p>Abkuerzung</p></td>
+<td><p>Text mit max. 10 Zeichen</p></td>
+<td><p>Abkürzung der Dokumentkategorie (Regierungsratsbeschluss, Sonderbauvorschrift, Zonenreglement)</p></td>
+<td><p>RRB, SBV, ZR</p></td>
+</tr>
+<tr class="row-even"><td><p>OffizielleNr</p></td>
+<td><p>Text mit max. 20 Zeichen</p></td>
+<td><p>Eindeutiger Identifikator gemäss <a class="reference external" href="https://www.so.ch/planregister">Planregister</a>.
+Die ID setzt sich folgendermassen zusammen:</p>
+<p>Sonderbauvorschriften: Gemeindennummer „-“ Plannummer nach Planregister „-“ S (für Sonderbauvorschriften)</p>
+<p>Reglemente: Gemeindenummer „-“ und Kürzel Reglementart (ZR Zonenereglement, BR Baureglement und
+BZR Bau- und Zonenreglement</p>
+<p>Gestaltungsplan: Gemeindennummer „-“ Plannummer nach Planregister „-“ P (für Plan)</p>
+<p>Bei <a class="reference external" href="https://rrb.so.ch/">RRB</a> ist die RRB Nr. aufzuführen (YYYY/RRB Nr.)</p>
+</td>
+<td><p>109-31-S</p>
+<p>109-BR</p>
+<p>109-31-P</p>
+<p>2001/1585</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Kanton</p></td>
+<td><p>CHCantonCode</p></td>
+<td><p>Abkürzung Kanton</p></td>
+<td><p>SO</p></td>
+</tr>
+<tr class="row-even"><td><p>Gemeinde</p></td>
+<td><p>CHMunicipalityCode</p></td>
+<td><p>Gemeindenummer vom schweizerischen Bundesamt für Statistik (BFS-Nr.)</p></td>
+<td><p>2502</p></td>
+</tr>
+<tr class="row-odd"><td><p>publiziertAb</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum des Regierungsratsbeschlusses</p></td>
+<td><p>2002-04-23</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Rechtsstatus</p></td>
+<td><p>inKraft</p></td>
+<td><p>Rechtsstatus des Dokuments. Das Dokument ist in Kraft</p></td>
+<td rowspan="2"><p>inKraft</p></td>
+</tr>
+<tr class="row-odd"><td><p>laufende_Aenderung</p></td>
+<td><p>Rechtsstatus des Dokuments. Das Dokument ist noch nicht in Kraft, eine Änderung ist in Vorbereitung.</p></td>
+</tr>
+<tr class="row-even"><td><p>TextImWeb</p></td>
+<td><p>URI</p></td>
+<td><p>Relative Internetadresse des Dokuments auf <a class="reference external" href="https://www.so.ch/planregister">Planregister</a>.
+D.h. stabiler Teil, ohne „<a class="reference external" href="http://www.so.ch.../">http://www.so.ch…/</a>“</p></td>
+<td><p>109-Wisen/Entscheide/109-31-E.pdf</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bemerkung</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Erläuternder Text oder Bemerkungen zum Dokument</p></td>
+<td><p>ersetzt den RRB vom 13.12.2001</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Rechtsvorschrift</p></td>
+<td><p>ja</p></td>
+<td><p>RRB, Zonenreglement, Baureglement, Bauzonenreglement, Sonderbauvorschrift, Gestaltungsplan</p></td>
+<td rowspan="2"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>nein</p></td>
+<td><p>Raumplanungsbericht, Umweltverträglichkeitsbericht</p></td>
+</tr>
+</tbody>
+</table>
+<p>Die zu referenzierenden Dokumente stehen im <a class="reference external" href="https://www.so.ch/planregister">Planregister</a> zur Verfügung. Im Ordner <strong>Entscheide</strong> sind die Genehmigungsbeschlüsse des Regierungsrats abgelegt, im Ordner <strong>Plaene</strong> die Plandokumente, im Ordner <strong>Sonderbauvorschriften</strong> – dort wo vorhanden - die spezifischen Regelungen zum jeweiligen Sondernutzungsplan, fallweise auch Schutzonenreglemente zu Grundwasserschutzzonenplänen und im Ordner <strong>Reglemente</strong> die rechtskräftigen Baureglemente und Zonenreglemente.</p>
+<p>Die Dokumente werden mit dem <code class="docutils literal notranslate"><span class="pre">Typ_Grundnutzung</span></code> verknüpft. Dies sind in der Regel:</p>
+<ul class="simple">
+<li><p>Baureglemente und Zonenreglemente</p></li>
+<li><p>(RRB - werden an Baureglemente oder Zonenreglemente verknüpft)</p></li>
+</ul>
+<p>Auf die Erfassung der folgenden Rechtsgrundlagen des Bundes und des Kantons im Bereich der Nutzungsplanung wird verzichtet.</p>
+<ul class="simple">
+<li><p>Bundesgesetz über die Raumplanung <a class="reference external" href="https://www.admin.ch/ch/d/sr/c700.html">RPG, SR 700</a></p></li>
+<li><p>Raumplanungsverordnung <a class="reference external" href="https://www.admin.ch/ch/d/sr/c700_1.html">RPV, SR 700.1</a></p></li>
+<li><p>Kantonales Planungs- und Baugesetz <a class="reference external" href="http://bgs.so.ch/frontend/versions/4116">PBG, BGS 711.1</a>)</p></li>
+<li><p>Kantonale Bauverordnung <a class="reference external" href="http://bgs.so.ch/frontend/versions/4169">KBV, BGS 711.61</a></p></li>
+</ul>
+<p>Gemäss Datenmodell kann für die Dokumente eine Hierarchie erfasst werden. Als primäres Dokument (Ursprung) gilt immer die Rechtsvorschrift (Baureglement, Zonenreglement, Sonderbauvorschrift, Gestaltungsplan etc.), dort wo die eigentumsbeschränktenden Informationen festgehalten sind. Die RRBs (Hinweis) werden diesen Rechtsvorschriften zugewiesen. Ist keine Rechtsvorschrift vorhanden, so wird der <code class="docutils literal notranslate"><span class="pre">Typ_Grundnutzung</span></code> direkt mit dem RRB verknüpft.</p>
+<div class="figure align-center" id="id13">
+<span id="img-hierarchie-np"></span><a class="reference internal image-reference" href="_images/hierarchie_np.jpg"><img alt="_images/hierarchie_np.jpg" src="_images/hierarchie_np.jpg" style="width: 2000.0px; height: 574.0px;" /></a>
+<p class="caption"><span class="caption-text">Hierarchie der Dokumente, sowie Beispiel einer Zuweisung des Dokuments zur Geometrie Grundnutzung.</span><a class="headerlink" href="#id13" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p>Weil ein Teil der zu verknüpfenden Dokumente erst nach der Genehmigung der Ortsplanung vorliegt (der Genehmigungsbeschluss selber und die Reglemente) wird der Zeitpunkt der endgültigen Datenabgabe im Genehmigungsbeschluss festgelegt.</p>
+<p>Falls die Grundnutzungsgeometrien angepasst werden z.B. bei einer Teilrevision ist ein neuer <code class="docutils literal notranslate"><span class="pre">Typ_Grundnutzung</span></code> zu erstellen, welcher mit dem Zonenreglement Verknüpft ist und sich auf den neuen RRB bezieht (siehe <a class="reference internal" href="#img-hierarchie-np"><span class="std std-ref">Beispiel</span></a>).</p>
+<p>Für den <code class="docutils literal notranslate"><span class="pre">Typ_Grundnutzung</span></code> mit Verbindlichkeit gleich orientierend oder hinweisend sind keine Dokumente zu erfassen.</p>
+</div>
+</div>
+</div>
+<div class="section" id="nutzungsplanung-uberlagernde-objekte">
+<span id="ref-nutzungsplanunguberlagerndeobjekte"></span><span id="ref-uberlagerndeobjekte"></span><h2>Nutzungsplanung, überlagernde Objekte<a class="headerlink" href="#nutzungsplanung-uberlagernde-objekte" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="attribute-der-uberlagenden-objekte">
+<span id="ref-attributeuberlagerndeobjekte"></span><h3>Attribute der überlagenden Objekte<a class="headerlink" href="#attribute-der-uberlagenden-objekte" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Folgende Attribute sind für die überlagernden Objekte zu erfassen:</p>
+<p><span class="orange">Orange markierte Attribute sind Pflicht</span>. D.h. diese Werte müssen immer erfasst werden.</p>
+<div class="section" id="klasse-typ-ueberlagernd-flaeche-klasse-typ-ueberlagernd-linie-klassetyp-ueberlagernd-punkt">
+<span id="ref-klassetyp-ueberlagernd"></span><span id="index-4"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">KlasseTyp_Ueberlagernd_Punkt</span></code><a class="headerlink" href="#klasse-typ-ueberlagernd-flaeche-klasse-typ-ueberlagernd-linie-klassetyp-ueberlagernd-punkt" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="typueberlagerndflp docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 53%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Bezeichnung</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name des überlagernden Objekts / Wird von der Gemeinde definiert.</p></td>
+<td><p>Landschaftsschutzzone</p></td>
+</tr>
+<tr class="row-odd"><td><p>Abkuerzung</p></td>
+<td><p>Text mit max. 12 Zeichen</p></td>
+<td><p>Abkürzung des überlagernden Objekts. Kann von der Gemeinde vergeben werden. Falls keine Abkürzungen verhanden ist bleibt das Feld leer.</p></td>
+<td><p>LS</p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><p>Verbindlichkeit</p></td>
+<td><p>Nutzungsplanfestlegung</p></td>
+<td><p>eigentümerverbindlich, im Verfahren der Nutzungsplanung festgelegt.</p></td>
+<td rowspan="4"><p>Nutzungsplanfestlegung</p></td>
+</tr>
+<tr class="row-odd"><td><p>orientierend</p></td>
+<td><p>eigentümerverbindlich, in einem anderen Verfahren festgelegt.</p></td>
+</tr>
+<tr class="row-even"><td><p>hinweisend</p></td>
+<td><p>nicht eigentümerverbindlich, Informationsinhalte.</p></td>
+</tr>
+<tr class="row-odd"><td><p>wegleitend</p></td>
+<td><p>nicht eigentümerverbindlich, sie umfassen Qualitäten, Standards und dergleichen, die zu berücksichtigen sind.</p></td>
+</tr>
+<tr class="row-even"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Erläuternder Text zum Typ_Ueberlagernd.</p></td>
+<td><p>Daten von extern übernommen</p></td>
+</tr>
+<tr class="row-odd"><td><p>Typ_Kt</p></td>
+<td><p>Siehe Datenmodell
+NP_Typ_Kanton_Ueberlagernd_Flaeche
+NP_Typ_Kanton_Ueberlagernd_Linie
+NP_Typ_Kanton_Ueberlagernd_Punkt</p></td>
+<td><p>Siehe <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a></p></td>
+<td><p>N523_Landschaftsschutzzone</p></td>
+</tr>
+<tr class="row-even"><td><p>Code_kommunal</p></td>
+<td><p>Text mit max. 12 Zeichen</p></td>
+<td><p>4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Stelle 1-3 ist identisch zum kantonalen Code
+Im <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a>
+ist definiert, welche Werte des kommunalen Codes erlaubt sind. Falls kommunale Werte zugelassen sind, beginnt die 4. Stelle jeweils bei 1.</p></td>
+<td><p>5231</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ein <code class="docutils literal notranslate"><span class="pre">Typ_Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Typ_Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">Typ_Ueberlagernd_Punkt</span></code> kann mehrere überlagernde Geometrien haben ( siehe <a class="reference internal" href="#img-ermodell"><span class="std std-ref">Beziehung in der Übersicht</span></a>).</p>
+</div>
+<div class="section" id="klasse-ueberlagernd-flaeche-klasse-ueberlagernd-linie-klasse-ueberlagernd-punkt">
+<span id="ref-klasseueberlagernd"></span><span id="index-5"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Punkt</span></code><a class="headerlink" href="#klasse-ueberlagernd-flaeche-klasse-ueberlagernd-linie-klasse-ueberlagernd-punkt" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="ueberlagerndflp docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 43%" />
+<col style="width: 32%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Geometrie</p></td>
+<td><p>Polygon (surface)
+Linie
+Punkt</p></td>
+<td><p>Fläche, Linie oder Punkt, welche die Grundnutzung überlagern.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Name_Nummer</p></td>
+<td><p>Text mit max. 20 Zeichen</p></td>
+<td><p>Leer lassen</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Rechtsstatus</p></td>
+<td><p>inKraft</p></td>
+<td><p>Die Festlegung ist in Kraft.</p></td>
+<td rowspan="2"><p>inKraft</p></td>
+</tr>
+<tr class="row-odd"><td><p>laufende_Aenderung</p></td>
+<td><p>Die Festlegung ist noch nicht in Kraft, eine Änderung ist in Vorbereitung</p></td>
+</tr>
+<tr class="row-even"><td><p>publiziertAb</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum des Regierungsratsbeschlusses</p></td>
+<td><p>2002-04-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Bemerkung zu der einzelnen überlagernden Objekte.</p></td>
+<td><p>(z.B. zu 5240): Perimeter den lokalen Gegebenheiten
+angepasst</p></td>
+</tr>
+<tr class="row-even"><td><p>Erfasser</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name der Firma, welche die Daten erfasst hat</p></td>
+<td><p>Lerch Weber AG</p></td>
+</tr>
+<tr class="row-odd"><td><p>Datum</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum der Erfassung</p></td>
+<td><p>2017-06-14</p></td>
+</tr>
+</tbody>
+</table>
+<p>Eine überlagernde Fläche, Linie oder ein überlagernder Punkt ist immer einem Typ (<code class="docutils literal notranslate"><span class="pre">Typ_Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Typ_Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">Typ_Ueberlagernd_Punkt</span></code>) zugewiesen ( <a class="reference internal" href="#img-ermodell"><span class="std std-ref">siehe Beziehung in der Übersicht</span></a>).</p>
+</div>
+<div class="section" id="klasse-ueberlagernd-flaeche-pos-klasse-ueberlagernd-linie-pos-klasse-ueberlagernd-punkt-pos">
+<span id="ref-klasseueberlagernd-pos"></span><span id="index-6"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Linie_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Punkt_Pos</span></code><a class="headerlink" href="#klasse-ueberlagernd-flaeche-pos-klasse-ueberlagernd-linie-pos-klasse-ueberlagernd-punkt-pos" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="ueberlagerndflppos docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Pos</p></td>
+<td><p>Punkt</p></td>
+<td><p>Position für die Beschriftung</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Ori</p></td>
+<td><p>Wert zwischen 0 und 399</p></td>
+<td><p>Orientierung der Beschriftung in Gon. 0 gon = Horizontal</p></td>
+<td><p>37</p></td>
+</tr>
+<tr class="row-even"><td><p>HAli</p></td>
+<td><p>left, center, right</p></td>
+<td><p>Mit dem horizontalen Alignment wird festgelegt, ob die Position auf dem linken oder rechten
+Rand des Textes oder in der Textmitte liegt (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>left</p></td>
+</tr>
+<tr class="row-odd"><td><p>VAli</p></td>
+<td><p>top, cap, half, base, bottom</p></td>
+<td><p>Das vertikale Alignment legt die Position in Richtung der Texthöhe fest (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>)</p></td>
+<td><p>bottom</p></td>
+</tr>
+<tr class="row-even"><td><p>Grösse</p></td>
+<td><p>klein, mittel, gross</p></td>
+<td><p>Grösse der Beschriftung</p></td>
+<td><p>mittel</p></td>
+</tr>
+</tbody>
+</table>
+<p>Beschriftet wird die Abkürzung, welche in der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Punkt</span></code> erfasst wird. Eine Beschriftung der überlagernden Geometrie macht nur Sinn, wenn eine Abkürzung unter der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Linie</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Punkt</span></code> erfasst ist. Eine Beschriftung ist nicht zwingend ( <a class="reference internal" href="#img-ermodell"><span class="std std-ref">siehe Beziehung in der Übersicht</span></a>).
+Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.</p>
+</div>
+<div class="section" id="ref-klassedomument2">
+<span id="index-7"></span><span id="id6"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code><a class="headerlink" href="#ref-klassedomument2" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Analog zur <a class="reference internal" href="#ref-klassedokument"><span class="std std-ref">Klasse Dokument</span></a> der Grundnutzung.</p>
+<div class="figure align-center" id="id14">
+<span id="img-hierarchie-snp"></span><a class="reference internal image-reference" href="_images/hierarchie_snp.jpg"><img alt="_images/hierarchie_snp.jpg" src="_images/hierarchie_snp.jpg" style="width: 2000.0px; height: 476.0px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Perimeter Gestaltungsplan - setzt sich aus der Sonderbauvorschrift und dem Gestaltungsplan mit zugehörigen RRB zusammen (Typ wird mit mehreren Dokumenten [SBV, GP] verknüpft).</span><a class="headerlink" href="#id14" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p>Bei folgenden Plänen wird nur der Perimeter unter der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Ueberlagernd_Flaeche</span></code> erfasst und auf das Dokument verwiesen:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="11objektkatalog.html#ref-pknp"><span class="std std-ref">Kantonaler Nutzungsplan (Typ_Kt: N610_Perimeter_kantonaler_Nutzungsplan)</span></a></p></li>
+<li><p><a class="reference internal" href="11objektkatalog.html#ref-pkgp"><span class="std std-ref">Kommunaler Gestaltungsplan (Typ_Kt: N611_Perimeter_kommunaler_Gestaltungsplan)</span></a></p></li>
+<li><p><a class="reference internal" href="11objektkatalog.html#ref-pknp"><span class="std std-ref">Kantonaler Erschliessungsplan (Typ_Kt: N610_Permimeter_kantonaler_Nutzungsplan)</span></a></p></li>
+</ul>
+<p>Diese Lösung wurde gewählt, weil die Planinhalte der kantonalen Nutzungspläne und die Gestaltungspläne derart unterschiedlich ausfallen, dass sie nicht im Datenmodell modelliert werden können. Der Perimeter ist nach Möglichkeit an vorhanden Geometrieen aus der Grundnutzung zu verknüpfen (Liegenschaftsgrenzen, Strassen).</p>
+<div class="figure align-center" id="id15">
+<span id="img-gestaltungsplan"></span><a class="reference internal image-reference" href="_images/gestaltungsplan.jpg"><img alt="_images/gestaltungsplan.jpg" src="_images/gestaltungsplan.jpg" style="width: 872.0px; height: 707.0px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Gestaltungsplan Asylweg mit Sonderbauvorschriften (GB Nr. 3060).</span><a class="headerlink" href="#id15" title="Link zu diesem Bild">¶</a></p>
+</div>
+<span class="target" id="ref-erschliessung"></span></div>
+</div>
+</div>
+<div class="section" id="erschliessungsplanung">
+<span id="index-8"></span><h2>Erschliessungsplanung<a class="headerlink" href="#erschliessungsplanung" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Übersicht über die Erschliessungsplanung:</p>
+<div class="figure align-center" id="id16">
+<span id="img-erschliessung"></span><a class="reference internal image-reference" href="_images/Klassendiagramm_Erschliessung.jpg"><img alt="_images/Klassendiagramm_Erschliessung.jpg" src="_images/Klassendiagramm_Erschliessung.jpg" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">UML-Klassendiagramm Erschliessungsplanung.</span><a class="headerlink" href="#id16" title="Link zu diesem Bild">¶</a></p>
+</div>
+<div class="section" id="attribute-der-erschliessungsplanung">
+<span id="ref-attributeerschliessungsplanung"></span><h3>Attribute der Erschliessungsplanung<a class="headerlink" href="#attribute-der-erschliessungsplanung" title="Link zu dieser Überschrift">¶</a></h3>
+<p><span class="orange">Orange markierte Attribute sind Pflicht</span>. D.h. diese Werte müssen immer erfasst werden.</p>
+<div class="section" id="klasse-typ-erschliessung-flaecheobjekt-klasse-typ-erschliessung-linienobjekt-klasse-typ-erschliessung-punktobjekt">
+<span id="ref-klassetyp-erschliessung"></span><span id="index-9"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Punktobjekt</span></code><a class="headerlink" href="#klasse-typ-erschliessung-flaecheobjekt-klasse-typ-erschliessung-linienobjekt-klasse-typ-erschliessung-punktobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="typerschliessungflp docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 53%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Bezeichnung</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name des Objekts / Wird von der Gemeinde definiert.</p></td>
+<td><p>Sammelstrasse kommunal</p></td>
+</tr>
+<tr class="row-odd"><td><p>Abkuerzung</p></td>
+<td><p>Text mit max. 12 Zeichen</p></td>
+<td><p>Abkürzung des überlagernden Objekts. Kann von der Gemeinde vergeben werden. Falls keine Abkürzungen verhanden ist bleibt das Feld leer.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><p>Verbindlichkeit</p></td>
+<td><p id="ref-al2"><span id="ref-npf2orie"></span><span id="ref-wl2"></span><span id="ref-hw2"></span><span id="ref-ori2"></span><span id="ref-npf2"></span>Nutzungsplanfestlegung</p>
+</td>
+<td><p>eigentümerverbindlich, im Verfahren der Nutzungsplanung festgelegt.</p></td>
+<td rowspan="4"><p>Nutzungsplanfestlegung</p></td>
+</tr>
+<tr class="row-odd"><td><p>orientierend</p></td>
+<td><p>eigentümerverbindlich, in einem anderen Verfahren festgelegt.</p></td>
+</tr>
+<tr class="row-even"><td><p>hinweisend</p></td>
+<td><p>nicht eigentümerverbindlich, Informationsinhalte.</p></td>
+</tr>
+<tr class="row-odd"><td><p>wegleitend</p></td>
+<td><p>nicht eigentümerverbindlich, sie umfassen Qualitäten, Standards und dergleichen, die zu berücksichtigen sind.</p></td>
+</tr>
+<tr class="row-even"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Erläuternder Text oder Bemerkung zum Typ_Ueberlagernd.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Typ_Kt</p></td>
+<td><p>Siehe Datenmodel
+EP_Typ_Kanton_Erschliessung_Flaechenobjekt
+EP_Typ_Kanton_Erschliessung_Linienobjekt
+EP_Typ_Kanton_Erschliessung_Punktobjekt</p></td>
+<td><p>Siehe <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a></p></td>
+<td><p>E562</p></td>
+</tr>
+<tr class="row-even"><td><p>Code_kommunal</p></td>
+<td><p>Text mit max. 12 Zeichen</p></td>
+<td><p>4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Stelle 1-3 ist identisch zum kantonalen Code
+Im <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a>
+ist definiert, welche Werte des kommunalen Codes erlaubt sind. Falls kommunale Werte zugelassen sind, beginnt die 4. Stelle jeweils bei 1.</p></td>
+<td><p>5620</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ein <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Punktobjekt</span></code> kann mehrere Geometrien haben.</p>
+</div>
+<div class="section" id="klasse-erschliessung-flaecheobjekt-klasse-erschliessung-linienobjekt-klasse-erschliessung-punktobjekt">
+<span id="ref-klasseerschliessung"></span><span id="index-10"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Punktobjekt</span></code><a class="headerlink" href="#klasse-erschliessung-flaecheobjekt-klasse-erschliessung-linienobjekt-klasse-erschliessung-punktobjekt" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="erschliessungflp docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 43%" />
+<col style="width: 32%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Geometrie</p></td>
+<td><p>Polygon (AREA)
+Linie
+Punkt</p></td>
+<td><p>Fläche, Linie oder Punkt</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Name_Nummer</p></td>
+<td><p>Text mit max. 20 Zeichen</p></td>
+<td><p>Leer lassen</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Rechtsstatus</p></td>
+<td><p>inKraft</p></td>
+<td><p>Die Festlegung ist in Kraft.</p></td>
+<td rowspan="2"><p>inKraft</p></td>
+</tr>
+<tr class="row-odd"><td><p>laufende_Aenderung</p></td>
+<td><p>Die Festlegung ist noch nicht in Kraft, eine Änderung ist in Vorbereitung</p></td>
+</tr>
+<tr class="row-even"><td><p>publiziertAb</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum des Regierungsratsbeschlusses</p></td>
+<td><p>2002-04-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Bemerkung zu der einzelnen Erschliessungsobjekten.</p></td>
+<td><p>Fläche bei nächster OP zu prüfen</p></td>
+</tr>
+<tr class="row-even"><td><p>Erfasser</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name der Firma, welche die Daten erfasst hat</p></td>
+<td><p>Planteam S</p></td>
+</tr>
+<tr class="row-odd"><td><p>Datum</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum der Erfassung</p></td>
+<td><p>2017-07-12</p></td>
+</tr>
+</tbody>
+</table>
+<p>Eine Erschliessungsgeometrie (Fläche, Linie oder Punkt) ist immer einem Typ (<code class="docutils literal notranslate"><span class="pre">Typ_Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Typ_Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Typ_Erschliessung_Punktobjekt</span></code>) zugewiesen (siehe <a class="reference internal" href="#img-erschliessung"><span class="std std-ref">Beziehung in der Übersicht</span></a>).</p>
+</div>
+<div class="section" id="klasse-erschliessung-flaecheobjekt-pos-klasse-erschliessung-flaecheobjekt-pos-klasse-erschliessung-flaecheobjekt-pos">
+<span id="ref-klassererschliessung-pos"></span><span id="index-11"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt_Pos</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Erschliessung_Flaecheobjekt_Pos</span></code><a class="headerlink" href="#klasse-erschliessung-flaecheobjekt-pos-klasse-erschliessung-flaecheobjekt-pos-klasse-erschliessung-flaecheobjekt-pos" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="erschliessungflppos docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Pos</p></td>
+<td><p>Punkt</p></td>
+<td><p>Position für die Beschriftung</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Ori</p></td>
+<td><p>Wert zwischen 0 und 399</p></td>
+<td><p>Orientierung der Beschriftung in Gon. 0 gon = Horizontal</p></td>
+<td><p>37</p></td>
+</tr>
+<tr class="row-even"><td><p>HAli</p></td>
+<td><p>left, center, right</p></td>
+<td><p>Mit dem horizontalen Alignment wird festgelegt, ob die Position auf dem linken oder rechten
+Rand des Textes oder in der Textmitte liegt (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>left</p></td>
+</tr>
+<tr class="row-odd"><td><p>VAli</p></td>
+<td><p>top, cap, half, base, bottom</p></td>
+<td><p>Das vertikale Alignment legt die Position in Richtung der Texthöhe fest  (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>bottom</p></td>
+</tr>
+<tr class="row-even"><td><p>Grösse</p></td>
+<td><p>klein, mittel, gross</p></td>
+<td><p>Grösse der Beschriftung</p></td>
+<td><p>mittel</p></td>
+</tr>
+</tbody>
+</table>
+<p>Beschriftet wir die Abkürzung, welche in der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Flaecheobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Linienobjekt</span></code> / <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Punktobjekt</span></code> erfasst wird. Eine Beschriftung macht nur Sinn, wenn eine Abkürzung unter der <code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Typ_Erschliessung_Flaecheobjekt</span> <span class="pre">/</span> <span class="pre">Typ_Erschliessung_Linienobjekt</span> <span class="pre">/</span> <span class="pre">Typ_Erschliessung_Punktobjekt</span></code> erfasst ist. Eine Beschriftung ist nicht zwingend (siehe <a class="reference internal" href="#img-erschliessung"><span class="std std-ref">Beziehung in der Übersicht</span></a>).
+Die Ausrichtung (Ori, HAli und VAli) und die Textgrösse kann frei gewählt werden.</p>
+</div>
+<div class="section" id="ref-klassedokument3">
+<span id="index-12"></span><span id="id9"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Dokument</span></code><a class="headerlink" href="#ref-klassedokument3" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Analog zur <a class="reference internal" href="#ref-klassedokument"><span class="std std-ref">Klasse Dokument</span></a> der Grundnutzung.</p>
+<div class="figure align-center" id="id17">
+<span id="img-hierarchie-es"></span><a class="reference internal image-reference" href="_images/hierarchie_es.jpg"><img alt="_images/hierarchie_es.jpg" src="_images/hierarchie_es.jpg" style="width: 2000.0px; height: 574.0px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Erschliessungsplan-Teilrevision. Sammelstrassen setzen sich aus mehreren Plänen mit zugehörigen RRBs zusammen (Typ wird mit mehreren Dokumenten [RRB 1, 2, ..] verknüpft).</span><a class="headerlink" href="#id17" title="Link zu diesem Bild">¶</a></p>
+</div>
+<span class="target" id="ref-transfermetadaten"></span></div>
+</div>
+</div>
+<div class="section" id="transfermetadaten">
+<span id="index-13"></span><h2>TransferMetadaten<a class="headerlink" href="#transfermetadaten" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Übersicht über die TransferMetadaten:</p>
+<div class="figure align-center" id="id18">
+<span id="img-transfermetadaten"></span><a class="reference internal image-reference" href="_images/transfermetadaten.jpg"><img alt="_images/transfermetadaten.jpg" src="_images/transfermetadaten.jpg" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">UML-Klassendiagramm TransferMetadaten.</span><a class="headerlink" href="#id18" title="Link zu diesem Bild">¶</a></p>
+</div>
+<div class="section" id="datenabgabe">
+<h3>Datenabgabe<a class="headerlink" href="#datenabgabe" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Das Topic „TransferMetadaten“ muss bei jedem Datentransfer mitgeliefert werden.</p>
+<p>Folgende Attribute sind für die TransferMetadaten zu erfassen:
+Hinweis: <span class="orange">Orange markierte Attribute sind Pflicht</span>. D.h. diese Werte müssen immer erfasst werden.</p>
+<div class="section" id="klasse-amt">
+<span id="ref-klasseamt"></span><span id="index-14"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Amt</span></code><a class="headerlink" href="#klasse-amt" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="amt docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Firmenname des Erfassers</p></td>
+<td><p>Lerch Weber AG</p></td>
+</tr>
+<tr class="row-odd"><td><p>AmtImWeb</p></td>
+<td><p>URI</p></td>
+<td><p>Verweis auf die Webseite</p></td>
+<td><p>www.lerch-weber.ch/</p></td>
+</tr>
+</tbody>
+</table>
+<p>Diese Klasse enthält Angaben zur zuständigen Stelle resp. zum Planungsbüro, das die Geobasisdaten in deren Auftrag bearbeitet hat.</p>
+</div>
+<div class="section" id="klasse-datenbestand">
+<span id="ref-klasse-datenbestand"></span><span id="index-15"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">Datenbestand</span></code><a class="headerlink" href="#klasse-datenbestand" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="datenbestand docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 43%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Stand</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum des Datenstandes, z.B. Gemeinderatsbeschluss oder bereinigte Daten nach RRB</p></td>
+<td><p>2017-06-01</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lieferdatum</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum der Datenlieferung</p></td>
+<td><p>2017-07-14</p></td>
+</tr>
+<tr class="row-even"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Erläuternder Text oder Bemerkungen zum Datenbestand.</p></td>
+<td><p>Amtliche Vermessung als shp bezogen. Kreisbogen sind segmentiert.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Diese Klasse enthält Angaben zum gelieferten Datensatz. Einem Amt (Firma) können mehrere Datenbestände zugewiesen werden (siehe <a class="reference internal" href="#img-transfermetadaten"><span class="std std-ref">Beziehung in der Übersicht</span></a>).</p>
+<span class="target" id="ref-verfahrensstand"></span></div>
+</div>
+</div>
+<div class="section" id="verfahrensstand">
+<span id="index-16"></span><h2>Verfahrensstand<a class="headerlink" href="#verfahrensstand" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Übersicht über das Topic Verfahrensstand:</p>
+<div class="figure align-center" id="id19">
+<span id="img-verfahrensstand"></span><a class="reference internal image-reference" href="_images/verfahrensstand.jpg"><img alt="_images/verfahrensstand.jpg" src="_images/verfahrensstand.jpg" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">UML-Klassendiagramm Verfahrensstand.</span><a class="headerlink" href="#id19" title="Link zu diesem Bild">¶</a></p>
+</div>
+<div class="section" id="folgende-attribute-sind-fur-die-verfahrensstand-zu-erfassen">
+<h3>Folgende Attribute sind für die Verfahrensstand zu erfassen<a class="headerlink" href="#folgende-attribute-sind-fur-die-verfahrensstand-zu-erfassen" title="Link zu dieser Überschrift">¶</a></h3>
+<p><span class="orange">Orange markierte Attribute sind Pflicht</span>. D.h. diese Werte müssen immer erfasst werden.</p>
+<div class="section" id="klasse-vs-perimeter-verfahrensstand">
+<span id="ref-klassevs-perimeter-verfahrensstand"></span><span id="index-17"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">VS_Perimeter_Verfahrensstand</span></code><a class="headerlink" href="#klasse-vs-perimeter-verfahrensstand" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="vsperimeterverfahrensstand docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 22%" />
+<col style="width: 41%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Geometrie</p></td>
+<td><p>Polygon (Surface)</p></td>
+<td><p>Geltungsbereich für die Mutation</p></td>
+<td><p>z.B. Perimeter Gestaltungsplan</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><p>Planungsart</p></td>
+<td><p>Nutzungsplanung</p></td>
+<td></td>
+<td rowspan="3"><p>Nutzungsplanung</p></td>
+</tr>
+<tr class="row-even"><td><p>Erschliessungsplanung</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Waldfeststellung</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="6"><p>Verfahrensstufe</p></td>
+<td><p>Vorpruefung</p></td>
+<td></td>
+<td rowspan="6"><p>Vorpruefung</p></td>
+</tr>
+<tr class="row-odd"><td><p>Planauflage</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>zur_Genehmigung_beantragt</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>genehmigt_Beschwerde_haengig</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>rechtskraeftig</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>von_Genehmigung_ausgenommen</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Name_Nummer</p></td>
+<td><p>Text mit max. 20 Zeichen</p></td>
+<td><p>Leer lassen</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Bemerkungen</p></td>
+<td><p>Text mit max. 240 Zeichen</p></td>
+<td><p>Erläuternder Text oder Bemerkungen zum Verfahrenstand.</p></td>
+<td><ol class="arabic simple">
+<li><p>Vorprüfung</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><p>Erfasser</p></td>
+<td><p>Text mit max. 80 Zeichen</p></td>
+<td><p>Name des der Firma</p></td>
+<td><p>BSB + Partner</p></td>
+</tr>
+<tr class="row-odd"><td><p>Datum</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum Verfahrensbeginn</p></td>
+<td><p>2017-08-25</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="klasse-vs-perimeter-pos">
+<span id="ref-klassevs-perimeter-pos"></span><span id="index-18"></span><h4><code class="docutils literal notranslate"><span class="pre">Klasse</span> <span class="pre">VS_Perimeter_Pos</span></code><a class="headerlink" href="#klasse-vs-perimeter-pos" title="Link zu dieser Überschrift">¶</a></h4>
+<table class="vsperimeterpos docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bezeichnung</strong></p></td>
+<td><p><strong>Typ / Werte</strong></p></td>
+<td><p><strong>Beschreibung</strong></p></td>
+<td><p><strong>Beispiel</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Pos</p></td>
+<td><p>Punkt</p></td>
+<td><p>Position für die Beschriftung</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Ori</p></td>
+<td><p>Wert zwischen 0 und 399</p></td>
+<td><p>Orientierung der Beschriftung in Gon. 0 gon = Horizontal</p></td>
+<td><p>37</p></td>
+</tr>
+<tr class="row-even"><td><p>HAli</p></td>
+<td><p>left, center, right</p></td>
+<td><p>Mit dem horizontalen Alignment wird festgelegt, ob die Position auf dem linken oder rechten
+Rand des Textes oder in der Textmitte liegt  (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>left</p></td>
+</tr>
+<tr class="row-odd"><td><p>VAli</p></td>
+<td><p>top, cap, half, base, bottom</p></td>
+<td><p>Das vertikale Alignment legt die Position in Richtung der Texthöhe fest (siehe
+<a class="reference external" href="https://www.interlis.ch/content/index.php?language=d">Interlis 2 Referenzhandbuch</a>).</p></td>
+<td><p>bottom</p></td>
+</tr>
+<tr class="row-even"><td><p>Grösse</p></td>
+<td><p>klein, mittel, gross</p></td>
+<td><p>Grösse der Beschriftung</p></td>
+<td><p>mittel</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Stichwortverzeichnis</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="11objektkatalog.html" class="btn btn-neutral float-right" title="Objektkatalog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2ablaufdererfassung.html" class="btn btn-neutral float-left" title="Ablauf der Erfassung" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Amt für Raumplanung Kanton Solothurn
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

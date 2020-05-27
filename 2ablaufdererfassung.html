@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Ablauf der Erfassung &mdash; np SO-Arbeitshilfe 0.1.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="Datenmodell" href="3nutzungsplanung.html" />
+    <link rel="prev" title="Allgemein" href="1allgemein.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> np SO-Arbeitshilfe
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Inhalt:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1allgemein.html">Allgemein</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ablauf der Erfassung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#beantragung-verpflichtungskredit-bei-digitaler-ersterfassung">Beantragung Verpflichtungskredit bei digitaler Ersterfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zuordnung-der-nutzungsplaninhalte">Zuordnung der Nutzungsplaninhalte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grundlagenbeschaffung">Grundlagenbeschaffung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#planliste">Planliste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planregister">Planregister</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tiff-dateien-georeferenzieren">TIFF Dateien, georeferenzieren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kantonale-daten">Kantonale Daten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datenherr">Datenherr</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#datenerfassung">Datenerfassung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#daten-der-amtlichen-vermessung-av-als-basis">Daten der amtlichen Vermessung (AV) als Basis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#empfohlene-reihenfolge-der-erfassung">Empfohlene Reihenfolge der Erfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bereinigungsarbeiten">Bereinigungsarbeiten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#offensichtliche-fehler">Offensichtliche Fehler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bemerkungen">Bemerkungen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#allgemeine-technische-vorgaben">Allgemeine technische Vorgaben</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#prufung-der-transferdatei-auf-modellkonformitat">Prüfung der Transferdatei auf Modellkonformität</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#datenabgabe-an-den-zustandigen-kreisplaner-in">Datenabgabe an den zuständigen Kreisplaner(in)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kontrolle-durch-den-zustandigen-kreisplaner-in">Kontrolle durch den zuständigen Kreisplaner(in)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ablage-der-daten-in-der-kantonalen-geodateninfrastruktur-und-publikation-im-web-gis">Ablage der Daten in der kantonalen Geodateninfrastruktur und Publikation im Web GIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3nutzungsplanung.html">Datenmodell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11objektkatalog.html">Objektkatalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+    <a href="genindex.html">Stichwortverzeichnis</a>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">np SO-Arbeitshilfe</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Ablauf der Erfassung</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/2ablaufdererfassung.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ablauf-der-erfassung">
+<span id="ref-ablauferfassung"></span><span id="ref-erfassung"></span><h1>Ablauf der Erfassung<a class="headerlink" href="#ablauf-der-erfassung" title="Link zu dieser Überschrift">¶</a></h1>
+<p>Eine Übersicht über den Ablauf der digitalen Erfassung der Nutzungsplanungsdaten</p>
+<div class="figure align-center" id="id11">
+<span id="img-erfassungsschema"></span><a class="reference internal image-reference" href="_images/erfassungsschema2.jpg"><img alt="_images/erfassungsschema2.jpg" src="_images/erfassungsschema2.jpg" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Vorgehen bei der Erfassung.</span><a class="headerlink" href="#id11" title="Link zu diesem Bild">¶</a></p>
+</div>
+<div class="section" id="beantragung-verpflichtungskredit-bei-digitaler-ersterfassung">
+<span id="ref-beantragungverpflichtungskredit"></span><span id="index-0"></span><h2>Beantragung Verpflichtungskredit bei digitaler Ersterfassung<a class="headerlink" href="#beantragung-verpflichtungskredit-bei-digitaler-ersterfassung" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Die Gemeinden werden bei der digitalen Ersterfassung finanziell durch den Kanton unterstützt. Bis Ende 2019 übernimmt der Kanton max. 40% der Erfassungskosten mit einem Kostendach von maximal 18‘000.– inkl. MwSt.
+Beitragsgesuche sind einzureichen beim:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Amt für Raumplanung</div>
+<div class="line">Werkhofstrasse 59</div>
+<div class="line">4509 Solothurn</div>
+</div>
+</div></blockquote>
+<p>Beitragsgesuche sind durch die jeweilige Gemeinde einzureichen. Sie haben minimal eine Offerte des ausführenden Planungs-, Ingenieur oder Vermessungsbüros sowie die Bezeichnung einer Ansprechperson des ausführenden Büros zu beinhalten.</p>
+<p>Voraussetzung für die Auszahlung des Kantonsbeitrages ist Abgabe von verifizierten, fehlerfreien Daten.</p>
+</div>
+<div class="section" id="zuordnung-der-nutzungsplaninhalte">
+<span id="ref-zuordnungnutzungsplaninhalte"></span><h2>Zuordnung der Nutzungsplaninhalte<a class="headerlink" href="#zuordnung-der-nutzungsplaninhalte" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Bevor mit der Erfassung begonnen wird, sind die zu digitalisierenden Planinhalte zu inventarisieren. Das heisst alle vorkommenden Planinhalte einer Gemeinde werden im Objektkatalog den jeweiligen passenden kantonalen Codes zugeordnet. Die Ersterfassung erfolgt in der Regel gestützt auf die rechtsgültige Ortsplanung – auch bei einer bereits laufenden Ortsplanungsrevision. Ab der öffentlichen Auflage der laufenden Ortsplanung sollen nicht mehr die rechtsgültigen Daten digitalisiert werden. Nur so kann sichergestellt werden, dass die Daten für alle Gemeinden flächendeckend bis Ende 2019 verfügbar sind.</p>
+<p>Dazu ist die <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/xls/Objektkatalog.xlsx">Excel-Tabelle Objektkatalog</a>  zu verwenden und gemäss dem folgenden Beispiel zu ergänzen (nicht vorkommende Planinhalte können zur besseren Übersicht ausgeblendet werden (nicht löschen!). In der Spalte <strong>Bezeichnung Gemeinde</strong> ist die exakte Bezeichnung der Zone oder des Planinhaltes gemäss Plan oder Reglement der Gemeinde aufzuführen:</p>
+<div class="figure align-center" id="id12">
+<span id="img-objektkatalog"></span><a class="reference internal image-reference" href="_images/objektkatalog.jpg"><img alt="_images/objektkatalog.jpg" src="_images/objektkatalog.jpg" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Objektkatalog.</span><a class="headerlink" href="#id12" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p id="index-1"><strong>Fett</strong> dargestellte Codes sind unverändert zu übernehmen, weil die Gemeinde für diese Planinhalte keinen Spielraum resp. nur eine abschliessend definierte Zuteilungmöglichkeit besitzt.
+Die Zuordnung ist mit dem für die jeweilige Gemeinde zuständigen <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> im Amt für Raumplanung abzusprechen. So wird die korrekte Codezuweisung bei der Digitalisierung früh im Ablauf sichergestellt.</p>
+</div>
+<div class="section" id="grundlagenbeschaffung">
+<span id="ref-grundlagenbeschaffung"></span><span id="index-2"></span><h2>Grundlagenbeschaffung<a class="headerlink" href="#grundlagenbeschaffung" title="Link zu dieser Überschrift">¶</a></h2>
+<span class="target" id="ref-planliste"></span><div class="section" id="planliste">
+<span id="index-3"></span><h3>Planliste<a class="headerlink" href="#planliste" title="Link zu dieser Überschrift">¶</a></h3>
+<div class="figure align-center" id="id13">
+<span id="img-planliste"></span><a class="reference internal image-reference" href="_images/Zuweisung_Dokumente_Plandokumente.jpg"><img alt="_images/Zuweisung_Dokumente_Plandokumente.jpg" src="_images/Zuweisung_Dokumente_Plandokumente.jpg" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Planliste für die Zuweisung der Dokumente.</span><a class="headerlink" href="#id13" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p>Analog zur Objektliste wird die Planliste gesichtet und die zu verwendenden Dokumente hervorgehoben (um die Planliste als Excelfile zu erhalten meldet beim zuständigen <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a>).   So ist klar, welche Dokumente erfasst und verknüpft werden müssen und welche nicht. Diese Liste ist wiederum  dem/der <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> zur Kontrolle vorzulegen. So könne potentielle Fehler frühzeitig vermieden werden.</p>
+<div class="figure align-center" id="id14">
+<span id="img-planlisteindex"></span><a class="reference internal image-reference" href="_images/planlisteindex.png"><img alt="_images/planlisteindex.png" src="_images/planlisteindex.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Zuweisung der Farben für die Planliste.</span><a class="headerlink" href="#id14" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p>Wir empfehlen die Pläne (Bauzonenplan, Gesamtplan, Erschliessungspläne, Gestaltungspläne, Waldfeststellungsplan) gemäss obiger Farbcodierung einzufärben.</p>
+</div>
+<div class="section" id="planregister">
+<span id="ref-planregister"></span><span id="index-4"></span><h3>Planregister<a class="headerlink" href="#planregister" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Basis für die Erfassung der Nutzungsplanungsdaten sind die analogen, rechtsgültigen Dokumente der jeweiligen Ortsplanung. Unter dem kantonalen <a class="reference external" href="https://www.so.ch/planregister">Planregister</a> sind die eingescannten Plandokumente gemeindeweise abgelegt.</p>
+<div class="figure align-center" id="id15">
+<span id="img-planregister"></span><a class="reference internal image-reference" href="_images/planregister.jpg"><img alt="_images/planregister.jpg" src="_images/planregister.jpg" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Planregister des Kanton Solothurn.</span><a class="headerlink" href="#id15" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p id="index-5">Über die Gemeindebezeichnung (linke Spalte) lässt sich das Inhaltsverzeichnis aller Pläne und Dokumente aufrufen; über den Link gelangt man in die Ablage der Dateien. Pro Gemeinde sind vier Unterverzeichnisse anwählbar:</p>
+<ul class="simple">
+<li><p>Das Verzeichnis <strong>Entscheide</strong> enthält die Regierungsratsbeschlüsse (Genehmigungsbeschlüsse) zu jeder Nutzungsplanung</p></li>
+<li><p>Das Verzeichnis <strong>Plaene</strong> enthält die Plandokumente</p></li>
+<li><p>Das Verzeichnis <strong>Sonderbauvorschriften</strong> enthält die Bestimmungen zu ausgewählten Plänen (dort, wo solche erforderlich und somit vorhanden sind).</p></li>
+<li><p>Das Verzeichnis <strong>Reglemente</strong> enthält die jeweils rechtsgültige Version der Bau- und Zonenvorschriften.</p></li>
+</ul>
+<p>Nachträgliche Mutationen einzelner Paragraphen werden dem Reglement chronologisch vorangestellt.
+Die Bezeichnung der Dokumente im Planregister setzt sich zusammen aus der BJD-Gemeindenummer, einer Laufnummer (nach dem Datum der Genehmigung aufsteigend) und einem Kürzel für die Dokumentart (<strong>E</strong> für Entschied, <strong>P</strong> für Plan und <strong>S</strong> für Sonderbauvorschrift).</p>
+<p id="index-6">Folgende Pläne sind für die Erfassung der digitalen Nutzungsplandaten zu berücksichtigen:</p>
+<ul class="simple">
+<li><p>Bauzonenplan und Gesamtplan (im Inhaltsverzeichnis unter <a class="reference external" href="https://so.ch/planregister">https://so.ch/planregister</a> jeweils gelb hervorgehoben)</p></li>
+<li><p>die Lärmempfindlichkeitsstufen (in der Regel in den Bauzonenplan integriert)</p></li>
+<li><p>Erschliessungspläne (meist mit demselben RRB genehmigt, wie der Bauzonen- und Gesamtplan, fallweise auch mehrere Teilerschliessungspläne mit unterschiedlichem Genehmigungsdatum)</p></li>
+<li><p>Waldfeststellungspläne</p></li>
+</ul>
+<p>Neben den genannten Plänen zur Ortsplanung enthält das Planverzeichnis weitere Einträge unterschiedlicher Kategorien. Einige dieser Pläne sind als Plandokumente auf die entsprechenden Nutzungsplaninhalte zu referenzieren (Gestaltungspläne und kant. Erschliessungspläne auf die der Grundnutzung <a class="reference internal" href="11objektkatalog.html#ref-pknp"><span class="std std-ref">überlagerten flächenbezogenen Festlegungen mit dem kant. Zonencode 611</span></a>; kantonale Nutzungspläne (insbesondere kantonale Erschliessungspläne) auf die <a class="reference internal" href="11objektkatalog.html#ref-pkgp"><span class="std std-ref">überlagerten flächenbezogenen Festlegungen mit dem Zonencode 610</span></a>). Andere Pläne (z.B. Landwirtschaftsinventare, oder Fruchtfolgeflächenpläne bilden als Grundlagepläne eine Momentaufnahme zum Zeitpunkt einer Ortsplanungsrevision ab und sind bei der Datenerfassung nicht weiter zu berücksichtigen. Bei Unklarheiten zur Planliste hilft der <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> weiter.</p>
+</div>
+<div class="section" id="tiff-dateien-georeferenzieren">
+<span id="ref-tiff"></span><span id="index-7"></span><h3>TIFF Dateien, georeferenzieren<a class="headerlink" href="#tiff-dateien-georeferenzieren" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die Pläne sind als PDF, aber auch als TIFF vorhanden. TIFF Pläne können im GIS importiert werden. Georeferenziert sind sie eine ausgezeichnete visuelle Hilfestellung bei der Ersterfassung der Daten.</p>
+<p>Das Verzeichnis kann unter <a class="reference external" href="https://geoweb.so.ch/zonenplaene/Zonenplaene_tif/">https://geoweb.so.ch/zonenplaene/Zonenplaene_tif/</a> aufgerufen werden.</p>
+</div>
+<div class="section" id="kantonale-daten">
+<span id="ref-kantonaledaten"></span><span id="index-8"></span><h3>Kantonale Daten<a class="headerlink" href="#kantonale-daten" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Kantonale Daten werden vom zuständigen Amt (Datenherr) erhoben und zur Verfügung gestellt.</p>
+</div>
+<div class="section" id="datenherr">
+<span id="ref-datenherr"></span><h3>Datenherr<a class="headerlink" href="#datenherr" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Der Datenherr ist verantwortlich für die Erfassung und Nachführung der Daten.</p>
+<p>Beim Amt für Geoinformation <a class="reference external" href="mailto:agi&#37;&#52;&#48;bd&#46;so&#46;ch">agi<span>&#64;</span>bd<span>&#46;</span>so<span>&#46;</span>ch</a> können die Daten zu den Objekten, welche im <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkatalog</span></a> gekennzeichnet sind, modellkonform bezogen werden. Folgende kantonale Objekte müssen <cite>nicht</cite> erfasst werden:</p>
+<dl class="simple" id="ref-arp">
+<dt>ARP - Amt für Raumplanung</dt><dd><ul class="simple">
+<li><p>520 BLN Gebiete</p></li>
+<li><p>522 Naturreservat (inkl. Geotope)</p></li>
+<li><p>524 Siedlungstrenngürtel von kommunaler Bedeutung</p></li>
+<li><p>525 Siedlungstrenngürtel von kantonaler Bedeutung</p></li>
+<li><p>526 kantonale Landwirtschafts- und Schutzzone Witi</p></li>
+<li><p>527 kantonale Uferschutzzone</p></li>
+<li><p>690 kantonales Vorranggebiet Natur und Landschaft</p></li>
+<li><p>790 Wanderweg</p></li>
+<li><p>791 historischer Verkehrsweg</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple" id="ref-afu">
+<dt>AFU - Amt für Umwelt</dt><dd><ul class="simple">
+<li><p>593 - 596 Grundwasserschutzzonen (S1, S2, S3 und Areal)</p></li>
+<li><p>530 - 533 Naturgefahren</p></li>
+<li><p>812 geologisches Objekt</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple" id="ref-avt">
+<dt>AVT - Amt für Verkehr und Tiefbau</dt><dd><ul class="simple">
+<li><p>799 Velorouten (Weitere linienbezogene Festlegungen NP)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple" id="ref-awjf">
+<dt>AWJF - Amt für Wald, Jagd und Fischerei</dt><dd><ul class="simple">
+<li><p>792 Waldgrenze</p></li>
+<li><p>793 Negative Waldfeststellung</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple" id="ref-ada">
+<dt>ADA - Amt für Denkmalpflege und Archäologie</dt><dd><ul class="simple">
+<li><p>6999 Geschützte archäologische Fundstellen</p></li>
+<li><p>820 kantonal geschütztes Kulturobjekt</p></li>
+</ul>
+</dd>
+<dt>Kantonale Objekte welche erfasst werden müssen:</dt><dd><ul class="simple">
+<li><p>610 Perimeter kantonaler Nutzungsplan</p></li>
+<li><p>711 kantonale Baulinie (Strasse, Vorbaulinie, Gestaltungsbaulinie, Rückwärtige, Infrastruktur und weitere)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Die oben aufgeführten Bemerkungen beziehen sich auf die Ersterfassung. Sobald die Nutzungsplanungsdaten digital in der kantonalen Geodateninfrastruktur vorliegen, können diese ebenfalls beim Amt für Geoinformation bezogen werden.
+.. Unter <code class="docutils literal notranslate"><span class="pre">Verzeichnis</span> <span class="pre">existiert</span> <span class="pre">noch</span> <span class="pre">nicht</span></code> sehen sie eine Übersicht über die Verfügbarkeit der digitalen Nutzungsplanungsdaten.</p>
+</div>
+</div>
+<div class="section" id="datenerfassung">
+<span id="ref-datenerfassung"></span><span id="ref-av-wms"></span><span id="ref-av-l"></span><span id="ref-av-b"></span><span id="ref-av"></span><span id="index-9"></span><h2>Datenerfassung<a class="headerlink" href="#datenerfassung" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="daten-der-amtlichen-vermessung-av-als-basis">
+<span id="ref-datenvermessung"></span><h3>Daten der amtlichen Vermessung (AV) als Basis<a class="headerlink" href="#daten-der-amtlichen-vermessung-av-als-basis" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Basis zur Erfassung der Geometriedaten bilden die Daten der amtlichen Vermessung (vorab die Liegenschaftsgrenzen, fallweise auch Abgrenzungen, die sich aus der Bodenbedeckung oder Einzelobjekten ergeben). D.h. Nutzungsplanungsobjekte sind auf bestehenden Geometrien der amtlichen Vermessung der Ebenen Liegenschaften, Bodenbedeckung und Einzelobjekte durch exakte Kopie der Geometrien oder Geometrieteile zu konstruieren. Nur wo solche Abgrenzungen nicht zur Verfügung stehen, sind die Planinhalte neu zu digitalisieren.</p>
+<ul class="simple">
+<li><p>AV - Bodenbedeckung</p></li>
+<li><p>AV - Liegenschaften</p></li>
+<li><p>AV - WMS schwarz-weiss</p></li>
+</ul>
+</div>
+<div class="section" id="empfohlene-reihenfolge-der-erfassung">
+<span id="ref-empfohlenereihenfolge"></span><span id="index-10"></span><h3>Empfohlene Reihenfolge der Erfassung<a class="headerlink" href="#empfohlene-reihenfolge-der-erfassung" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die Geometrie der Planinhalte ist in der Reihenfolge des <a class="reference internal" href="11objektkatalog.html#ref-objektkatalog"><span class="std std-ref">Objektkataloges</span></a> zu erfassen; das heisst:
+zuerst die <a class="reference internal" href="11objektkatalog.html#ref-gn"><span class="std std-ref">Grundnutzung</span></a>, dann die <a class="reference internal" href="11objektkatalog.html#ref-ueb"><span class="std std-ref">überlagernden Festlegungen</span></a> (beide zusammen bilden die Nutzungsplanung) und schliesslich die <a class="reference internal" href="11objektkatalog.html#ref-er"><span class="std std-ref">Erschliessungsplanung</span></a>. Die Erfassung und separate Prüfung in dieser Reihenfolge ist sinnvoll, weil Lage und/oder Abgrenzung von überlagerten Planinhalten teilweise von der Grundnutzung abhängig sind. Die Erschliessungsflächen sind kongruent mit den Flächen der Verkehrszonen. Sie stellen eine genauere Untersteilung der Strassenflächen der Grundnutzung dar. Eine Strassenbaulinie zu einer projektierten Strasse ist beispielsweise von der korrekten Erfassung der Verkehrsfläche in der Grundnutzung abhängig; oder die Abgrenzung von Lärmempfindlichkeitsstufen von der Lage der entsprechenden Bauzonengrenzen.</p>
+</div>
+<div class="section" id="bereinigungsarbeiten">
+<span id="ref-bereinigungsarbeiten"></span><span id="index-11"></span><h3>Bereinigungsarbeiten<a class="headerlink" href="#bereinigungsarbeiten" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Mit der digitalen Ersterfassung dürfen im Grundsatz keine inhaltlichen Veränderungen oder Bereinigungsarbeiten vorgenommen werden. Wenn inhaltlicher Bereinigungs- oder Anpassungsbedarf besteht, so sind solche Arbeiten nach dem Abschluss der Ersterfassung in einem eigenständigen Arbeitsschritt umzusetzen und zu dokumentieren. Kleine Abweichungen zwischen analogen Planwerken und den Geometrien der amtlichen Vermessung sind als Zusammenfallen zu interpretieren, wenn dies klar und eindeutig als Absicht aus dem Plan hervorgeht. Bei Fragen zu diesem Thema kann der zuständige <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> kontaktiert werden.</p>
+</div>
+<div class="section" id="offensichtliche-fehler">
+<span id="ref-offensichtlilchefehler"></span><span id="index-12"></span><h3>Offensichtliche Fehler<a class="headerlink" href="#offensichtliche-fehler" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Tritt ein offensichtlicher Fehler auf so ist die neue Situation zu erfassen und zu vermerken. Der <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a>  wird in solchen Fällen das Vorgehen bestimmen.</p>
+<div class="figure align-center" id="id16">
+<span id="img-fehler"></span><a class="reference internal image-reference" href="_images/fehler_halten_wald.jpg"><img alt="_images/fehler_halten_wald.jpg" src="_images/fehler_halten_wald.jpg" style="width: 850px;" /></a>
+<p class="caption"><span class="caption-text">Beispiel Halten, ist die Parzelle 147 Wald?: links - rechtskräfitger Bauzonenplan (Landwirschaftszone), mitte - <a class="reference external" href="https://geoweb.so.ch/rest/qgis/webgisLauncher.wsgi?uuid=3314616b-06d0-4471-9474-c6246f62a828">Amtliche Vermessung</a> (Wald), rechts - <a class="reference external" href="https://geoweb.so.ch/rest/qgis/webgisLauncher.wsgi?uuid=d499a0c6-241e-45b9-8f3c-fa6d99f33f45">Orthophoto</a> (Wald).</span><a class="headerlink" href="#id16" title="Link zu diesem Bild">¶</a></p>
+</div>
+</div>
+<div class="section" id="bemerkungen">
+<span id="ref-bemerkungen"></span><span id="index-13"></span><h3>Bemerkungen<a class="headerlink" href="#bemerkungen" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Bemerkungen werden verwendet um getroffene Entscheide festzuhalten, Fragen zu stellen oder um vorgreifende Bemerkungen für eine OPR anzubringen (z.B. „Abweichung zum rechtsgültigen Plan. In OPR bereinigen“). Die Bemerkungen werden nicht im WebGIS Client angezeigt und dienen ausschliesslich den Planenden. Für allgemeine Bemerkungen (überall gleichlaufende Kommentare) ist dieses Feld nicht angedacht. Diese sollen per Mail bei jeweiliger Datenlieferung mitgeteilt werden.</p>
+</div>
+<div class="section" id="allgemeine-technische-vorgaben">
+<span id="ref-allgemeinevorgaben"></span><span id="index-14"></span><h3>Allgemeine technische Vorgaben<a class="headerlink" href="#allgemeine-technische-vorgaben" title="Link zu dieser Überschrift">¶</a></h3>
+<ul class="simple">
+<li><p>Die Datenerfassung Nachführung erfolgt im Bezugsrahmensystem LV 95 (EPSG:2056).</p></li>
+<li><p>Multipart-Geometrien sind nicht zulässig und werden von INTERLIS 2 nicht unterstützt.</p></li>
+<li><p>Kreisbogen dürfen als Geraden segmentiert sein. Es sind die segmentieren Kreisbogen der AV, wie sie vom Amt für Geoinformation bereitgestellt werden zu übernehmen.</p></li>
+<li><p>Die zu erfassenden Daten liegen auf der Gemeindegrenze oder innerhalb der Gemeinde. D.h. die Geometrien dürften die Gemeindegrenze nicht überlappen.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="prufung-der-transferdatei-auf-modellkonformitat">
+<span id="ref-prufungtransferdatei"></span><span id="index-15"></span><h2>Prüfung der Transferdatei auf Modellkonformität<a class="headerlink" href="#prufung-der-transferdatei-auf-modellkonformitat" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Bevor die erfassten Daten abgegeben werden, ist die Transferdatei (XTF) auf modellkonformität zu prüfen. Die Prüfung ist über den <a class="reference external" href="https://geo.so.ch/ilivalidator/">Validator</a> durchzuführen. Das Resultat der Prüfung muss <code class="docutils literal notranslate"><span class="pre">...validation</span> <span class="pre">done</span></code> sein. Ist dies nicht der Fall, müssen die Daten gemäss Fehlermeldung bereinigt werden.</p>
+<p>Die <a class="reference external" href="https://github.com/sogis/ilivalidator-web-service/blob/master/docs/user-manual-de.rst">Validator Dokumentation</a> finden sie hier .</p>
+</div>
+<div class="section" id="datenabgabe-an-den-zustandigen-kreisplaner-in">
+<span id="ref-datenabgabekreisplaner"></span><span id="index-16"></span><h2>Datenabgabe an den zuständigen Kreisplaner(in)<a class="headerlink" href="#datenabgabe-an-den-zustandigen-kreisplaner-in" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Folgende Daten sind dem zuständigen <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> per Mail abzugeben:</p>
+<ul class="simple">
+<li><p>Transferdatei (.xtf)</p></li>
+<li><p>Logfile Validator (.log)</p></li>
+<li><p>Bauzonenplan als .pdf</p></li>
+<li><p>Gesamtplan als .pdf</p></li>
+<li><p>Erschliessungsplan als .pdf</p></li>
+</ul>
+<p>In der Transferdatei sind alle Daten vorhanden, auch die Daten, welche vom Kanton  bezogen und eingebunden wurden (z.B. Grundwasserschutzzonen).</p>
+<p>Bei einer Ortsplanungsrevision ist der Zeitpunkt der Datenabgabe mit dem <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> in Abhängigkeit von Verfahrensstand abzusprechen. In der Regel erfolgt die Datenabgabe erstmalig im Sinn einer Vorprüfung (bei einer Datenerhebung im Rahmen der Ortsplanungsrevision koordiniert mit der Vorprüfung nach <a class="reference external" href="http://bgs.so.ch/frontend/versions/4287">§ 15 PBG</a> ). Bei der Abgabe der Daten zur Vorprüfung kann den Daten ein Bericht oder eine Tabelle mit offenen Fragen und Erläuterungen beigelegt werden.</p>
+<p>Zwingend erforderlich ist die Datenabgabe der bereinigten modellkonformen Daten zum Zeitpunkt der regierungsrätlichen Genehmigung einer Ortsplanung. Die Datenabgabe ist Voraussetzung für die Auszahlung des Kantonsbeitrages. Auch bei einer Datenerfassung ausserhalb der Ortsplanung ist die Abgabe fehlerfreier Daten Voraussetzung für die Auszahlung des Beitrags.</p>
+</div>
+<div class="section" id="kontrolle-durch-den-zustandigen-kreisplaner-in">
+<span id="ref-kontrollekreisplaner"></span><span id="index-17"></span><h2>Kontrolle durch den zuständigen Kreisplaner(in)<a class="headerlink" href="#kontrolle-durch-den-zustandigen-kreisplaner-in" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der zuständige <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> kontrolliert die digitalen Nutzungsplanungsdaten und gibt der Gemeinde resp. dem Planungs-, Ingenieur-, oder Vermessungsbüros Rückmeldung. Falls die Daten noch nicht in Ordnung sind, sind diese in der vereinbarten Frist zu korrigieren.</p>
+<p><strong>Für Fragen der Ersterfassung im Kreis Olten, Gösgen, Gäu ist neu Vanessa Studer statt Stephan Schader verantwortlich.</strong></p>
+<p>Die technische und fachliche Kontrolle wir anhand der folgenden <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/pdf/Checkliste_v2.2.pdf">Checkliste</a> durchgeführt.</p>
+</div>
+<div class="section" id="ablage-der-daten-in-der-kantonalen-geodateninfrastruktur-und-publikation-im-web-gis">
+<span id="ref-ablagedaten"></span><span id="index-18"></span><h2>Ablage der Daten in der kantonalen Geodateninfrastruktur und Publikation im Web GIS<a class="headerlink" href="#ablage-der-daten-in-der-kantonalen-geodateninfrastruktur-und-publikation-im-web-gis" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Sobald die Daten vom zuständigen <a class="reference external" href="https://www.so.ch/fileadmin/internet/bjd/bjd-arp/Nutzungsplanung/img/Karte_Kreisplaner.jpg">Kreisplaner(in)</a> geprüft und in Ordnung sind, werden die Daten in die kantonalen Datenbank importiert und im <a class="reference external" href="https://geoweb.so.ch/map">Web GIS</a> publiziert. Die Planungsbüros werden informiert dass die Datenprüfuing abgeschlossen ist.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Stichwortverzeichnis</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="3nutzungsplanung.html" class="btn btn-neutral float-right" title="Datenmodell" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="1allgemein.html" class="btn btn-neutral float-left" title="Allgemein" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Amt für Raumplanung Kanton Solothurn
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
