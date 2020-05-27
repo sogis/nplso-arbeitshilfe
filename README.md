@@ -13,6 +13,11 @@ Clone this repository:
 ```
 git clone https://github.com/sogis/nplso-arbeitshilfe.git $HOME/Projekte/nplso-arbeitshilfe
 ```
+For pulling from the git repository:
+
+```
+git pull
+```
 
 For pushing into the git repository, you need a github account and be member of sogis organization:
 
